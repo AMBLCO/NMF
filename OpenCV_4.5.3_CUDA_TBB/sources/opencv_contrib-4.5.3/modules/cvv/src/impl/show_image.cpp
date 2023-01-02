@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:89ec78ca7d45056681752969c125fc974c3d35e1c90bb7be29dcd63be698164a
-size 358
+#include "opencv2/cvv/show_image.hpp"
+
+#include "opencv2/cvv/call_meta_data.hpp"
+#include "single_image_call.hpp"
+
+namespace cvv
+{
+namespace impl
+{
+
+void showImage(cv::InputArray img, const CallMetaData &data,
+               const char *description, const char *view)
+{
+	debugSingleImageCall(img, data, description, view, "singleImage");
+}
+}
+} // namespaces

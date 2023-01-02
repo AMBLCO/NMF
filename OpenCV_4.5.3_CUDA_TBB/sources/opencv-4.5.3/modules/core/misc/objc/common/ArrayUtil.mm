@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3772579ff5093962888b93b2f688ff65da0749a0985df272cb5478e6296bd3bd
-size 317
+//
+//  ArrayUtil.mm
+//
+//  Created by Giles Payne on 2020/02/09.
+//
+
+#import "ArrayUtil.h"
+
+NSMutableArray* createArrayWithSize(int size, NSObject* val) {
+    NSMutableArray *array = [NSMutableArray arrayWithCapacity:size];
+    for (int i = 0; i < size; i++){
+        [array addObject:val];
+    }
+    return array;
+}

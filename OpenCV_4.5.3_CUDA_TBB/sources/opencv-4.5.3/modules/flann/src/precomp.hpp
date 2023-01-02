@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e31ba8a90833d8463a03af82e608a330f5371b67253ac9b2317816517584587b
-size 509
+#ifndef OPENCV_FLANN_PRECOMP_HPP
+#define OPENCV_FLANN_PRECOMP_HPP
+
+#include <cstdio>
+#include <cstdarg>
+#include <sstream>
+
+#include "opencv2/core.hpp"
+#include "opencv2/core/utility.hpp"
+
+#include "opencv2/flann/miniflann.hpp"
+#include "opencv2/flann/dist.h"
+#include "opencv2/flann/index_testing.h"
+#include "opencv2/flann/params.h"
+#include "opencv2/flann/saving.h"
+
+// index types
+#include "opencv2/flann/all_indices.h"
+#include "opencv2/flann/flann_base.hpp"
+
+#include "opencv2/core/private.hpp"
+
+#endif

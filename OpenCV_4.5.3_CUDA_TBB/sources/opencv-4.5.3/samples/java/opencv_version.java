@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fb268d670631c64fe01c560260af369ce17245f1beea134f882ba45f1abbbf37
-size 581
+import org.opencv.core.Core;
+
+class opencv_version {
+
+  static { System.loadLibrary(Core.NATIVE_LIBRARY_NAME); }
+
+  public static void main(String[] args) {
+
+    if ((1==args.length) && (0==args[0].compareTo("--build"))) {
+
+        System.out.println(Core.getBuildInformation());
+    } else
+    if ((1==args.length) && (0==args[0].compareTo("--help"))) {
+
+        System.out.println("\t--build\n\t\tprint complete build info");
+        System.out.println("\t--help\n\t\tprint this help");
+    } else {
+
+        System.out.println("Welcome to OpenCV " + Core.VERSION);
+    }
+  }
+
+}

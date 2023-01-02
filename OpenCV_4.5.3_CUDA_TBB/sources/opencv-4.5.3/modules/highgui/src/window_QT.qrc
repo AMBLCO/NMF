@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c793bfe99ca70a44193ed74fd2045dc465a1acea87bff8f0bf5d5f404f35495f
-size 872
+<RCC>
+    <qresource prefix="/">
+        <file alias="left-icon">files_Qt/Milky/48/28.png</file>
+        <file alias="right-icon">files_Qt/Milky/48/23.png</file>
+        <file alias="up-icon">files_Qt/Milky/48/19.png</file>
+        <file alias="down-icon">files_Qt/Milky/48/24.png</file>
+        <file alias="zoom_x1-icon">files_Qt/Milky/48/27.png</file>
+        <file alias="imgRegion-icon">files_Qt/Milky/48/61.png</file>
+        <file alias="zoom_in-icon">files_Qt/Milky/48/106.png</file>
+        <file alias="zoom_out-icon">files_Qt/Milky/48/107.png</file>
+        <file alias="save-icon">files_Qt/Milky/48/7.png</file>
+        <file alias="copy_clipbrd-icon">files_Qt/Milky/48/43.png</file>
+        <file alias="properties-icon">files_Qt/Milky/48/38.png</file>
+        <file alias="stylesheet-trackbar">files_Qt/stylesheet_trackbar.qss</file>
+    </qresource>
+</RCC>

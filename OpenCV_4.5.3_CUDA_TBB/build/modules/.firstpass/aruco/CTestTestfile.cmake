@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:54a42156514863a6e29e02ebc7c5c9d16b1598e9e46105413301ee6360629b93
-size 302
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/aruco
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/aruco
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

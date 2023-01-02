@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:76dc2d55cf8fbea95f06905a43f2e293ed99a0028c01bcccbf0a36ea67232cc6
-size 298
+# CMake generated Testfile for 
+# Source directory: C:/opencv-4.5.3/modules/imgproc
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/imgproc
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

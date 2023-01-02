@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d3857cb92464439b3b4fcbe67f4ac61c723ef942438980bacee87017ce43edcf
-size 125
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OCV Image Manipulations</string>
+</resources>

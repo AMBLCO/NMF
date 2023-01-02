@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a6085db1f080aee070ebe0511bdd0d08120dd2b0685a93bb2a9a936a6980ac66
-size 257
+#ifndef __OPENCV_PERF_PRECOMP_HPP__
+#define __OPENCV_PERF_PRECOMP_HPP__
+
+#include <opencv2/ts.hpp>
+#include <opencv2/dnn.hpp>
+
+#include "../test/test_common.hpp"
+
+namespace opencv_test {
+using namespace perf;
+using namespace cv::dnn;
+} // namespace
+
+#endif

@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8ae25351ddffec9ada86bd01d84b8d8f5a33f168303d58f661b509d3a6bf8287
-size 512
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\opencv-4.5.3\build\CMakeFiles\19f621886f0960e15281295852764a49\PACKAGE_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{09A03636-53ED-3D0A-AA1D-C4D479970FCB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

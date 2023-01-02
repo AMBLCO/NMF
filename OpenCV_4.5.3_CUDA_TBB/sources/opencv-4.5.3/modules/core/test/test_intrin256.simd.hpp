@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3081660e29bf733f577dd698f06214d1365afb59d831996e5a64f234e1a25dbf
-size 771
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+#if !defined CV_CPU_OPTIMIZATION_DECLARATIONS_ONLY && \
+    !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS // TODO? C++ fallback implementation for SIMD256
+
+#define CV__SIMD_FORCE_WIDTH 256
+#include "opencv2/core/hal/intrin.hpp"
+#undef CV__SIMD_FORCE_WIDTH
+
+#if CV_SIMD_WIDTH != 32
+#error "Invalid build configuration"
+#endif
+
+#endif // CV_CPU_OPTIMIZATION_DECLARATIONS_ONLY
+
+namespace opencv_test { namespace hal { namespace intrin256 {
+CV_CPU_OPTIMIZATION_NAMESPACE_BEGIN
+
+#include "test_intrin_utils.hpp"
+
+CV_CPU_OPTIMIZATION_NAMESPACE_END
+}}} //namespace

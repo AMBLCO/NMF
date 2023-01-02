@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4d135696eddf15a8f5640deef65953f86e3e8f5e72242006e1b8fcc2d4464743
-size 282
+PlatformToolSet=v142:VCToolArchitecture=Native64Bit:VCToolsVersion=14.29.30133:VCServicingVersionATL=14.29.30136:VCServicingVersionCrtHeaders=14.29.30136:VCServicingVersionCompilers=14.29.30136:TargetPlatformVersion=10.0.19041.0:
+Release|x64|C:\opencv-4.5.3\build\3rdparty\zlib\|

@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c2fefa5f8a0b29b60f4b27763b0c06e408e1bf1b59d71ec8134746018f9cb989
-size 415
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+#include "perf_precomp.hpp"
+#include "opencv2/ts/cuda_perf.hpp"
+
+static const char * impls[] = {
+#ifdef HAVE_CUDA
+    "cuda",
+#endif
+    "plain"
+};
+
+CV_PERF_TEST_MAIN_WITH_IMPLS(xfeatures2d, impls, perf::printCudaInfo())

@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2bebb5e306f4b7a9a0c778f91e34464c9dd37f2eef30dff16a411984fa018f94
-size 111
+{
+    "AdditionalImports" : {
+        "*" : [ "\"face.hpp\"" ],
+        "BIF" : [ "\"face/bif.hpp\"" ]
+    }
+}

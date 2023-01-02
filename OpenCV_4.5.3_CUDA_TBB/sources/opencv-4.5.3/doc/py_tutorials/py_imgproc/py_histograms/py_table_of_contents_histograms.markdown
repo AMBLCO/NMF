@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:45ce882fcb07e989ee8ed62cc917296f4947076fd9988d9c5178279c069bcc72
-size 477
+Histograms in OpenCV {#tutorial_py_table_of_contents_histograms}
+====================
+
+-   @subpage tutorial_py_histogram_begins
+
+    Learn the basics of histograms
+
+-   @subpage tutorial_py_histogram_equalization
+
+    Learn to Equalize Histograms to get better contrast for images
+
+-   @subpage tutorial_py_2d_histogram
+
+    Learn to find and plot 2D Histograms
+
+-   @subpage tutorial_py_histogram_backprojection
+
+    Learn histogram backprojection to segment colored objects

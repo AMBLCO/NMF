@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:53bffe44efd2288818bed3fdb9f1de133dd4e259be074bf967de7d16b0aca4ae
-size 131
+Video Analysis {#tutorial_py_table_of_contents_video}
+==============
+
+Content has been moved: @ref tutorial_table_of_content_video

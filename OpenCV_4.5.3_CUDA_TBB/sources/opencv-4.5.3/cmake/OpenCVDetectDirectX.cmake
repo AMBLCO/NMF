@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ead423d6ba2b3b7947451139c5e9c826cb1d46316e54a17037b4c022baa06200
-size 776
+if(WIN32)
+  try_compile(__VALID_DIRECTX
+    "${OpenCV_BINARY_DIR}"
+    "${OpenCV_SOURCE_DIR}/cmake/checks/directx.cpp"
+    OUTPUT_VARIABLE TRY_OUT
+  )
+  if(NOT __VALID_DIRECTX)
+    return()
+  endif()
+  try_compile(__VALID_DIRECTX_NV12
+    "${OpenCV_BINARY_DIR}"
+    "${OpenCV_SOURCE_DIR}/cmake/checks/directx.cpp"
+    COMPILE_DEFINITIONS "-DCHECK_NV12"
+    OUTPUT_VARIABLE TRY_OUT
+  )
+  if(__VALID_DIRECTX_NV12)
+    set(HAVE_DIRECTX_NV12 ON)
+  else()
+    message(STATUS "No support for DirectX NV12 format (install Windows 8 SDK)")
+  endif()
+  set(HAVE_DIRECTX ON)
+  set(HAVE_D3D11 ON)
+  set(HAVE_D3D10 ON)
+  set(HAVE_D3D9 ON)
+
+  if(HAVE_OPENCL AND WITH_OPENCL_D3D11_NV AND EXISTS "${OPENCL_INCLUDE_DIR}/CL/cl_d3d11_ext.h")
+    set(HAVE_OPENCL_D3D11_NV ON)
+  endif()
+
+endif()

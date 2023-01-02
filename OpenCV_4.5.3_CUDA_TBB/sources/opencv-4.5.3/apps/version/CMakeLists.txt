@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e56041ac27cb783fd662f57b871c177b35e9a188ae6b00ba4e0f065739f2ae63
-size 266
+ocv_add_application(opencv_version MODULES opencv_core SRCS opencv_version.cpp)
+if(WIN32)
+  ocv_add_application(opencv_version_win32 MODULES opencv_core SRCS opencv_version.cpp)
+  target_compile_definitions(opencv_version_win32 PRIVATE "OPENCV_WIN32_API=1")
+endif()

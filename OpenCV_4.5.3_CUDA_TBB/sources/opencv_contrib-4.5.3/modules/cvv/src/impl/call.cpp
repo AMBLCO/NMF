@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f29e5dbe3633bd92f553855b5edf42b115383249e95c03a910cb0c5406e695b2
-size 542
+#include "call.hpp"
+#include <atomic>
+
+namespace cvv
+{
+namespace impl
+{
+
+size_t newCallId()
+{
+	static std::atomic_size_t nextId (1);
+	return nextId++;
+}
+
+Call::Call() : metaData_{}, id{ newCallId() }, calltype{}
+{
+}
+
+Call::Call(impl::CallMetaData callData, QString type, QString description,
+           QString requestedView)
+    : metaData_{ std::move(callData) }, id{ newCallId() },
+      calltype{ std::move(type) }, description_{ std::move(description) },
+      requestedView_{ std::move(requestedView) }
+{
+
+}
+}
+} // namespaces cvv::impl

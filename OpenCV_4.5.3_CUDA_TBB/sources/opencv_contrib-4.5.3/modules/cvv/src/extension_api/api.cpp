@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6199027b46a1a3111ec5be82209529eb79319546521f246e1e5dc992d8993af6
-size 280
+#include "api.hpp"
+
+#include "../gui/filter_call_tab.hpp"
+#include "../gui/match_call_tab.hpp"
+
+namespace cvv
+{
+namespace extend
+{
+
+void addCallType(const QString name, TabFactory factory)
+{
+	controller::ViewController::addCallType(name, factory);
+}
+}
+} // namespaces cvv::extend

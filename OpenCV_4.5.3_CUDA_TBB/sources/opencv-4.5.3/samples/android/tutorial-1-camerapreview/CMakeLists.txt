@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:961580e12ead6403a502740948f4eecd0eaa8d8b5d33e72a5d886c35e4aebf84
-size 269
+set(sample example-tutorial-1-camerapreview)
+
+add_android_project(${sample} "${CMAKE_CURRENT_SOURCE_DIR}" LIBRARY_DEPS "${OPENCV_ANDROID_LIB_DIR}" SDK_TARGET 11 "${ANDROID_SDK_TARGET}")
+if(TARGET ${sample})
+  add_dependencies(opencv_android_examples ${sample})
+endif()

@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c98b1e0646682683e8618ed61e149e9baa5d2cb922a00d56e844f01eb30c49ec
-size 421
+# if(ANDROID AND ANDROID_NATIVE_API_LEVEL GREATER_EQUAL 24)  <-- would be nicer but requires CMake 3.7 or later
+if(ANDROID AND ANDROID_NATIVE_API_LEVEL GREATER 23)
+  set(HAVE_ANDROID_NATIVE_CAMERA TRUE)
+  set(libs "-landroid -llog -lcamera2ndk")
+  ocv_add_external_target(android_native_camera "" "${libs}" "HAVE_ANDROID_NATIVE_CAMERA")
+endif()
+
+set(HAVE_ANDROID_NATIVE_CAMERA ${HAVE_ANDROID_NATIVE_CAMERA} PARENT_SCOPE)

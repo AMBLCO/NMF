@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f7946608b3b266b8090c41159d3b9f8c0822f42e93c9ffcf3ea86a995ce78d66
-size 484
+cmake_minimum_required(VERSION 3.6)
+
+set(target detection_based_tracker)
+project(${target} CXX)
+
+set(ANDROID_OPENCV_COMPONENTS "opencv_java" CACHE STRING "")
+message(STATUS "ANDROID_ABI=${ANDROID_ABI}")
+find_package(OpenCV REQUIRED COMPONENTS ${ANDROID_OPENCV_COMPONENTS})
+
+file(GLOB srcs *.cpp *.c)
+file(GLOB hdrs *.hpp *.h)
+
+include_directories("${CMAKE_CURRENT_LIST_DIR}")
+add_library(${target} SHARED ${srcs} ${hdrs})
+target_link_libraries(${target} ${ANDROID_OPENCV_COMPONENTS})

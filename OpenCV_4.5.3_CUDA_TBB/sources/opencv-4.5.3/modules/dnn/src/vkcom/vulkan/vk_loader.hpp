@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fd88a910fcd96ba77bd23598e0d112db3d7a06a543655d780d35c4835dce03c0
-size 794
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+//
+// Copyright (C) 2018, Intel Corporation, all rights reserved.
+// Third party copyrights are property of their respective owners.
+
+#ifndef OPENCV_DNN_VKCOM_VULKAN_VK_LOADER_HPP
+#define OPENCV_DNN_VKCOM_VULKAN_VK_LOADER_HPP
+
+#ifdef HAVE_VULKAN
+#include <vulkan/vulkan.h>
+#endif // HAVE_VULKAN
+
+namespace cv { namespace dnn { namespace vkcom {
+
+#ifdef HAVE_VULKAN
+bool loadVulkanLibrary();
+bool loadVulkanEntry();
+bool loadVulkanGlobalFunctions();
+bool loadVulkanFunctions(VkInstance& instance);
+#endif // HAVE_VULKAN
+
+}}} // namespace cv::dnn::vkcom
+#endif // OPENCV_DNN_VKCOM_VULKAN_VK_LOADER_HPP

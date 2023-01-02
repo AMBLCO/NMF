@@ -1,3 +1,50 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f03cb8d2a7957909986a5996afb75881ae28bfd21dad7fcb7a6fd2167f4ef102
-size 1144
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+//
+// Copyright (C) 2019-2020 Intel Corporation
+
+
+#include "precomp.hpp"
+#include <opencv2/gapi/gopaque.hpp>
+#include "api/gorigin.hpp"
+
+// cv::detail::GOpaqueU public implementation ///////////////////////////////////
+cv::detail::GOpaqueU::GOpaqueU()
+    : m_priv(new GOrigin(GShape::GOPAQUE, cv::GNode::Param()))
+{
+}
+
+cv::detail::GOpaqueU::GOpaqueU(const GNode &n, std::size_t out)
+    : m_priv(new GOrigin(GShape::GOPAQUE, n, out))
+{
+}
+
+cv::GOrigin& cv::detail::GOpaqueU::priv()
+{
+    return *m_priv;
+}
+
+const cv::GOrigin& cv::detail::GOpaqueU::priv() const
+{
+    return *m_priv;
+}
+
+void cv::detail::GOpaqueU::setConstructFcn(ConstructOpaque &&co)
+{
+    m_priv->ctor = std::move(co);
+}
+
+void cv::detail::GOpaqueU::setKind(cv::detail::OpaqueKind kind)
+{
+    m_priv->kind = kind;
+}
+
+namespace cv {
+std::ostream& operator<<(std::ostream& os, const cv::GOpaqueDesc &)
+{
+    // FIXME: add type information here
+    os << "(Opaque)";
+    return os;
+}
+}

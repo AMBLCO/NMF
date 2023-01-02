@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ff4ca27c58e30cb0c96edc6ac29c0401a2578eaa07d524d3e6ce5ae2d2d054e4
-size 402
+if(IOS OR (NOT HAVE_CUDA AND NOT BUILD_CUDA_STUBS))
+  ocv_module_disable(cudaobjdetect)
+endif()
+
+set(the_description "CUDA-accelerated Object Detection")
+
+ocv_warnings_disable(CMAKE_CXX_FLAGS /wd4127 /wd4324 /wd4512 -Wundef -Wmissing-declarations -Wshadow -Wstrict-aliasing)
+
+ocv_define_module(cudaobjdetect opencv_objdetect opencv_cudaarithm opencv_cudawarping OPTIONAL opencv_cudalegacy WRAP python)

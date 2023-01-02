@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a3c44167003158a62f3ccff8a47a40005d4d916b58790476926d4ed7f49f40d8
-size 381
+/*
+ *      ** File generated automatically, do not modify **
+ *
+ * This file defines the list of modules available in current build configuration
+ *
+ *
+*/
+
+// This definition means that OpenCV is built with enabled non-free code.
+// For example, patented algorithms for non-profit/non-commercial use only.
+#cmakedefine OPENCV_ENABLE_NONFREE
+
+@OPENCV_MODULE_DEFINITIONS_CONFIGMAKE@

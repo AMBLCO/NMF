@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c4a005111610ec60a5f9b9d51fd0f362d61214aa11f1f9359052ea68e734a601
-size 341
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+#ifndef __OPENCV_TEST_PRECOMP_HPP__
+#define __OPENCV_TEST_PRECOMP_HPP__
+
+#include "opencv2/ts.hpp"
+#include "opencv2/structured_light.hpp"
+
+#endif

@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d7af140a6d3d5e3db40fa47d053b80d46d17a4951e42c9a98ade40c4d93914f6
-size 299
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+#include "opencv2/ts.hpp"
+#include "test_common.hpp"
+
+namespace opencv_test
+{
+using namespace cv::viz;
+}

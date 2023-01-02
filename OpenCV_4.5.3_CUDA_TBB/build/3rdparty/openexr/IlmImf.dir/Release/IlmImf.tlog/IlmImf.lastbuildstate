@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:88bb6dce556a57a5cb6dcb1b16780330a7386a0e388dc0f68be706683349d33a
-size 285
+PlatformToolSet=v142:VCToolArchitecture=Native64Bit:VCToolsVersion=14.29.30133:VCServicingVersionATL=14.29.30136:VCServicingVersionCrtHeaders=14.29.30136:VCServicingVersionCompilers=14.29.30136:TargetPlatformVersion=10.0.19041.0:
+Release|x64|C:\opencv-4.5.3\build\3rdparty\openexr\|

@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:92c14a55bcbd5ef122b02c0df1337bae745b621aa25fd7c98b3e41cbeab4587c
-size 605
+# G-API Overview
+
+This is the latest overview slide deck on G-API.
+
+## Prerequisites
+
+- [Emacs] v24 or higher;
+- [Org]-mode 8.2.10;
+- `pdflatex`;
+- `texlive-latex-recommended` ([Beamer] package);
+- `texlive-font-utils` (`epstopdf`);
+- `wget` (for `get_sty.sh`).
+
+## Building
+
+1. Download and build the [Metropolis] theme with the script:
+
+```
+$ ./get_sty.sh
+```
+
+2. Now open `gapi_overview.org` with Emacs and press `C-c C-e l P`.
+
+[Emacs]:      https://www.gnu.org/software/emacs/
+[Org]:        https://orgmode.org/
+[Beamer]:     https://ctan.org/pkg/beamer
+[Metropolis]: https://github.com/matze/mtheme

@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ef0b0ac4638de113e97c68cb2ad1f9dfe1c80302a308258acd5226aa394ca6f4
-size 238
+if(INSTALL_PYTHON_EXAMPLES)
+  file(GLOB install_list *.py )
+  install(FILES ${install_list}
+          DESTINATION ${OPENCV_SAMPLES_SRC_INSTALL_PATH}/python
+          PERMISSIONS OWNER_READ GROUP_READ WORLD_READ COMPONENT samples)
+endif()

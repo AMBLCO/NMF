@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4f89d11ac8f73b4e16f9a1f9b2d5c771ffc525396455cfe46d4c98671e124754
-size 264
+OpenCV modules {#mainpage}
+==============
+
+- @ref intro
+- @ref tutorial_root
+- @ref tutorial_py_root
+@CMAKE_DOXYGEN_TUTORIAL_JS_ROOT@
+@CMAKE_DOXYGEN_TUTORIAL_CONTRIB_ROOT@
+- @ref faq
+- @ref citelist
+
+@CMAKE_DOXYGEN_MAIN_REFERENCE@
+
+@CMAKE_DOXYGEN_EXTRA_REFERENCE@

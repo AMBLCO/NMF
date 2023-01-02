@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8d36b57c46a34c917e5d991100ebde9831eaaf8197906ef4f97783a9d683e7b2
-size 606
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\opencv-4.5.3\build\CMakeFiles\18c0939a9166e3f07922d9490d530539\uninstall.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\opencv-4.5.3\build\CMakeFiles\uninstall" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{09A03636-53ED-3D0A-AA1D-C4D479970FCB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

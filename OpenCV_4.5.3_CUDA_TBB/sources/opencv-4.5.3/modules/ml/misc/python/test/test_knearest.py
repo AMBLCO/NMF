@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:31a4d488b2d9376403aa0e673974c7002167cd60c016e55d4636cb5d68835352
-size 373
+#!/usr/bin/env python
+import cv2 as cv
+
+from tests_common import NewOpenCVTests
+
+class knearest_test(NewOpenCVTests):
+    def test_load(self):
+        k_nearest = cv.ml.KNearest_load(self.find_file("ml/opencv_ml_knn.xml"))
+        self.assertFalse(k_nearest.empty())
+        self.assertTrue(k_nearest.isTrained())
+
+if __name__ == '__main__':
+    NewOpenCVTests.bootstrap()

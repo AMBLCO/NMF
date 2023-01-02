@@ -1,3 +1,44 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b9dc35c50c275350c6ac8aded17930c1cecc783b93159f1ad3a7c09dea9e03f5
-size 934
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+//
+// Copyright (C) 2019 Intel Corporation
+
+#ifndef OPENCV_FREETYPE_TEXT_RENDER_HPP
+#define OPENCV_FREETYPE_TEXT_RENDER_HPP
+
+#include <memory>
+#include <string>
+
+#include <opencv2/core.hpp>
+
+#include <opencv2/gapi/own/exports.hpp>
+
+namespace cv
+{
+namespace gapi
+{
+namespace wip
+{
+namespace draw
+{
+
+class GAPI_EXPORTS FTTextRender
+{
+public:
+    class Priv;
+    explicit FTTextRender(const std::string& path);
+
+    cv::Size getTextSize(const std::wstring& text, int fh, int* baseline);
+    void putText(cv::Mat& mat, const std::wstring& text, const cv::Point& org, int fh);
+
+private:
+    std::shared_ptr<Priv> m_priv;
+};
+
+} // namespace draw
+} // namespace wip
+} // namespace gapi
+} // namespace cv
+
+#endif // OPENCV_FREETYPE_TEXT_RENDER_HPP

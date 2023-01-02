@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4b79474c18e7c4b81725b6889903884d5525c0a90331113d221542e0e30bfa84
-size 880
+#pragma once
+
+#include "opencv2/core.hpp"
+
+#ifdef OPENCV_BINDINGS_PARSER
+
+namespace cv
+{
+CV_EXPORTS_W void add(InputArray src1, Scalar srcScalar, OutputArray dst, InputArray mask=noArray(), int dtype=-1);
+
+CV_EXPORTS_W void subtract(InputArray src1, Scalar srcScalar, OutputArray dst, InputArray mask=noArray(), int dtype=-1);
+
+CV_EXPORTS_W void multiply(InputArray src1, Scalar srcScalar, OutputArray dst, double scale=1, int dtype=-1);
+
+CV_EXPORTS_W void divide(InputArray src1, Scalar srcScalar, OutputArray dst, double scale=1, int dtype=-1);
+
+CV_EXPORTS_W void absdiff(InputArray src1, Scalar srcScalar, OutputArray dst);
+
+CV_EXPORTS_W void compare(InputArray src1, Scalar srcScalar, OutputArray dst, int cmpop);
+
+CV_EXPORTS_W void min(InputArray src1, Scalar srcScalar, OutputArray dst);
+
+CV_EXPORTS_W void max(InputArray src1, Scalar srcScalar, OutputArray dst);
+
+}
+#endif

@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5abf75b5cb4bb881240994cbb2b4ca910949f9a9a01cf5ddb0fcbcbc9dc1f120
-size 191
+set(the_description "Biologically inspired algorithms")
+ocv_warnings_disable(CMAKE_CXX_FLAGS -Wundef)
+ocv_define_module(bioinspired opencv_core OPTIONAL opencv_highgui WRAP java objc python)

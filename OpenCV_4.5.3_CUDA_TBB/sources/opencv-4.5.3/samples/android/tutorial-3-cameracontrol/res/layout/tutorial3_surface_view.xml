@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f82f767d87c000050e5d10d490b1ae0b0aeda393d92ed6f8f6649a1dc28e7354
-size 462
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <org.opencv.samples.tutorial3.Tutorial3View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/tutorial3_activity_java_surface_view" />
+
+</LinearLayout>

@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eea5d41cea06ea8528922b82e50e949f24e31246b80c003a9a5a5680dbe881be
-size 302
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/cudev
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/cudev
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

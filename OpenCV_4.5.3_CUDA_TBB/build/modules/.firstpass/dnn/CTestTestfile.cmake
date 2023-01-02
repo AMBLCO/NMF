@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eecb9ffdbd1735bfa19528f3fcd7eb33dfbc2d01d0dc3c591761b66e77600a2f
-size 290
+# CMake generated Testfile for 
+# Source directory: C:/opencv-4.5.3/modules/dnn
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/dnn
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

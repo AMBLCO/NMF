@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9cdb28da12dbd8e3e99645a2bdb150f62b592ef93b186b4b54c97e4422a26fc4
-size 253
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+#include "perf_precomp.hpp"
+
+CV_PERF_TEST_MAIN(edgefilter)

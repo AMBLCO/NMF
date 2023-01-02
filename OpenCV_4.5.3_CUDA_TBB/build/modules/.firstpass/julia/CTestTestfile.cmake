@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:df1e304db4e3986fb21271ee3dadc410a7f342c49509a45d5895155bc5068b2d
-size 302
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/julia
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/julia
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

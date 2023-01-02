@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:db2b8c823c5b56957f71457c794e44a53ae85aa1cf406e3be4dc1e45e45cb152
-size 627
+package org.opencv.test.calib3d;
+
+import org.opencv.test.OpenCVTestCase;
+
+public class StereoBMTest extends OpenCVTestCase {
+
+    public void testComputeMatMatMat() {
+        fail("Not yet implemented");
+    }
+
+    public void testComputeMatMatMatInt() {
+        fail("Not yet implemented");
+    }
+
+    public void testStereoBM() {
+        fail("Not yet implemented");
+    }
+
+    public void testStereoBMInt() {
+        fail("Not yet implemented");
+    }
+
+    public void testStereoBMIntInt() {
+        fail("Not yet implemented");
+    }
+
+    public void testStereoBMIntIntInt() {
+        fail("Not yet implemented");
+    }
+
+}

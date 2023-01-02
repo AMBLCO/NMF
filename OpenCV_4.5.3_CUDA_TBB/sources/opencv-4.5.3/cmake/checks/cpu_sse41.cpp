@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2713fd743fdbd40385bf37675d03c8360d14caa1f206d69ac7acb981a43769ce
-size 154
+#include <smmintrin.h>
+int main() {
+    __m128i a = _mm_setzero_si128(), b = _mm_setzero_si128();
+    __m128i c = _mm_packus_epi32(a, b);
+    return 0;
+}

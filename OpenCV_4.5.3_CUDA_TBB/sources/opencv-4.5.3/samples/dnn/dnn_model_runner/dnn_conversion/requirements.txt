@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:84692d1e2a0cda3383eb5a2947720d934a3d84f134897b27fd3349a3c02d829f
-size 196
+# Python 3.7.5
+onnx>=1.7.0
+numpy>=1.19.1
+
+torch>=1.5.1
+torchvision>=0.6.1
+
+tensorflow>=2.1.0
+tensorflow-gpu>=2.1.0
+
+paddlepaddle>=2.0.0
+paddlepaddle-gpu>=2.0.0
+paddlehub>=2.1.0
+paddle2onnx>=0.5.1

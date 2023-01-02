@@ -1,3 +1,1 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9c9a69e63a68f7ca6e1ffad0eabd5a66b56168bd2eee672c8a48924b73ed51fe
-size 93
+C:\opencv-4.5.3\build\modules\world\opencv_world_SSE4_2.dir\Release\opencv_world_SSE4_2.lib

@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:27a60751ac2e736667144f99ef2c7a3de81ef68cf1578419b1c2d160184539d6
-size 296
+PlatformToolSet=v142:VCToolArchitecture=Native64Bit:VCToolsVersion=14.29.30133:VCServicingVersionATL=14.29.30136:VCServicingVersionCrtHeaders=14.29.30136:VCServicingVersionCompilers=14.29.30136:TargetPlatformVersion=10.0.19041.0:
+Debug|x64|C:\opencv-4.5.3\build\CMakeFiles\3.21.3\CompilerIdC\|

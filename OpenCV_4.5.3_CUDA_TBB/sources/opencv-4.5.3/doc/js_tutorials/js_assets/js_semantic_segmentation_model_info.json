@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:771d86f6bd8a127085be8f889495aaee36f26305b7df3707e37aa89a1b5cac4d
-size 332
+{
+    "tensorflow": [
+        {
+            "model": "deeplabv3",
+            "inputSize": "513, 513",
+            "mean": "127.5, 127.5, 127.5",
+            "std": "0.007843",
+            "swapRB": "false",
+            "modelUrl": "https://drive.google.com/uc?id=1v-hfGenaE9tiGOzo5qdgMNG_gqQ5-Xn4&export=download"
+        }
+    ]
+}

@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1661394470a614982bb7fa765da14ebfbd419a893955a29c6308c0c5f6aa5267
-size 293
+# Object Detection using Convolutional Neural Networks
+
+- These files include model weights, model definition files, model deploy files for two trained networks.
+
+### Network 1
+- SqueezeNet model trained on ImageNet 2012 Dataset
+
+### Network 2
+- SqueezeDet model trained on PASCAL VOC Dataset

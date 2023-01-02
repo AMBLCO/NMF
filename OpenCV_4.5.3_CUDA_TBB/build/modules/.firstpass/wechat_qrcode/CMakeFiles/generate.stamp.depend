@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:55657dc1938c7da2660cd9739c52c743d948d6e88a322f0f994433b8c80f0d37
-size 118
+# CMake generation dependency list for this directory.
+C:/opencv_contrib-4.5.3/modules/wechat_qrcode/CMakeLists.txt

@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:808169644edeb0c103767aa66c9e0f6a45b6990a7af38726a2f080b15758457f
-size 394
+if(APPLE AND IOS)
+  set(HAVE_CAP_IOS TRUE)
+  set(libs
+    "-framework Accelerate"
+    "-framework AVFoundation"
+    "-framework CoreGraphics"
+    "-framework CoreImage"
+    "-framework CoreMedia"
+    "-framework CoreVideo"
+    "-framework QuartzCore"
+    "-framework UIKit")
+  ocv_add_external_target(cap_ios "" "${libs}" "HAVE_CAP_IOS")
+endif()
+
+set(HAVE_CAP_IOS ${HAVE_CAP_IOS} PARENT_SCOPE)

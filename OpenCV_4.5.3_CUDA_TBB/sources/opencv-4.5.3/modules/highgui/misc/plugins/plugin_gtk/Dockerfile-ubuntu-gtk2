@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2120c05765e88b2037f61bc1fa9b015321f50b07e8c1116752133e10df26718d
-size 571
+ARG VER
+FROM ubuntu:$VER
+
+RUN \
+  apt-get update && \
+  DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+    pkg-config \
+    cmake \
+    g++ \
+    ninja-build \
+  && \
+  rm -rf /var/lib/apt/lists/*
+
+RUN \
+  apt-get update && \
+  DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+    libgtk2.0-dev \
+  && \
+  rm -rf /var/lib/apt/lists/*
+
+RUN \
+  apt-get update && \
+  DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+    libgtkglext1-dev \
+  && \
+  rm -rf /var/lib/apt/lists/*
+
+WORKDIR /tmp

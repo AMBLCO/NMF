@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:70047a303d034bbb8efccfc69a688dfd66f93171c701987f27aa45e91b052e4e
-size 589
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.21/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/CheckIncludeFiles.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/CheckTypeSize.cmake
+C:/opencv-4.5.3/3rdparty/libjpeg-turbo/CMakeLists.txt
+C:/opencv-4.5.3/3rdparty/libjpeg-turbo/jconfig.h.win.in
+C:/opencv-4.5.3/3rdparty/libjpeg-turbo/jconfigint.h.in

@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f398cc83d884eff9fa81a5b9a1e22fa2224ebd93052d4fb017bdc406cd7f6651
-size 545
+#ifndef CSVWRITER_H
+#define CSVWRITER_H
+
+#include <iostream>
+#include <fstream>
+#include <opencv2/core.hpp>
+#include "Utils.h"
+
+using namespace std;
+using namespace cv;
+
+class CsvWriter {
+public:
+    CsvWriter(const string &path, const string &separator = " ");
+    ~CsvWriter();
+    void writeXYZ(const vector<Point3f> &list_points3d);
+    void writeUVXYZ(const vector<Point3f> &list_points3d, const vector<Point2f> &list_points2d, const Mat &descriptors);
+
+private:
+    ofstream _file;
+    string _separator;
+    bool _isFirstTerm;
+};
+
+#endif

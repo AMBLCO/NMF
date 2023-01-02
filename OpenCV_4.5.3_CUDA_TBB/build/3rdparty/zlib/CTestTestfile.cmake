@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d533d9dcb64bddc9c99cbaf3623c74f45e828c03af1a4edbce51c5cde88df933
-size 283
+# CMake generated Testfile for 
+# Source directory: C:/opencv-4.5.3/3rdparty/zlib
+# Build directory: C:/opencv-4.5.3/build/3rdparty/zlib
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

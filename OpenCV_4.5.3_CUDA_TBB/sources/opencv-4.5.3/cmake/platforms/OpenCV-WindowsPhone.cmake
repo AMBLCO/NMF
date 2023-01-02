@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ef5bab3886e323cb0eb8a1c638c8355380a0e754d2be90b938a4cf6dc6f01b06
-size 255
+include("${CMAKE_CURRENT_LIST_DIR}/OpenCV-WinRT.cmake")
+
+# Adding additional using directory for WindowsPhone 8.0 to get Windows.winmd properly
+if(WINRT_8_0)
+  set(OPENCV_EXTRA_CXX_FLAGS "${OPENCV_EXTRA_CXX_FLAGS} /AI\$(WindowsSDK_MetadataPath)")
+endif()

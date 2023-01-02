@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f4fae21c976274ef0f50ee7e67833178fd191c36a10e99f2ba140c0b8852caa0
-size 247
+if(NOT HAVE_EIGEN)
+  message(STATUS "Module opencv_alphamat disabled because the following dependencies are not found: Eigen")
+  ocv_module_disable(alphamat)
+endif()
+
+ocv_define_module(alphamat
+    opencv_core
+    opencv_imgproc
+    WRAP python
+)

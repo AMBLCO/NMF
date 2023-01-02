@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9c2d8ad9426ce185a4ed51a6a927e5281156fc49c58e4f6dda6b184a9eb78289
-size 354
+if(IOS OR WINRT OR (NOT HAVE_CUDA AND NOT BUILD_CUDA_STUBS))
+  ocv_module_disable(cudawarping)
+endif()
+
+set(the_description "CUDA-accelerated Image Warping")
+
+ocv_warnings_disable(CMAKE_CXX_FLAGS /wd4127 /wd4324 /wd4512 -Wundef -Wmissing-declarations -Wshadow)
+
+ocv_define_module(cudawarping opencv_core opencv_imgproc OPTIONAL opencv_cudev WRAP python)

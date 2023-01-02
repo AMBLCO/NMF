@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2916b48ffd8575a4c25991560e43742bd28b04af2331fc27ced29a3a4a311719
-size 687
+if(ANDROID)
+  ocv_update(OPENCV_JAVA_LIB_NAME_SUFFIX "${OPENCV_VERSION_MAJOR}")
+  ocv_update(JAVA_INSTALL_ROOT "sdk/java")
+else()
+  ocv_update(OPENCV_JAVA_LIB_NAME_SUFFIX "${OPENCV_VERSION_MAJOR}${OPENCV_VERSION_MINOR}${OPENCV_VERSION_PATCH}")
+endif()
+
+if(MSVC)
+  ocv_warnings_disable(CMAKE_CXX_FLAGS /wd4996)
+else()
+  ocv_warnings_disable(CMAKE_CXX_FLAGS -Wdeprecated-declarations)
+endif()
+
+# get list of modules to wrap
+# message(STATUS "Wrapped in java:")
+set(OPENCV_JAVA_MODULES)
+foreach(m ${OPENCV_MODULES_BUILD})
+  if (";${OPENCV_MODULE_${m}_WRAPPERS};" MATCHES ";java;" AND HAVE_${m})
+    list(APPEND OPENCV_JAVA_MODULES ${m})
+    #message(STATUS "\t${m}")
+  endif()
+endforeach()

@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0bb9358cd366fef8ce5277ffb21b545bb465d82fba16c76d00e5f99c81bd85a1
-size 465
+﻿//
+// MainPage.xaml.h
+// Declaration of the MainPage class.
+//
+
+#pragma once
+
+#include "MainPage.g.h"
+
+namespace video_capture_xaml
+{
+    /// <summary>
+    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// </summary>
+    public ref class MainPage sealed
+    {
+    public:
+        MainPage();
+
+    private:
+        void OnVisibilityChanged(Platform::Object ^sender, Windows::UI::Core::VisibilityChangedEventArgs ^e);
+
+    };
+}

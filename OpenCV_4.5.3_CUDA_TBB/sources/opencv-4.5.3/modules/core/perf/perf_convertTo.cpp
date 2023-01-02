@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:41e80d66efe28c29ae3f99f3e8b427ddfc9f771e166f2eb20be71ec7a44c76ec
-size 1395
+#include "perf_precomp.hpp"
+
+namespace opencv_test
+{
+using namespace perf;
+
+typedef tuple<Size, MatType, MatType, int, double> Size_DepthSrc_DepthDst_Channels_alpha_t;
+typedef perf::TestBaseWithParam<Size_DepthSrc_DepthDst_Channels_alpha_t> Size_DepthSrc_DepthDst_Channels_alpha;
+
+PERF_TEST_P( Size_DepthSrc_DepthDst_Channels_alpha, convertTo,
+             testing::Combine
+             (
+                 testing::Values(szVGA, sz1080p),
+                 testing::Values(CV_8U, CV_8S, CV_16U, CV_16S, CV_32S, CV_32F, CV_64F),
+                 testing::Values(CV_8U, CV_8S, CV_16U, CV_16S, CV_32S, CV_32F, CV_64F),
+                 testing::Values(1, 4),
+                 testing::Values(1.0, 1./255)
+             )
+           )
+{
+    Size sz = get<0>(GetParam());
+    int depthSrc = get<1>(GetParam());
+    int depthDst = get<2>(GetParam());
+    int channels = get<3>(GetParam());
+    double alpha = get<4>(GetParam());
+
+    int maxValue = 255;
+
+    Mat src(sz, CV_MAKETYPE(depthSrc, channels));
+    randu(src, 0, maxValue);
+    Mat dst(sz, CV_MAKETYPE(depthDst, channels));
+
+    int runs = (sz.width <= 640) ? 8 : 1;
+    TEST_CYCLE_MULTIRUN(runs) src.convertTo(dst, depthDst, alpha);
+
+    double eps = depthSrc <= CV_32S && (depthDst <= CV_32S || depthDst == CV_64F) ? 1e-12 : (FLT_EPSILON * maxValue);
+    eps = eps * std::max(1.0, fabs(alpha));
+    SANITY_CHECK(dst, eps);
+}
+
+} // namespace

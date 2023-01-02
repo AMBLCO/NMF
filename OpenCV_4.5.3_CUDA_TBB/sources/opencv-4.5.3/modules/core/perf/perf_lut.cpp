@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:45ec69789eb624198fbad1777064ff806eb21fccfbedd513ace38ec8fdcccc6b
-size 509
+#include "perf_precomp.hpp"
+
+namespace opencv_test { namespace {
+using namespace perf;
+
+typedef perf::TestBaseWithParam<Size> SizePrm;
+
+PERF_TEST_P( SizePrm, LUT,
+             testing::Values(szQVGA, szVGA, sz1080p)
+           )
+{
+    Size sz = GetParam();
+
+    int maxValue = 255;
+
+    Mat src(sz, CV_8UC1);
+    randu(src, 0, maxValue);
+    Mat lut(1, 256, CV_8UC1);
+    randu(lut, 0, maxValue);
+    Mat dst(sz, CV_8UC1);
+
+    TEST_CYCLE() LUT(src, lut, dst);
+
+    SANITY_CHECK(dst, 0.1);
+}
+
+}} // namespace

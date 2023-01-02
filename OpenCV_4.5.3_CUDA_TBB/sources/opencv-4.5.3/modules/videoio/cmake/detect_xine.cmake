@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1d9b8d7d39e875553365f57ed29ee02333f317644753788f38250412689804f7
-size 239
+if(NOT HAVE_XINE AND PKG_CONFIG_FOUND)
+  ocv_check_modules(XINE libxine QUIET)
+endif()
+
+if(HAVE_XINE)
+  ocv_add_external_target(xine "${XINE_INCLUDE_DIRS}" "${XINE_LIBRARIES}" "HAVE_XINE")
+endif()
+
+set(HAVE_XINE ${HAVE_XINE} PARENT_SCOPE)

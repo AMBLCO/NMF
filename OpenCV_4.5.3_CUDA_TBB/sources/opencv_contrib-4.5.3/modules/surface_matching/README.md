@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e7fab51ce799f82c3789b4e3c4f41afdf6b9c2c3b363efc5debebb32fec1c60e
-size 258
+Point Pair Features for 3D Surface Matching
+===========================================
+
+Implements 3d object detection and localization using multimodal point pair features.
+http://docs.opencv.org/3.0-beta/modules/surface_matching/doc/surface_matching.html

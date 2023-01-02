@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b3716b812817698cbddbb44b554718567bed340b60511056e3ce8812879f6e72
-size 115
+# CMake generation dependency list for this directory.
+C:/opencv_contrib-4.5.3/modules/xobjdetect/CMakeLists.txt

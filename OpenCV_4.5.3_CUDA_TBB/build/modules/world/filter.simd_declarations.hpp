@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f6aeaf1620d8f569eb9d314d7b20fc9681476e5d30082b872375d5ab06756dc2
-size 389
+#define CV_CPU_SIMD_FILENAME "C:/opencv-4.5.3/modules/imgproc/src/filter.simd.hpp"
+#define CV_CPU_DISPATCH_MODE SSE4_1
+#include "opencv2/core/private/cv_cpu_include_simd_declarations.hpp"
+
+#define CV_CPU_DISPATCH_MODE AVX2
+#include "opencv2/core/private/cv_cpu_include_simd_declarations.hpp"
+
+#define CV_CPU_DISPATCH_MODES_ALL AVX2, SSE4_1, BASELINE
+
+#undef CV_CPU_SIMD_FILENAME

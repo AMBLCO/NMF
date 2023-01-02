@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6dabe642fcb353816340a31f56ec6774e7912069459d99d74bb2191c03c8d387
-size 195
+Image Transforms in OpenCV.js {#tutorial_js_table_of_contents_transforms}
+==========================
+
+-   @subpage tutorial_js_fourier_transform
+    Learn to find the Fourier Transform of images

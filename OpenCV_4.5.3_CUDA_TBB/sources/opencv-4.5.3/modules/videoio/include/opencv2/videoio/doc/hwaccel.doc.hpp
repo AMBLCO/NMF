@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8336479fa6165b8f365d00d3c3588afcf73f0cf9da7860a23bd3813c110b5ba8
-size 970
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+
+//
+// This file should not be used with compiler (documentation only)
+//
+
+namespace cv {
+/** @addtogroup videoio_hwaccel
+This section contains information about API to control Hardware-accelerated video decoding and encoding.
+
+@note Check [Wiki page](https://github.com/opencv/opencv/wiki/Video-IO-hardware-acceleration)
+for description of supported hardware / software configurations and available benchmarks
+
+cv::VideoCapture properties:
+- #CAP_PROP_HW_ACCELERATION (as #VideoAccelerationType)
+- #CAP_PROP_HW_DEVICE
+
+cv::VideoWriter properties:
+- #VIDEOWRITER_PROP_HW_ACCELERATION (as #VideoAccelerationType)
+- #VIDEOWRITER_PROP_HW_DEVICE
+
+Properties are supported by these backends:
+
+- #CAP_FFMPEG
+- #CAP_GSTREAMER
+- #CAP_MSMF (Windows)
+
+@{
+ */
+
+/** @} */
+}  // namespace

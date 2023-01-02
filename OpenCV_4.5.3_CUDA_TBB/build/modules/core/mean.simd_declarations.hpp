@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7a1ffe790bf632039c88178a6edaa446985a11ae43581b4512272d0c920cbda4
-size 267
+#define CV_CPU_SIMD_FILENAME "C:/opencv-4.5.3/modules/core/src/mean.simd.hpp"
+#define CV_CPU_DISPATCH_MODE AVX2
+#include "opencv2/core/private/cv_cpu_include_simd_declarations.hpp"
+
+#define CV_CPU_DISPATCH_MODES_ALL AVX2, BASELINE
+
+#undef CV_CPU_SIMD_FILENAME

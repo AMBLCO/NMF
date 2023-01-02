@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fec1a7ad29d39a5dc28037a7e6b5d3393c43fe834679d3799e73a87ec9d717c4
-size 317
+if(IOS OR (NOT HAVE_CUDA AND NOT BUILD_CUDA_STUBS))
+  ocv_module_disable(cudabgsegm)
+endif()
+
+set(the_description "CUDA-accelerated Background Segmentation")
+
+ocv_warnings_disable(CMAKE_CXX_FLAGS /wd4127 /wd4324 /wd4512 -Wundef -Wmissing-declarations -Wshadow)
+
+ocv_define_module(cudabgsegm opencv_video WRAP python)

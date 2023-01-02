@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4e91807709dd070e177e7d20f79ef2241782b573a4cc2e441e39342472f16db7
-size 143
+Object Detection {#tutorial_py_table_of_contents_objdetect}
+================
+
+Content has been moved: @ref tutorial_table_of_content_objdetect

@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3d004ad4341bb7795aee1e6c3202a84a778a3e2830d57923c5a594b8a75a742a
-size 960
+namespace TH {
+
+struct THFile__
+{
+    struct THFileVTable *vtable;
+
+    int isQuiet;
+    int isReadable;
+    int isWritable;
+    int isBinary;
+    int isAutoSpacing;
+    int hasError;
+};
+
+/* virtual table definition */
+
+struct THFileVTable
+{
+    int (*isOpened)(THFile *self);
+
+    long (*readByte)(THFile *self, unsigned char *data, long n);
+    long (*readChar)(THFile *self, char *data, long n);
+    long (*readShort)(THFile *self, short *data, long n);
+    long (*readInt)(THFile *self, int *data, long n);
+    long (*readLong)(THFile *self, int64 *data, long n);
+    long (*readFloat)(THFile *self, float *data, long n);
+    long (*readDouble)(THFile *self, double *data, long n);
+    long (*readString)(THFile *self, const char *format, char **str_);
+
+    void (*seek)(THFile *self, long position);
+    void (*seekEnd)(THFile *self);
+    long (*position)(THFile *self);
+    void (*close)(THFile *self);
+    void (*free)(THFile *self);
+};
+
+} // namespace

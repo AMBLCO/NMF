@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:97bc06640ab9f866fd3874dc2905acf139b1b28459877f36d7c52f085206e081
-size 174
+#ifndef OPENCV_CORE_OCL_RUNTIME_CLAMDFFT_HPP
+#error "Invalid usage"
+#endif
+
+@CLAMDFFT_REMAP_ORIGIN@
+
+#include <clFFT.h>
+
+@CLAMDFFT_REMAP_DYNAMIC@
+
+@CLAMDFFT_FN_DECLARATIONS@

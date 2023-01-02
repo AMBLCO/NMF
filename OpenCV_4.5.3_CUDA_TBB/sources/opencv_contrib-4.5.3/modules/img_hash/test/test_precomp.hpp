@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:312dd48fa80715c1ddb4f88be19cfc4684039aead7199c62915a8f499529be69
-size 333
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+#ifndef __OPENCV_TEST_PRECOMP_HPP__
+#define __OPENCV_TEST_PRECOMP_HPP__
+
+#include "opencv2/ts.hpp"
+#include "opencv2/img_hash.hpp"
+
+#endif

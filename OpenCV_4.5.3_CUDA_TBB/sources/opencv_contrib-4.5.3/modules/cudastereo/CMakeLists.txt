@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e668cd0157ac95a1f3d713e9bf54d4b4b227e18e3775d676db3a9b9c8bbfe108
-size 349
+if(IOS OR  WINRT OR (NOT HAVE_CUDA AND NOT BUILD_CUDA_STUBS))
+  ocv_module_disable(cudastereo)
+endif()
+
+set(the_description "CUDA-accelerated Stereo Correspondence")
+
+ocv_warnings_disable(CMAKE_CXX_FLAGS /wd4127 /wd4324 /wd4512 -Wundef -Wmissing-declarations -Wshadow)
+
+ocv_define_module(cudastereo opencv_calib3d OPTIONAL opencv_cudev WRAP python)

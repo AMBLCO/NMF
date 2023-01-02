@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0a379944c0c2ae20db9f4e41cbfb8a7375349520810fd16e48501d25ab6a4bca
-size 111
+# CMake generation dependency list for this directory.
+C:/opencv_contrib-4.5.3/modules/stereo/CMakeLists.txt

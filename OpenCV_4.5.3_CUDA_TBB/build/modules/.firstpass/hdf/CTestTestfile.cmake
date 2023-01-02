@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ad268122edfbe405f1599653393baa4539eb1ce8150c631b29dd2c6d8a3aa411
-size 298
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/hdf
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/hdf
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

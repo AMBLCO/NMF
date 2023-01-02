@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:81bf3aab1ccfe64563834e8fa53c2323090f3cf41ca286e6fce35ca701698bc2
-size 308
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/saliency
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/saliency
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9eb3167ed8e4c16aa96e18bc07eb2fb26e09625fdeffb6944e376816c169a973
-size 524
+cmake_minimum_required(VERSION 3.5)
+
+get_filename_component(OpenCV_SOURCE_DIR "${CMAKE_CURRENT_LIST_DIR}/../../../.." ABSOLUTE)
+include("${OpenCV_SOURCE_DIR}/cmake/OpenCVPluginStandalone.cmake")
+
+# scan dependencies
+set(WITH_GSTREAMER ON)
+include("${OpenCV_SOURCE_DIR}/modules/videoio/cmake/init.cmake")
+
+set(OPENCV_PLUGIN_DEPS core imgproc imgcodecs)
+ocv_create_plugin(videoio "opencv_videoio_gstreamer" "ocv.3rdparty.gstreamer" "GStreamer" "src/cap_gstreamer.cpp")
+
+message(STATUS "Using GStreamer: ${GSTREAMER_VERSION}")

@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ae4bc710434806d5a93728238594c7b2e80aa3f53207b5d0d38b5c9b0601501a
-size 511
+#define CV_CPU_SIMD_FILENAME "C:/opencv-4.5.3/modules/core/src/matmul.simd.hpp"
+#define CV_CPU_DISPATCH_MODE SSE4_1
+#include "opencv2/core/private/cv_cpu_include_simd_declarations.hpp"
+
+#define CV_CPU_DISPATCH_MODE AVX2
+#include "opencv2/core/private/cv_cpu_include_simd_declarations.hpp"
+
+#define CV_CPU_DISPATCH_MODE AVX512_SKX
+#include "opencv2/core/private/cv_cpu_include_simd_declarations.hpp"
+
+#define CV_CPU_DISPATCH_MODES_ALL AVX512_SKX, AVX2, SSE4_1, BASELINE
+
+#undef CV_CPU_SIMD_FILENAME

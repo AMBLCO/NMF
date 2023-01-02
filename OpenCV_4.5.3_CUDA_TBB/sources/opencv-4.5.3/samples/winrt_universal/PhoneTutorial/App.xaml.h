@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f35f6add95d3eee4b3cebca1b77846d681946c6bb843f7dc5afa6825c1431190
-size 818
+﻿//
+// App.xaml.h
+// Declaration of the App class.
+//
+
+#pragma once
+
+#include "App.g.h"
+
+namespace PhoneTutorial
+{
+    /// <summary>
+    /// Provides application-specific behavior to supplement the default Application class.
+    /// </summary>
+    ref class App sealed
+    {
+    public:
+        App();
+
+        virtual void OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEventArgs^ e) override;
+
+    private:
+        Windows::UI::Xaml::Media::Animation::TransitionCollection^ _transitions;
+        Windows::Foundation::EventRegistrationToken _firstNavigatedToken;
+
+        void OnSuspending(Platform::Object^ sender, Windows::ApplicationModel::SuspendingEventArgs^ e);
+        void RootFrame_FirstNavigated(Platform::Object^ sender, Windows::UI::Xaml::Navigation::NavigationEventArgs^ e);
+    };
+}

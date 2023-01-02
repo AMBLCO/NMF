@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5adfb8a1eea49160e8907fa5c0826f73163136f3959506614e017bca66b62e20
-size 108
+# CMake generation dependency list for this directory.
+C:/opencv_contrib-4.5.3/modules/dpm/CMakeLists.txt

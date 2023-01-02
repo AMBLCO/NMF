@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e28b2c90bb3a1783291eb4c7fe13330ab4df6f2c5f9ff83dec3a18b71d9d7d5f
-size 367
+ocv_warnings_disable(CMAKE_CXX_FLAGS -Wdeprecated-declarations)
+
+# get list of modules to wrap
+# message(STATUS "Wrapped in Objective-C:")
+set(OPENCV_OBJC_MODULES)
+foreach(m ${OPENCV_MODULES_BUILD})
+  if (";${OPENCV_MODULE_${m}_WRAPPERS};" MATCHES ";objc;" AND HAVE_${m})
+    list(APPEND OPENCV_OBJC_MODULES ${m})
+    #message(STATUS "\t${m}")
+  endif()
+endforeach()

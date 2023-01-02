@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c38de9fc20f20064d5a37b8b930d04c1659d5876ef059f044f5f21e9509db40c
-size 340
+#if !defined __AVX2__ // MSVC supports this flag since MSVS 2013
+#error "__AVX2__ define is missing"
+#endif
+#include <immintrin.h>
+void test()
+{
+    int data[8] = {0,0,0,0, 0,0,0,0};
+    __m256i a = _mm256_loadu_si256((const __m256i *)data);
+    __m256i b = _mm256_bslli_epi128(a, 1);  // available in GCC 4.9.3+
+}
+int main() { return 0; }

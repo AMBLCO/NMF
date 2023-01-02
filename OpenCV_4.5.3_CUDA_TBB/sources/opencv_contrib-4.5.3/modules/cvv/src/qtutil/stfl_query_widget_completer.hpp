@@ -1,3 +1,46 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6d2399a20a427ee5b6bafd889ce351ce18c86edf51c4fbed3544b47d2da150fd
-size 804
+#ifndef CVVISUAL_STFL_QUERY_WIDGET_COMPLETER_HPP
+#define CVVISUAL_STFL_QUERY_WIDGET_COMPLETER_HPP
+
+#include <QStringList>
+#include <QStringListModel>
+#include <QString>
+#include <QCompleter>
+
+namespace cvv
+{
+namespace qtutil
+{
+
+/**
+ * @brief A simple completer for the query widget.
+ */
+class STFLQueryWidgetCompleter : public QCompleter
+{
+	Q_OBJECT
+
+      public:
+	/**
+	 * @brief Constructor of this class.
+	 * @param parent widget
+	 */
+	STFLQueryWidgetCompleter(QObject *parent) : QCompleter(parent), model()
+	{
+		setModel(&model);
+	}
+
+	/**
+	 * @brief Update the inherited model with the given suggestions.
+	 * @param suggestions given suggestions
+	 */
+	void update(QStringList suggestions)
+	{
+		model.setStringList(suggestions);
+		complete();
+	}
+
+      private:
+	QStringListModel model;
+};
+}
+}
+#endif

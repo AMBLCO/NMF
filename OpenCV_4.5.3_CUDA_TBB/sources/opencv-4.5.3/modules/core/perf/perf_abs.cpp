@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:40468ec92783af6017bc1b50136cb0af67df6d8237c3c8346ee6d534cfc26575
-size 622
+#include "perf_precomp.hpp"
+
+namespace opencv_test
+{
+using namespace perf;
+
+#define TYPICAL_MAT_SIZES_ABS  TYPICAL_MAT_SIZES
+#define TYPICAL_MAT_TYPES_ABS  CV_8SC1, CV_8SC4, CV_32SC1, CV_32FC1
+#define TYPICAL_MATS_ABS       testing::Combine( testing::Values( TYPICAL_MAT_SIZES_ABS), testing::Values( TYPICAL_MAT_TYPES_ABS) )
+
+PERF_TEST_P(Size_MatType, abs, TYPICAL_MATS_ABS)
+{
+    Size sz = get<0>(GetParam());
+    int type = get<1>(GetParam());
+
+    cv::Mat a = Mat(sz, type);
+    cv::Mat c = Mat(sz, type);
+
+    declare.in(a, WARMUP_RNG).out(c);
+
+    TEST_CYCLE() c = cv::abs(a);
+
+    SANITY_CHECK(c);
+}
+
+} // namespace

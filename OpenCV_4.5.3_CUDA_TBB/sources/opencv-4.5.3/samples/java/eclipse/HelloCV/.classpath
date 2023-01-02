@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:90f74199971ce96b7cb6fd50bb721e4a9e631da584078243945e037fd6cf7c49
-size 374
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/opencv-2.4.4"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

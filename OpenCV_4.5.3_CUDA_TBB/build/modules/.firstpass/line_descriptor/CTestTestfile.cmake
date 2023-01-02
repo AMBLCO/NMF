@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2eafdca2a2a8adada6bb0502294483b8f46fac7da2801d1b6766a52361becb96
-size 322
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/line_descriptor
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/line_descriptor
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

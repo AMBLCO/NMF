@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:464a9b5835fd276d1333314b582672348bb75d55760e9cf1e334a6d6fc6627e2
-size 546
+// Copyright (C) 2018 Intel Corporation
+//
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+/// @file check_cycles.hpp
+
+#ifndef ADE_CHECK_CYCLES_HPP
+#define ADE_CHECK_CYCLES_HPP
+
+#include <exception>
+#include <string>
+
+#include "ade/passes/pass_base.hpp"
+
+namespace ade
+{
+
+namespace passes
+{
+class CycleFound : public std::exception
+{
+public:
+    virtual const char* what() const noexcept override;
+};
+
+struct CheckCycles
+{
+    void operator()(const PassContext& context) const;
+    static std::string name();
+};
+}
+}
+
+#endif // ADE_CHECK_CYCLES_HPP

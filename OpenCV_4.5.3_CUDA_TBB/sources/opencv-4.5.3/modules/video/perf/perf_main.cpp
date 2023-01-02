@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0eb0a475e55864066e4c2da5d001caef7f7828decca6595680b286f85815dea1
-size 468
+#include "perf_precomp.hpp"
+
+#if defined(HAVE_HPX)
+    #include <hpx/hpx_main.hpp>
+#endif
+
+static
+void initTests()
+{
+    const char* extraTestDataPath =
+#ifdef WINRT
+        NULL;
+#else
+        getenv("OPENCV_DNN_TEST_DATA_PATH");
+#endif
+    if (extraTestDataPath)
+        cvtest::addDataSearchPath(extraTestDataPath);
+
+    cvtest::addDataSearchSubDirectory("");  // override "cv" prefix below to access without "../dnn" hacks
+}
+
+CV_PERF_TEST_MAIN(video, initTests())

@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d0692b6d747f60c966e9b283d66934b7d84e1a95119548240e8e43d6ccd42781
-size 431
+if(IOS OR WINRT OR (NOT HAVE_CUDA AND NOT BUILD_CUDA_STUBS))
+  ocv_module_disable(cudafeatures2d)
+endif()
+
+set(the_description "CUDA-accelerated Feature Detection and Description")
+
+ocv_warnings_disable(CMAKE_CXX_FLAGS /wd4127 /wd4100 /wd4324 /wd4512 /wd4515 -Wundef -Wmissing-declarations -Wshadow -Wunused-parameter -Wshadow)
+
+ocv_define_module(cudafeatures2d opencv_features2d opencv_cudafilters opencv_cudawarping WRAP python)

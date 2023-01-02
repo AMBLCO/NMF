@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ca84d22f852131cab06b626c1e416b4c7e0c7866e442f8401a9a99de4c67e44f
-size 401
+#define LOG_TAG "org.opencv.core.Core"
+#include "common.h"
+#include "core_manual.hpp"
+#include "opencv2/core/utility.hpp"
+
+static int quietCallback( int, const char*, const char*, const char*, int, void* )
+{
+    return 0;
+}
+
+namespace cv {
+
+void setErrorVerbosity(bool verbose)
+{
+    if(verbose)
+        cv::redirectError(0);
+    else
+        cv::redirectError((cv::ErrorCallback)quietCallback);
+}
+
+}

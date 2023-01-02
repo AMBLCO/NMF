@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cc0a563c64e6889a878a6b309de0a9b2de1268d64cc078ecf98a28e77345cfdb
-size 744
+#!/usr/bin/env python
+
+'''
+prints OpenCV version
+
+Usage:
+    opencv_version.py [<params>]
+    params:
+        --build: print complete build info
+        --help:  print this help
+'''
+
+# Python 2/3 compatibility
+from __future__ import print_function
+
+import numpy as np
+import cv2 as cv
+
+def main():
+    import sys
+
+    try:
+        param = sys.argv[1]
+    except IndexError:
+        param = ""
+
+    if "--build" == param:
+        print(cv.getBuildInformation())
+    elif "--help" == param:
+        print("\t--build\n\t\tprint complete build info")
+        print("\t--help\n\t\tprint this help")
+    else:
+        print("Welcome to OpenCV")
+
+    print('Done')
+
+
+if __name__ == '__main__':
+    print(__doc__)
+    main()
+    cv.destroyAllWindows()

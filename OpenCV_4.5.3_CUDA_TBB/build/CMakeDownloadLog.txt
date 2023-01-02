@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:850ddcd53f5c54a5bc7a1ad750c87a97709ff85c2a4f1d17744b09968473e4c7
-size 153
+#use_cache "C:/opencv-4.5.3/.cache"
+#match_hash_in_cmake_cache "OCV_DOWNLOAD_IPPICV_HASH_3rdparty_ippicv_ippicv_2020_win_intel64_20191018_general_zip"

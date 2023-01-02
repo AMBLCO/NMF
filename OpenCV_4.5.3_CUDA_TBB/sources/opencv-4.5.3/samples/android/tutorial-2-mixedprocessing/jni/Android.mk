@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d233e7324ec00ad6a542c8ad43102ca3dd74b8164c46bf343de84b53a3e6a17e
-size 433
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+
+ifdef OPENCV_ANDROID_SDK
+  ifneq ("","$(wildcard $(OPENCV_ANDROID_SDK)/OpenCV.mk)")
+    include ${OPENCV_ANDROID_SDK}/OpenCV.mk
+  else
+    include ${OPENCV_ANDROID_SDK}/sdk/native/jni/OpenCV.mk
+  endif
+else
+  include ../../sdk/native/jni/OpenCV.mk
+endif
+
+LOCAL_MODULE    := mixed_sample
+LOCAL_SRC_FILES := jni_part.cpp
+LOCAL_LDLIBS +=  -llog -ldl
+
+include $(BUILD_SHARED_LIBRARY)

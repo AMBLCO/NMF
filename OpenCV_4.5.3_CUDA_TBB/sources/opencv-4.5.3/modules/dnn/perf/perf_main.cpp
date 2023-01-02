@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0a992ccd89f15a34468174a76e9db5e02a6d4d5624d6c659773947c2b080a95a
-size 326
+#include "perf_precomp.hpp"
+
+static const char* extraTestDataPath =
+#ifdef WINRT
+        NULL;
+#else
+        getenv("OPENCV_DNN_TEST_DATA_PATH");
+#endif
+
+#if defined(HAVE_HPX)
+    #include <hpx/hpx_main.hpp>
+#endif
+
+CV_PERF_TEST_MAIN(dnn,
+    extraTestDataPath ? (void)cvtest::addDataSearchPath(extraTestDataPath) : (void)0
+)

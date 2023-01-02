@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:13da36b243ef0c3b1051aea6151fa9351b596fe3bf4a79cb18619b383c4a0207
-size 235
+set(OpenCV_HAL_FOUND @OpenCV_HAL_FOUND@)
+set(OpenCV_HAL_VERSION @OpenCV_HAL_VERSION@)
+set(OpenCV_HAL_LIBRARIES @OpenCV_HAL_LIBRARIES@)
+set(OpenCV_HAL_HEADERS @OpenCV_HAL_HEADERS@)
+set(OpenCV_HAL_INCLUDE_DIRS @OpenCV_HAL_INCLUDE_DIRS@)

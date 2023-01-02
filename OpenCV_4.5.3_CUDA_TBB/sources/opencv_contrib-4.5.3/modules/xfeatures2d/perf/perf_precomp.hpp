@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5801636d1b6c546e697b86f0715c015d212bf5a69288eccad24b73eb7801fff6
-size 568
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+#ifndef __OPENCV_PERF_PRECOMP_HPP__
+#define __OPENCV_PERF_PRECOMP_HPP__
+
+#include "cvconfig.h"
+
+#include "opencv2/ts.hpp"
+#include "opencv2/xfeatures2d.hpp"
+
+#ifdef HAVE_OPENCV_OCL
+#  include "opencv2/ocl.hpp"
+#endif
+
+#ifdef HAVE_CUDA
+#  include "opencv2/xfeatures2d/cuda.hpp"
+#endif
+
+namespace opencv_test {
+using namespace cv::xfeatures2d;
+using namespace perf;
+}
+
+#endif

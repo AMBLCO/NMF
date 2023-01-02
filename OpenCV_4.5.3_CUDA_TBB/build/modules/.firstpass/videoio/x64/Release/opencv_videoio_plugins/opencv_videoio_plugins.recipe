@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:27a287ca6ca7f4779cf4cbbaee830d267f6ac0a9d2760e30e6c581164974ab48
-size 326
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\opencv-4.5.3\build\modules\.firstpass\videoio\x64\Release\opencv_videoio_plugins</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

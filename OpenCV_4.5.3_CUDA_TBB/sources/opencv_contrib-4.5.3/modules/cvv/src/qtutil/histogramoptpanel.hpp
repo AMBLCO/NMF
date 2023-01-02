@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eccfddd28e0d95eda24762b3d426f027dd6b5d459787fc6f9290903aec270919
-size 374
+#ifndef CVVISUAL_HISTOGRAM_OPT_PANEL
+#define CVVISUAL_HISTOGRAM_OPT_PANEL
+
+#include <QWidget>
+
+#include "histogram.hpp"
+
+namespace cvv
+{
+namespace qtutil
+{
+
+class HistogramOptPanel
+  : public QWidget
+{
+  Q_OBJECT
+
+  public:
+    HistogramOptPanel(const Histogram& hist, bool showHideButton = true, QWidget* parent = nullptr);
+
+};
+
+}
+}
+
+#endif // CVVISUAL_HISTOGRAM_OPT_PANEL

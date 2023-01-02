@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:04f3b7ba9d08d2fb24763c13ac0177e524fbf65ba7c70eb0f3e7d66e7eff9eee
-size 253
+Building OpenCV WinRT Universal Samples
+=======================================
+
+Samples are created to run against x86 architecture OpenCV binaries.
+
+Please follow the instructions in "platforms/winrt/readme.txt" to generate and build OpenCV for WinRT.

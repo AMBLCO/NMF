@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:095002b69b247c3c7d91b0bea93f6750ef73d357c79b3de8ab9da3a365856cbe
-size 540
+Building OpenCV.js by Emscripten
+====================
+
+[Download and install Emscripten](https://emscripten.org/docs/getting_started/downloads.html).
+
+Execute `build_js.py` script:
+```
+emcmake python <opencv_src_dir>/platforms/js/build_js.py <build_dir>
+```
+
+If everything is fine, a few minutes later you will get `<build_dir>/bin/opencv.js`. You can add this into your web pages.
+
+Find out more build options by `-h` switch.
+
+For detailed build tutorial, check out `<opencv_src_dir>/doc/js_tutorials/js_setup/js_setup/js_setup.markdown`.

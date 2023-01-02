@@ -1,3 +1,83 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:80a5cc3b238a9e125850100d4f8f519e48da12d46b4d84cfbbc54df7cd273c87
-size 5030
+# CMake generation dependency list for this directory.
+C:/Program Files (x86)/Intel/oneAPI/tbb/2021.4.0/lib/cmake/tbb/TBBConfig.cmake
+C:/Program Files (x86)/Intel/oneAPI/tbb/2021.4.0/lib/cmake/tbb/TBBConfigVersion.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/CMakeParseArguments.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/CPack.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/CPackComponent.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/FindCUDA.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/FindCUDA/select_compute_arch.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/FindGit.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/FindPythonInterp.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/Platform/WindowsPaths.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/TestBigEndian.cmake
+C:/Program Files/CMake/share/cmake-3.21/Templates/CPackConfig.cmake.in
+C:/opencv-4.5.3/3rdparty/ippicv/ippicv.cmake
+C:/opencv-4.5.3/CMakeLists.txt
+C:/opencv-4.5.3/build/CMakeFiles/3.21.3/CMakeCCompiler.cmake
+C:/opencv-4.5.3/build/CMakeFiles/3.21.3/CMakeCXXCompiler.cmake
+C:/opencv-4.5.3/build/CMakeFiles/3.21.3/CMakeRCCompiler.cmake
+C:/opencv-4.5.3/build/CMakeFiles/3.21.3/CMakeSystem.cmake
+C:/opencv-4.5.3/cmake/OpenCVCRTLinkage.cmake
+C:/opencv-4.5.3/cmake/OpenCVCompilerOptimizations.cmake
+C:/opencv-4.5.3/cmake/OpenCVCompilerOptions.cmake
+C:/opencv-4.5.3/cmake/OpenCVDetectCUDA.cmake
+C:/opencv-4.5.3/cmake/OpenCVDetectCXXCompiler.cmake
+C:/opencv-4.5.3/cmake/OpenCVDetectPython.cmake
+C:/opencv-4.5.3/cmake/OpenCVDetectTBB.cmake
+C:/opencv-4.5.3/cmake/OpenCVDetectTrace.cmake
+C:/opencv-4.5.3/cmake/OpenCVDownload.cmake
+C:/opencv-4.5.3/cmake/OpenCVExtraTargets.cmake
+C:/opencv-4.5.3/cmake/OpenCVFindFrameworks.cmake
+C:/opencv-4.5.3/cmake/OpenCVFindIPP.cmake
+C:/opencv-4.5.3/cmake/OpenCVFindIPPIW.cmake
+C:/opencv-4.5.3/cmake/OpenCVFindLAPACK.cmake
+C:/opencv-4.5.3/cmake/OpenCVFindLibsGUI.cmake
+C:/opencv-4.5.3/cmake/OpenCVFindLibsGrfmt.cmake
+C:/opencv-4.5.3/cmake/OpenCVFindLibsPerf.cmake
+C:/opencv-4.5.3/cmake/OpenCVFindLibsVideo.cmake
+C:/opencv-4.5.3/cmake/OpenCVFindProtobuf.cmake
+C:/opencv-4.5.3/cmake/OpenCVGenABI.cmake
+C:/opencv-4.5.3/cmake/OpenCVGenAndroidMK.cmake
+C:/opencv-4.5.3/cmake/OpenCVGenConfig.cmake
+C:/opencv-4.5.3/cmake/OpenCVGenHeaders.cmake
+C:/opencv-4.5.3/cmake/OpenCVGenSetupVars.cmake
+C:/opencv-4.5.3/cmake/OpenCVInstallLayout.cmake
+C:/opencv-4.5.3/cmake/OpenCVMinDepVersions.cmake
+C:/opencv-4.5.3/cmake/OpenCVModule.cmake
+C:/opencv-4.5.3/cmake/OpenCVPCHSupport.cmake
+C:/opencv-4.5.3/cmake/OpenCVPackaging.cmake
+C:/opencv-4.5.3/cmake/OpenCVUtils.cmake
+C:/opencv-4.5.3/cmake/OpenCVVersion.cmake
+C:/opencv-4.5.3/cmake/platforms/OpenCV-Windows.cmake
+C:/opencv-4.5.3/cmake/templates/OpenCVConfig-version.cmake.in
+C:/opencv-4.5.3/cmake/templates/OpenCVConfig.cmake.in
+C:/opencv-4.5.3/cmake/templates/OpenCVConfig.root-WIN32.cmake.in
+C:/opencv-4.5.3/cmake/templates/cmake_uninstall.cmake.in
+C:/opencv-4.5.3/cmake/templates/custom_hal.hpp.in
+C:/opencv-4.5.3/cmake/templates/cv_cpu_config.h.in
+C:/opencv-4.5.3/cmake/templates/cvconfig.h.in
+C:/opencv-4.5.3/cmake/templates/opencv_modules.hpp.in
+C:/opencv-4.5.3/cmake/templates/setup_vars_win32.cmd.in
+C:/opencv-4.5.3/modules/core/include/opencv2/core/version.hpp

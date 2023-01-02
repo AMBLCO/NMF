@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0d8b882610a139a4faac42c17e52680729dc23da10192d62dc51853871701c73
-size 120
+include/opencv2/core/base.hpp
+include/opencv2/core.hpp
+include/opencv2/core/utility.hpp
+misc/objc/manual/core_manual.hpp

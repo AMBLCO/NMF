@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a052d29dbb9ec2425fa2a97f175149abb264e0c34b0df4b5c22cff6cf027f52d
-size 719
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+
+#ifndef OPENCV_DATASETS_SR_GENERAL100_HPP
+#define OPENCV_DATASETS_SR_GENERAL100_HPP
+
+#include <string>
+#include <vector>
+
+#include "opencv2/datasets/dataset.hpp"
+
+#include <opencv2/core.hpp>
+
+namespace cv
+{
+namespace datasets
+{
+
+//! @addtogroup datasets_sr
+//! @{
+
+struct SR_general100Obj : public Object
+{
+    std::string imageName;
+};
+
+class CV_EXPORTS SR_general100 : public Dataset
+{
+public:
+    virtual void load(const std::string &path) CV_OVERRIDE = 0;
+
+    static Ptr<SR_general100> create();
+};
+
+//! @}
+
+}
+}
+
+#endif

@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bf7e84cb7dad9a145d5eeca83f28bf2b55c33aa444292a05bb9771988fa2418b
-size 599
+// Copyright (C) 2018 Intel Corporation
+//
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+/// @file hash.hpp
+
+#ifndef ADE_HASH_HPP
+#define ADE_HASH_HPP
+
+#include <cstddef> //size_t
+
+namespace ade
+{
+namespace util
+{
+
+/// Combines hash with seed.
+/// Suitable for combining multiple hashes together.
+///
+/// @param seed
+/// @param hash
+/// @return Resulting hash
+inline std::size_t hash_combine(std::size_t seed, std::size_t val)
+{
+    // Hash combine formula from boost
+    return seed ^ (val + 0x9e3779b9 + (seed << 6) + (seed >> 2));
+}
+} // namespace util
+} // namespace ade
+
+#endif // ADE_HASH_HPP

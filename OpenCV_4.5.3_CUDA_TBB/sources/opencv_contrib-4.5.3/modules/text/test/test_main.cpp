@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:50a65ac19e5658d84357101b5d8cd87446279949fb6f74baea6ab15acf13b7ba
-size 346
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+#include "test_precomp.hpp"
+
+CV_TEST_MAIN("",
+    cvtest::addDataSearchSubDirectory("contrib"),
+    cvtest::addDataSearchSubDirectory("contrib/text")
+)

@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6f060d30d7d804bf33b08bb80315df44f13871d8776c4775345f96efc3548c96
-size 489
+#ifdef HAVE_OPENCV_SURFACE_MATCHING
+
+template<> struct pyopencvVecConverter<ppf_match_3d::Pose3DPtr >
+{
+    static bool to(PyObject* obj, std::vector<ppf_match_3d::Pose3DPtr >& value, const ArgInfo& info)
+    {
+        return pyopencv_to_generic_vec(obj, value, info);
+    }
+
+    static PyObject* from(const std::vector<ppf_match_3d::Pose3DPtr >& value)
+    {
+        return pyopencv_from_generic_vec(value);
+    }
+};
+
+typedef std::vector<ppf_match_3d::Pose3DPtr> vector_Pose3DPtr;
+#endif

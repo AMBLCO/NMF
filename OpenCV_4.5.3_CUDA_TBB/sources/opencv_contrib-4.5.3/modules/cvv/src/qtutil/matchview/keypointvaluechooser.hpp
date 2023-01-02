@@ -1,3 +1,47 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7d5ae8595374a66a1df6904295cebd4c0ba82068c871b3d39fb173521fc7f347
-size 902
+#ifndef CVVISUAL_KEY_POINT_VALUE_CHOOSER
+#define CVVISUAL_KEY_POINT_VALUE_CHOOSER
+
+#include <QWidget>
+#include <QComboBox>
+
+#include "opencv2/features2d.hpp"
+
+
+namespace cvv{ namespace qtutil{
+
+/**
+ * @brief this widget contains a combobox with the attributes of an keypoint as entry.
+ * you can call the method getChoosenValue which return the chosen value of the given keypoint
+ */
+class KeyPointValueChooser:public QWidget{
+
+	Q_OBJECT
+
+public:
+	/**
+	 * @brief the constructor
+	 * @param parent the parent Widget
+	 */
+	KeyPointValueChooser(QWidget *parent=nullptr);
+
+	/**
+	 * @brief returns the chosen value of the given keypoint
+	 * @return the chosen value of the given keypoint
+	 */
+	double getChoosenValue(cv::KeyPoint keypoint);
+
+signals:
+
+	/**
+	 * @brief this signal will be emitted if the user selected an other value
+	 */
+	void valueChanged();
+
+private:
+	QComboBox *combBox_;
+
+};
+
+}}
+
+#endif

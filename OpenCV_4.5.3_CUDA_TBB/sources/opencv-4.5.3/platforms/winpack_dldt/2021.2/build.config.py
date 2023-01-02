@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c1eaa18031b3c5e98f342c964f543c6e59f28c507d9ad543612668b6d14bd8cc
-size 106
+os.environ['CI_BUILD_NUMBER'] = '2021.2.0-opencv_winpack_dldt'
+
+cmake_vars['ENABLE_V10_SERIALIZE'] = 'ON'

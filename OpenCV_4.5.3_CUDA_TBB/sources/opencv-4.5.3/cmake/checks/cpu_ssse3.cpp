@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0acc144657b7c1b63a28d57a9d103000cfabbb39ea657b3b607cff2970addf3e
-size 143
+#include <tmmintrin.h>
+const double v = 0;
+int main() {
+    __m128i a = _mm_setzero_si128();
+    __m128i b = _mm_abs_epi32(a);
+    return 0;
+}

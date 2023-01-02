@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:451e1d095ed58706aaa8efed9f56d4a45cb1f05e667be3854d70faae7c376490
-size 831
+ RGB-Depth Processing module
+============================
+
+Contains a collection of depth processing algorithms:
+* Linemod 3D object recognition
+* Fast surface normals and 3D plane finding
+* 3D visual odometry
+* KinectFusion
+
+Note that the KinectFusion algorithm was patented and its use may be restricted by following (but not limited to) list of patents:
+
+* _US20120196679A1_  Real-Time Camera Tracking Using Depth Maps
+* _US20120194644A1_  Mobile Camera Localization Using Depth Maps
+* _US20120194516A1_  Three-Dimensional Environment Reconstruction
+* _US8401225B2_  Moving object segmentation using depth images
+
+Since OpenCV's license imposes different restrictions on usage please consult a legal before using this algorithm any way.
+
+That's why you need to set the OPENCV_ENABLE_NONFREE option in CMake to use KinectFusion.

@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:69e32978d1523601e1e4f56f1e7bcf4def8299c3404195a77bb274d5bbdaa8ee
-size 238
+#if defined __AVX512__ || defined __AVX512F__
+#include <immintrin.h>
+void test()
+{
+    __m512i a, b, c;
+    a = _mm512_dpwssd_epi32(a, b, c);            // VNNI
+}
+#else
+#error "AVX512-CLX is not supported"
+#endif
+int main() { return 0; }

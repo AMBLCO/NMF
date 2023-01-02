@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cf1e497d3d2129e493f9a2a4961e5678c2355153a0466bba314064c1a789725c
-size 310
+// Copyright (C) 2018 Intel Corporation
+//
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+#include <iostream>
+#include <ade/graph.hpp>
+
+int main(int argc, char *argv[])
+{
+    ade::Graph graph;
+    std::cout << "Emtpy graph has " << graph.nodes().size() << " nodes. A great start!" << std::endl;
+    return 0;
+}

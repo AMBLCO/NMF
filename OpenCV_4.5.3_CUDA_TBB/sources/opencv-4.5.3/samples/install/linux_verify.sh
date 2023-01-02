@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:adc257175b077edd1d6f450c44f40d65bae8ce1785d55e3b59c4bdb4d26f65f0
-size 471
+#!/bin/bash
+# This script verifies that all shell snippets in the
+# Linux installation tutorial work (in Ubuntu 18 container)
+set -e
+set -x
+
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+
+docker pull ubuntu:18.04
+
+for f in $(cd "${SCRIPT_DIR}" && ls -1 linux_*install*.sh) ; do
+    echo "Checking $f..."
+    docker run -it \
+        --volume "${SCRIPT_DIR}":/install:ro \
+        ubuntu:18.04 \
+        /bin/bash -ex /install/$f --check
+
+done

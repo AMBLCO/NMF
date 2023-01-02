@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7a1be26548b3f23e094c64f428be286b4a89bbb6d333b637fe305fbd8b373e25
-size 298
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/reg
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/reg
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

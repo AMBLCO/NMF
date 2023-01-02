@@ -1,3 +1,53 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2eb2550abfa8ee7f0272f312eea6a2018e1f52a3c65f73bf7a2632074f2ca8ac
-size 1526
+Point Polygon Test {#tutorial_point_polygon_test}
+==================
+
+@tableofcontents
+
+@prev_tutorial{tutorial_moments}
+@next_tutorial{tutorial_distance_transform}
+
+|    |    |
+| -: | :- |
+| Original author | Ana Huamán |
+| Compatibility | OpenCV >= 3.0 |
+
+Goal
+----
+
+In this tutorial you will learn how to:
+
+-   Use the OpenCV function @ref cv::pointPolygonTest
+
+Theory
+------
+
+Code
+----
+
+@add_toggle_cpp
+This tutorial code's is shown lines below. You can also download it from
+[here](https://github.com/opencv/opencv/tree/master/samples/cpp/tutorial_code/ShapeDescriptors/pointPolygonTest_demo.cpp)
+@include samples/cpp/tutorial_code/ShapeDescriptors/pointPolygonTest_demo.cpp
+@end_toggle
+
+@add_toggle_java
+This tutorial code's is shown lines below. You can also download it from
+[here](https://github.com/opencv/opencv/tree/master/samples/java/tutorial_code/ShapeDescriptors/point_polygon_test/PointPolygonTestDemo.java)
+@include samples/java/tutorial_code/ShapeDescriptors/point_polygon_test/PointPolygonTestDemo.java
+@end_toggle
+
+@add_toggle_python
+This tutorial code's is shown lines below. You can also download it from
+[here](https://github.com/opencv/opencv/tree/master/samples/python/tutorial_code/ShapeDescriptors/point_polygon_test/pointPolygonTest_demo.py)
+@include samples/python/tutorial_code/ShapeDescriptors/point_polygon_test/pointPolygonTest_demo.py
+@end_toggle
+
+Explanation
+-----------
+
+Result
+------
+
+Here it is:
+![](images/Point_Polygon_Test_Source_Image.png)
+![](images/Point_Polygon_Test_Result.jpg)

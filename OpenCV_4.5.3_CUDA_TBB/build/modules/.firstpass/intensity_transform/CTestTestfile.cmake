@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b5c632ba9307b13ad66c91b9aed5b01481d83a9e67c1e04451bf69be095a0810
-size 330
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/intensity_transform
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/intensity_transform
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

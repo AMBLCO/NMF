@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:518a8f1ab572ab0a008bb74c0e56a3d22f0a45f0c122298208da9e0aca81abd0
-size 644
+{
+    "class_ignore_list" : [
+        "SURF_CUDA"
+    ],
+    "const_fix" : {
+        "PCTSignatures" : { "SimilarityFunction": { "GAUSSIAN": "SIMFUN_GAUSSIAN" } }
+    },
+    "AdditionalImports" : {
+        "*" : [ "\"xfeatures2d.hpp\"" ]
+    },
+    "func_arg_fix" : {
+        "DAISY" : {
+            "create" : { "norm" : { "ctype" : "NormalizationType",
+                                    "defval" : "cv::xfeatures2d::DAISY::NRM_NONE"} }
+        },
+        "PCTSignatures" : {
+            "(PCTSignatures*)create:(NSArray<Point2f*>*)initSamplingPoints initSeedCount:(int)initSeedCount" : { "create" : {"name" : "create2"} }
+        }
+    }
+}

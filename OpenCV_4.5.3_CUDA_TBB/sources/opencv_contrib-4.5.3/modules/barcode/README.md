@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:060954cc3bc394eb3b6b10e08efc99db07e430c3c4b7f17c04c1d958a78a1536
-size 431
+1D Barcode Detect and Decode
+======================
+
+This module is focused on detecting and decoding barcode from image. It is mainly designed for scanning the images, locating barcode, decoding barcode and outputting its decoded result.
+
+1. Support 1-dimension bar code detection of any angle tilting.
+2. Support multi-scale detection.
+3. Support EAN-13, EAN-8 and UPC-A decode yet.
+4. With x86 CPU, it achieves 50FPS averagely.

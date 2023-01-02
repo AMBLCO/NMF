@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9efd17490322db4a90e0387ab5151bd4fb116757707b2ee810451c43331bf7b2
-size 308
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/img_hash
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/img_hash
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

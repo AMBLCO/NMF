@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0fce2e11064004ac21cf528c1c02aa0143bcf2be1760f448a3a93146e669e2aa
-size 310
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/cudacodec
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/cudacodec
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

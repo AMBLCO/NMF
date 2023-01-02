@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6d27f7731d292cea594a83006233312eb830ccbe97433fc720a0a5a0a5e7efce
-size 544
+#include <opencv2/videoio.hpp>
+#include <opencv2/highgui.hpp>
+#include <opencv2/gapi.hpp>
+#include <opencv2/gapi/core.hpp>
+#include <opencv2/gapi/imgproc.hpp>
+
+int main(int argc, char *argv[])
+{
+    (void) argc;
+    (void) argv;
+
+    using namespace cv;
+    Mat in_mat = imread("lena.png");
+    Mat gx, gy;
+
+    Sobel(in_mat, gx, CV_32F, 1, 0);
+    Sobel(in_mat, gy, CV_32F, 0, 1);
+
+    Mat mag;
+    sqrt(gx.mul(gx) + gy.mul(gy), mag);
+
+    Mat out_mat;
+    mag.convertTo(out_mat, CV_8U);
+
+    imwrite("lena-out.png", out_mat);
+    return 0;
+}

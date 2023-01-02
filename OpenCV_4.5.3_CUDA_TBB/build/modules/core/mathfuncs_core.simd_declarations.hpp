@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1712c0de4608679cdc9d1555ea3f3246decd4ebce7ef1bc5388b22722e49642b
-size 388
+#define CV_CPU_SIMD_FILENAME "C:/opencv-4.5.3/modules/core/src/mathfuncs_core.simd.hpp"
+#define CV_CPU_DISPATCH_MODE AVX
+#include "opencv2/core/private/cv_cpu_include_simd_declarations.hpp"
+
+#define CV_CPU_DISPATCH_MODE AVX2
+#include "opencv2/core/private/cv_cpu_include_simd_declarations.hpp"
+
+#define CV_CPU_DISPATCH_MODES_ALL AVX2, AVX, BASELINE
+
+#undef CV_CPU_SIMD_FILENAME

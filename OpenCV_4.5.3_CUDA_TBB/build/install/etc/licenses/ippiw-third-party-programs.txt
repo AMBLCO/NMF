@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:35db695cb1145d308036d312ecbddc5bf7e5f1f73fd3a156d5c0c278571f9eb2
-size 248
+This third-party-programs.txt file applies to the Intel(R) Integrated Performance Primitives 2020 Gold
+There are not any Third Party Programs (as defined in the Agreement) included in this version of the Intel(R) Integrated Performance Primitives.

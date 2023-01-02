@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:22d206aee7ca230975f196bd8528c5ddab3c88abc7106da4df4a9ef97d8c4302
-size 336
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+
+#include "../precomp.hpp"
+
+namespace cv {
+
+Tracker::Tracker()
+{
+    // nothing
+}
+
+Tracker::~Tracker()
+{
+    // nothing
+}
+
+}  // namespace cv

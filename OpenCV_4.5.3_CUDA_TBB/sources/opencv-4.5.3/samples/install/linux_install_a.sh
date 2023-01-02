@@ -1,3 +1,58 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aed8372ebd053e183a040202a3addc4cc206a7eeece47bcb0ac10d738a435d7b
-size 770
+#!/bin/bash
+# This file contains documentation snippets for Linux installation tutorial
+if [ "$1" = "--check" ] ; then
+sudo()
+{
+    command $@
+}
+fi
+
+sudo apt update
+
+# [gcc]
+sudo apt install -y g++
+# [gcc]
+
+# [make]
+sudo apt install -y make
+# [make]
+
+# [cmake]
+sudo apt install -y cmake
+# [cmake]
+
+# [wget]
+sudo apt install -y wget unzip
+# [wget]
+
+# [download]
+wget -O opencv.zip https://github.com/opencv/opencv/archive/master.zip
+unzip opencv.zip
+mv opencv-master opencv
+# [download]
+
+# [prepare]
+mkdir -p build && cd build
+# [prepare]
+
+# [configure]
+cmake ../opencv
+# [configure]
+
+# [build]
+make -j4
+# [build]
+
+# [check]
+ls bin
+ls lib
+# [check]
+
+# [check cmake]
+ls OpenCVConfig*.cmake
+ls OpenCVModules.cmake
+# [check cmake]
+
+# [install]
+sudo make install
+# [install]

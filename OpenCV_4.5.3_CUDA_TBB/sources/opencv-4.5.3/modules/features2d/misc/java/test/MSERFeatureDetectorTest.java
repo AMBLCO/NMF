@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1576aa2627af96ada213ff80b17ca8aad1a50bba063255572eefca07f313e5a6
-size 842
+package org.opencv.test.features2d;
+
+import org.opencv.test.OpenCVTestCase;
+
+public class MSERFeatureDetectorTest extends OpenCVTestCase {
+
+    public void testCreate() {
+        fail("Not yet implemented");
+    }
+
+    public void testDetectListOfMatListOfListOfKeyPoint() {
+        fail("Not yet implemented");
+    }
+
+    public void testDetectListOfMatListOfListOfKeyPointListOfMat() {
+        fail("Not yet implemented");
+    }
+
+    public void testDetectMatListOfKeyPoint() {
+        fail("Not yet implemented");
+    }
+
+    public void testDetectMatListOfKeyPointMat() {
+        fail("Not yet implemented");
+    }
+
+    public void testEmpty() {
+        fail("Not yet implemented");
+    }
+
+    public void testRead() {
+        fail("Not yet implemented");
+    }
+
+    public void testWrite() {
+        fail("Not yet implemented");
+    }
+
+}

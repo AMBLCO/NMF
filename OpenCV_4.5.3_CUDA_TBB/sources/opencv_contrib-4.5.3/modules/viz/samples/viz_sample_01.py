@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a942cf291f6180aafff65c7eccfac98a211d6db5ca9fd72119a018b2ec1fc8b6
-size 255
+import numpy as np
+import cv2 as cv
+
+v = cv.viz.Viz3d_create("Viz Demo")
+
+print("First event loop is over")
+v.spin()
+print("Second event loop is over")
+v.spinOnce(1, True)
+while not v.wasStopped():
+    v.spinOnce(1, True)
+print("Last event loop is over")

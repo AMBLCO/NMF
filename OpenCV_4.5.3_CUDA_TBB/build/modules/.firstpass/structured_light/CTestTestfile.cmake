@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:11f7bda99fd42faa65918d9ecd9117174d9897c62654abdb6dea674b9fed9933
-size 324
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/structured_light
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/structured_light
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

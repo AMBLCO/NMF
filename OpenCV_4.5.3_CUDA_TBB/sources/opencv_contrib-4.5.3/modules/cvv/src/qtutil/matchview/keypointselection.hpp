@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:75942ce7c950fa0aa7c73fd8fecd4f9b66090754ad572f042755ee11485e2ce5
-size 533
+#ifndef CVVISUAL_KEY_POINT_SELECTOR
+#define CVVISUAL_KEY_POINT_SELECTOR
+
+#include <QFrame>
+
+#include "opencv2/features2d.hpp"
+
+namespace cvv{ namespace qtutil{
+
+/**
+ * @brief this class select keypoints from a given selection
+ */
+class KeyPointSelection:public QFrame{
+
+	Q_OBJECT
+
+public:
+	/**
+	 * @brief the constructor
+	 */
+	KeyPointSelection(QWidget * parent =nullptr):QFrame{parent}{}
+
+
+	virtual std::vector<cv::KeyPoint> select(const std::vector<cv::KeyPoint>& selection) = 0;
+
+signals:
+
+	void settingsChanged();
+
+};
+
+}}
+#endif

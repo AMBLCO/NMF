@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:06c9700d0d9b7816cfac3424c51b87601488057cd21e31b753d69c106a8a3bba
-size 275
+applyPatch('20200313-ngraph-disable-tests-examples.patch', 'ngraph')
+applyPatch('20200313-dldt-disable-unused-targets.patch')
+applyPatch('20200313-dldt-fix-binaries-location.patch')
+applyPatch('20200318-dldt-pdb.patch')
+applyPatch('20200319-dldt-fix-msvs2019-v16.5.0.patch')

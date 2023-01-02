@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d09fe0aae6f649a4608ae7e55a6d0df33b39e7d6a2560e5f6805fc9639020fd1
-size 299
+set(the_description "Object detection algorithms")
+ocv_define_module(xobjdetect opencv_core opencv_imgproc opencv_objdetect opencv_imgcodecs WRAP python)
+if (BUILD_opencv_apps AND NOT APPLE_FRAMEWORK)
+    add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/tools ${CMAKE_CURRENT_BINARY_DIR}/tools)
+endif()

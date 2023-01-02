@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:585a31531d6624f34acfce2cc9ca0be4d46d30db061494c8ea189f7274b80391
-size 433
+<?xml version="1.0"?>
+<opencv_storage>
+<imagelist>
+"left01.jpg"
+"right01.jpg"
+"left02.jpg"
+"right02.jpg"
+"left03.jpg"
+"right03.jpg"
+"left04.jpg"
+"right04.jpg"
+"left05.jpg"
+"right05.jpg"
+"left06.jpg"
+"right06.jpg"
+"left07.jpg"
+"right07.jpg"
+"left08.jpg"
+"right08.jpg"
+"left09.jpg"
+"right09.jpg"
+"left11.jpg"
+"right11.jpg"
+"left12.jpg"
+"right12.jpg"
+"left13.jpg"
+"right13.jpg"
+"left14.jpg"
+"right14.jpg"
+</imagelist>
+</opencv_storage>

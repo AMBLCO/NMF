@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1e8b4ed667976053a020f6b26ec0a1e511005275b480b2d4542f8f44428d5b17
-size 431
+#!/usr/bin/env python
+import os
+import numpy as np
+import cv2 as cv
+
+from tests_common import NewOpenCVTests, unittest
+
+class tracking_test(NewOpenCVTests):
+
+    def test_createTracker(self):
+        t = cv.TrackerMIL_create()
+        try:
+            t = cv.TrackerGOTURN_create()
+        except cv.error as e:
+            pass  # may fail due to missing DL model files
+
+
+if __name__ == '__main__':
+    NewOpenCVTests.bootstrap()

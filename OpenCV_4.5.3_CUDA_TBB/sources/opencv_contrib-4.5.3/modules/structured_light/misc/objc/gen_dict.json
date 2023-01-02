@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e4877c18805a1cdc1e235475ee9f05f74eae0d05f5809c2e2f07fd59dcba4348
-size 83
+{
+    "AdditionalImports" : {
+        "*" : [ "\"structured_light.hpp\"" ]
+    }
+}

@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a7e7598dd097e6c7f4134fe18cb9f5ac4c0b1f5ed8321674da7bac11f7c99819
-size 309
+FROM ubuntu:18.04
+
+RUN apt-get update && apt-get --no-install-recommends install -y \
+        libgstreamer-plugins-base1.0-dev \
+        libgstreamer-plugins-good1.0-dev \
+        libgstreamer1.0-dev \
+        cmake \
+        g++ \
+        ninja-build \
+    && \
+    rm -rf /var/lib/apt/lists/*
+
+WORKDIR /tmp

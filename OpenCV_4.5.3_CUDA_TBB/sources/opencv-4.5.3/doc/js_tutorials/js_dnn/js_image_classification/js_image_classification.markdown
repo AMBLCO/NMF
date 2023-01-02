@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:87080b24fe1a165fad4a63e229852a5a85287f02b37bd6a6752f7f3fa74c226e
-size 386
+Image Classification Example {#tutorial_js_image_classification}
+=======================================
+
+Goal
+----
+
+- In this tutorial you will learn how to use OpenCV.js dnn module for image classification.
+
+\htmlonly
+<iframe src="../../js_image_classification.html" width="100%"
+        onload="this.style.height=this.contentDocument.body.scrollHeight +'px';">
+</iframe>
+\endhtmlonly

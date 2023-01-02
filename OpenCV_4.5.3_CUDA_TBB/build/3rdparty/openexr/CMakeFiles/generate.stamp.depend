@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:13c5ae54fd67ff73696bdd89420a58e7ee36b64f189fb0fdf8baa47474c94710
-size 221
+# CMake generation dependency list for this directory.
+C:/opencv-4.5.3/3rdparty/openexr/CMakeLists.txt
+C:/opencv-4.5.3/3rdparty/openexr/IlmBaseConfig.h.cmakein
+C:/opencv-4.5.3/3rdparty/openexr/OpenEXRConfig.h.cmakein

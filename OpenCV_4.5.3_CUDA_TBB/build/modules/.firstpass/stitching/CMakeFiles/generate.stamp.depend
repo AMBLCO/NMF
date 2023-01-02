@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:00ece8cfedbd7c83bf13a0aed86853f11f1ab79027f2ff272be8f14104e5fc44
-size 106
+# CMake generation dependency list for this directory.
+C:/opencv-4.5.3/modules/stitching/CMakeLists.txt

@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dd39d89f87db6be65e8b2dd0ea829f1a35a3df9ab5a61e6cb7fc27e565cab19f
-size 745
+﻿//
+// MainPage.xaml.h
+// Declaration of the MainPage class.
+//
+
+#pragma once
+
+#include "MainPage.g.h"
+
+namespace PhoneTutorial
+{
+    /// <summary>
+    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// </summary>
+    public ref class MainPage sealed
+    {
+    public:
+        MainPage();
+
+    protected:
+        virtual void OnNavigatedTo(Windows::UI::Xaml::Navigation::NavigationEventArgs^ e) override;
+    private:
+
+        Windows::UI::Xaml::Media::Imaging::WriteableBitmap^ m_bitmap;
+        void Process_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
+        void Reset_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
+        void LoadImage();
+    };
+}

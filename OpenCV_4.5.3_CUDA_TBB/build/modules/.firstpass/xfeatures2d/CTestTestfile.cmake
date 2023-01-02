@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:99a71ebd7d57033b09196cc70582ed74d6bac2fe73a97d521f3d4d92e3dd14ad
-size 314
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/xfeatures2d
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/xfeatures2d
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

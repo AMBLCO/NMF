@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bc992bdc2618162739aefbd8bba339cf21530cea557402904f9a39945035e6cc
-size 254
+if(HAVE_CUDA)
+  add_definitions(-D_HFS_CUDA_ON_)
+  ocv_warnings_disable(CMAKE_CXX_FLAGS -Wundef)
+endif()
+
+set(the_description "Hierarchical Feature Selection for Efficient Image Segmentation")
+ocv_define_module(hfs opencv_core opencv_imgproc WRAP python)

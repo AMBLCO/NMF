@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9197f6855901e1a47f6f9c3f0eac12eb9d798008e7a64b3b3319f6dae9795723
-size 211
+#!/bin/bash
+
+set -e
+
+cmake -GNinja \
+    -DOPENCV_PLUGIN_NAME=opencv_videoio_gstreamer \
+    -DOPENCV_PLUGIN_DESTINATION=$1 \
+    -DCMAKE_BUILD_TYPE=$2 \
+    /opencv/modules/videoio/misc/plugin_gstreamer
+
+ninja

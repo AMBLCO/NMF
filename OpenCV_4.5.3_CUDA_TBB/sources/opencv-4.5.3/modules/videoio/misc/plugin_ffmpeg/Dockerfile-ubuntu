@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ddea3655ca1b2957334487c242b8638a18210a6e3dc5fbe23b144fd978d398d5
-size 350
+ARG VER
+FROM ubuntu:$VER
+
+RUN apt-get update && apt-get --no-install-recommends install -y \
+        libavcodec-dev \
+        libavfilter-dev \
+        libavformat-dev \
+        libavresample-dev \
+        libavutil-dev \
+        pkg-config \
+        cmake \
+        g++ \
+        ninja-build \
+    && \
+    rm -rf /var/lib/apt/lists/*
+
+WORKDIR /tmp

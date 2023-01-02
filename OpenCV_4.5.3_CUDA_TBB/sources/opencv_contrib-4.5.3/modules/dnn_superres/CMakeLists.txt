@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4cfabea0b61eb6a3580ad23c572c49f4815ccbd8f8b40ac064013dfcf89f45fb
-size 183
+set(the_description "Super Resolution using CNNs")
+
+ocv_define_module(
+    dnn_superres
+    opencv_core
+    opencv_imgproc
+    opencv_dnn
+    OPTIONAL opencv_quality
+    WRAP python
+)

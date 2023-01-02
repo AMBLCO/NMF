@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6e1225f83b9ce2e974b47dcd8931b027c60bd07ac00180779a71813916fb8d0e
-size 310
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+//
+// Copyright (C) 2018 Intel Corporation
+
+
+#include "../perf_precomp.hpp"
+#include "gapi_core_perf_tests_inl.hpp"

@@ -1,3 +1,51 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cdec79ac245d202d286142685bff6b65adb8552ac0a4a1b5c58dbd4a73d44a88
-size 1586
+Shi-Tomasi corner detector {#tutorial_good_features_to_track}
+==========================
+
+@tableofcontents
+
+@prev_tutorial{tutorial_harris_detector}
+@next_tutorial{tutorial_generic_corner_detector}
+
+|    |    |
+| -: | :- |
+| Original author | Ana Huamán |
+| Compatibility | OpenCV >= 3.0 |
+
+Goal
+----
+
+In this tutorial you will learn how to:
+
+-   Use the function @ref cv::goodFeaturesToTrack to detect corners using the Shi-Tomasi method (@cite Shi94).
+
+Theory
+------
+
+Code
+----
+
+@add_toggle_cpp
+This tutorial code's is shown lines below. You can also download it from
+[here](https://github.com/opencv/opencv/tree/master/samples/cpp/tutorial_code/TrackingMotion/goodFeaturesToTrack_Demo.cpp)
+@include samples/cpp/tutorial_code/TrackingMotion/goodFeaturesToTrack_Demo.cpp
+@end_toggle
+
+@add_toggle_java
+This tutorial code's is shown lines below. You can also download it from
+[here](https://github.com/opencv/opencv/tree/master/samples/java/tutorial_code/TrackingMotion/good_features_to_track/GoodFeaturesToTrackDemo.java)
+@include samples/java/tutorial_code/TrackingMotion/good_features_to_track/GoodFeaturesToTrackDemo.java
+@end_toggle
+
+@add_toggle_python
+This tutorial code's is shown lines below. You can also download it from
+[here](https://github.com/opencv/opencv/tree/master/samples/python/tutorial_code/TrackingMotion/good_features_to_track/goodFeaturesToTrack_Demo.py)
+@include samples/python/tutorial_code/TrackingMotion/good_features_to_track/goodFeaturesToTrack_Demo.py
+@end_toggle
+
+Explanation
+-----------
+
+Result
+------
+
+![](images/good_features_to_track_Shi_Tomasi.jpg)

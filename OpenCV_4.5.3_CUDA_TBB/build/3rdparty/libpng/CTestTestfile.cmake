@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9de764a747cf235a5cb3e09da550a6092f5dce0bd233432f6c11eb4f90cf74de
-size 287
+# CMake generated Testfile for 
+# Source directory: C:/opencv-4.5.3/3rdparty/libpng
+# Build directory: C:/opencv-4.5.3/build/3rdparty/libpng
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

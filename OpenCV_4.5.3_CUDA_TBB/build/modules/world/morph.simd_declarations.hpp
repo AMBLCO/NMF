@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dcd57475ef322f474343dea4e79582d6210caf3bdd2e0c89b0b0c90860dec9ef
-size 388
+#define CV_CPU_SIMD_FILENAME "C:/opencv-4.5.3/modules/imgproc/src/morph.simd.hpp"
+#define CV_CPU_DISPATCH_MODE SSE4_1
+#include "opencv2/core/private/cv_cpu_include_simd_declarations.hpp"
+
+#define CV_CPU_DISPATCH_MODE AVX2
+#include "opencv2/core/private/cv_cpu_include_simd_declarations.hpp"
+
+#define CV_CPU_DISPATCH_MODES_ALL AVX2, SSE4_1, BASELINE
+
+#undef CV_CPU_SIMD_FILENAME

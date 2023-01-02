@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ef008e9826375c93c08083c834894d9ac6d8ebf831a5e54e1783c29e9497bcde
-size 318
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/cudaobjdetect
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/cudaobjdetect
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

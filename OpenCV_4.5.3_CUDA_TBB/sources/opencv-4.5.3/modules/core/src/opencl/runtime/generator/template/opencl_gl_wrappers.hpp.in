@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:033953bf81fea4d69d1dd90ca592446777dc63482a5a52679c2b032b710bd9b5
-size 165
+#ifndef OPENCV_CORE_OCL_RUNTIME_OPENCL_GL_WRAPPERS_HPP
+#error "Invalid usage"
+#endif
+
+#ifdef cl_khr_gl_sharing
+
+@CL_FN_INLINE_WRAPPERS@
+
+#endif // cl_khr_gl_sharing

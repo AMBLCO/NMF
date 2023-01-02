@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eb52ffecd9f55c66283706ce1091e48653408cf0150fcfea98fb1b64e2abc745
-size 432
+#if defined(__VSX__)
+    #if defined(__PPC64__) && defined(__LITTLE_ENDIAN__)
+        #include <altivec.h>
+    #else
+        #error "OpenCV only supports little-endian mode"
+    #endif
+#else
+    #error "VSX3 is not supported"
+#endif
+
+int main()
+{
+    __vector unsigned char a = vec_splats((unsigned char)1);
+    __vector unsigned char b = vec_splats((unsigned char)2);
+    __vector unsigned char r = vec_absd(a, b);
+    return 0;
+}

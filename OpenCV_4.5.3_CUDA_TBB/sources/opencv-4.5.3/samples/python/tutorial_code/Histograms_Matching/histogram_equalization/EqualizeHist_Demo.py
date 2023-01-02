@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:693d5582be6c48ffa8a46f2b0c115c480aad32b18647e8ab054e4c9e9b9763dc
-size 829
+from __future__ import print_function
+import cv2 as cv
+import argparse
+
+## [Load image]
+parser = argparse.ArgumentParser(description='Code for Histogram Equalization tutorial.')
+parser.add_argument('--input', help='Path to input image.', default='lena.jpg')
+args = parser.parse_args()
+
+src = cv.imread(cv.samples.findFile(args.input))
+if src is None:
+    print('Could not open or find the image:', args.input)
+    exit(0)
+## [Load image]
+
+## [Convert to grayscale]
+src = cv.cvtColor(src, cv.COLOR_BGR2GRAY)
+## [Convert to grayscale]
+
+## [Apply Histogram Equalization]
+dst = cv.equalizeHist(src)
+## [Apply Histogram Equalization]
+
+## [Display results]
+cv.imshow('Source image', src)
+cv.imshow('Equalized Image', dst)
+## [Display results]
+
+## [Wait until user exits the program]
+cv.waitKey()
+## [Wait until user exits the program]

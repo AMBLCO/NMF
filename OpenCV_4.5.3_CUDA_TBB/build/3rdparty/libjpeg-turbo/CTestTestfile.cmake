@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:81d0b3e77a30746ebfdf5563d5514dd03defae76f730c58978e164f69bfe021c
-size 301
+# CMake generated Testfile for 
+# Source directory: C:/opencv-4.5.3/3rdparty/libjpeg-turbo
+# Build directory: C:/opencv-4.5.3/build/3rdparty/libjpeg-turbo
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

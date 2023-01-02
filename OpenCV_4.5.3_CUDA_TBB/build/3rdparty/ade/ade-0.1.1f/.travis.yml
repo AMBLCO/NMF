@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bc604d9adc9e5daebc964931c1c1a9bb4ec3fcdfb79e783886cb06ae5221448d
-size 578
+dist: trusty
+language: cpp
+
+compiler:
+  - gcc
+
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - gcc-5
+    - g++-5
+    - ninja-build
+
+install:
+  - if [ "${TRAVIS_OS_NAME}" = "linux" ]; then export CC="gcc-5"; export CXX="g++-5"; fi
+  - cmake --version
+  - ninja --version
+
+script:
+  - mkdir build
+  - cd build
+# TODO: fix ninja build
+#  - cmake -G Ninja -DENABLE_ADE_TESTING=ON -DBUILD_ADE_TUTORIAL=ON -DCMAKE_BUILD_TYPE=Release ..
+#  - ninja
+  - cmake -DENABLE_ADE_TESTING=ON -DBUILD_ADE_TUTORIAL=ON -DCMAKE_BUILD_TYPE=Release ..
+  - make
+  - ctest

@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:21242173aa3b360b09f0cdf852e05927c9f9512637d60947ba03996557480b21
-size 308
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/alphamat
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/alphamat
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

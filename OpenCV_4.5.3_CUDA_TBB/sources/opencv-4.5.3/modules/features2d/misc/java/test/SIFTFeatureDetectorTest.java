@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d97bc08a15890b9045ed7c4bf53971bea9c4786e1af2c0dca799a546d15ca270
-size 842
+package org.opencv.test.features2d;
+
+import org.opencv.test.OpenCVTestCase;
+
+public class SIFTFeatureDetectorTest extends OpenCVTestCase {
+
+    public void testCreate() {
+        fail("Not yet implemented");
+    }
+
+    public void testDetectListOfMatListOfListOfKeyPoint() {
+        fail("Not yet implemented");
+    }
+
+    public void testDetectListOfMatListOfListOfKeyPointListOfMat() {
+        fail("Not yet implemented");
+    }
+
+    public void testDetectMatListOfKeyPoint() {
+        fail("Not yet implemented");
+    }
+
+    public void testDetectMatListOfKeyPointMat() {
+        fail("Not yet implemented");
+    }
+
+    public void testEmpty() {
+        fail("Not yet implemented");
+    }
+
+    public void testRead() {
+        fail("Not yet implemented");
+    }
+
+    public void testWrite() {
+        fail("Not yet implemented");
+    }
+
+}

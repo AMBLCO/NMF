@@ -1,3 +1,56 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e1e912b03e0c8a351aeb968777ccd5f4c2eea347a1bf1cbd0e92dd57fc55f4ff
-size 1615
+Detecting corners location in subpixels {#tutorial_corner_subpixels}
+=======================================
+
+@tableofcontents
+
+@prev_tutorial{tutorial_generic_corner_detector}
+@next_tutorial{tutorial_feature_detection}
+
+|    |    |
+| -: | :- |
+| Original author | Ana Huamán |
+| Compatibility | OpenCV >= 3.0 |
+
+Goal
+----
+
+In this tutorial you will learn how to:
+
+-   Use the OpenCV function @ref cv::cornerSubPix to find more exact corner positions (more exact
+    than integer pixels).
+
+Theory
+------
+
+Code
+----
+
+@add_toggle_cpp
+This tutorial code's is shown lines below. You can also download it from
+[here](https://github.com/opencv/opencv/tree/master/samples/cpp/tutorial_code/TrackingMotion/cornerSubPix_Demo.cpp)
+@include samples/cpp/tutorial_code/TrackingMotion/cornerSubPix_Demo.cpp
+@end_toggle
+
+@add_toggle_java
+This tutorial code's is shown lines below. You can also download it from
+[here](https://github.com/opencv/opencv/tree/master/samples/java/tutorial_code/TrackingMotion/corner_subpixels/CornerSubPixDemo.java)
+@include samples/java/tutorial_code/TrackingMotion/corner_subpixels/CornerSubPixDemo.java
+@end_toggle
+
+@add_toggle_python
+This tutorial code's is shown lines below. You can also download it from
+[here](https://github.com/opencv/opencv/tree/master/samples/python/tutorial_code/TrackingMotion/corner_subpixels/cornerSubPix_Demo.py)
+@include samples/python/tutorial_code/TrackingMotion/corner_subpixels/cornerSubPix_Demo.py
+@end_toggle
+
+Explanation
+-----------
+
+Result
+------
+
+![](images/Corner_Subpixels_Original_Image.jpg)
+
+Here is the result:
+
+![](images/Corner_Subpixels_Result.jpg)

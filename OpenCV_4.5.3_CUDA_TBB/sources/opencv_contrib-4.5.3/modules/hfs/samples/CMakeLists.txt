@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:02f964d2864fadaacb997c4572a8bedbadfcb83948c6fc770b29df6c57473090
-size 246
+cmake_minimum_required(VERSION 2.8)
+project(example)
+find_package(OpenCV REQUIRED)
+
+set(SOURCES example.cpp)
+
+include_directories(${OpenCV_INCLUDE_DIRS})
+add_executable(example ${SOURCES} ${HEADERS})
+target_link_libraries(example ${OpenCV_LIBS})

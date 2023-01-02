@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ee5f5673c06ea29952e02d67737c6e3aba3337422a21241d2a2d3c42dc7f88f6
-size 394
+# if(ANDROID AND ANDROID_NATIVE_API_LEVEL GREATER_EQUAL 21)  <-- would be nicer but requires CMake 3.7 or later
+if(ANDROID AND ANDROID_NATIVE_API_LEVEL GREATER 20)
+  set(HAVE_ANDROID_MEDIANDK TRUE)
+  set(libs "-landroid -llog -lmediandk")
+  ocv_add_external_target(android_mediandk "" "${libs}" "HAVE_ANDROID_MEDIANDK")
+endif()
+
+set(HAVE_ANDROID_MEDIANDK ${HAVE_ANDROID_MEDIANDK} PARENT_SCOPE)

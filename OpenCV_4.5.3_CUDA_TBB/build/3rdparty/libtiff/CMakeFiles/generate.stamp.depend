@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eedaff6c21b7f1ebb32631c9f4d3fd4c04f1c7dda5ac9fb257c3bd7540db0f66
-size 651
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.21/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/CheckFunctionExists.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/TestBigEndian.cmake
+C:/opencv-4.5.3/3rdparty/libtiff/CMakeLists.txt
+C:/opencv-4.5.3/3rdparty/libtiff/tif_config.h.cmake.in
+C:/opencv-4.5.3/3rdparty/libtiff/tiffconf.h.cmake.in

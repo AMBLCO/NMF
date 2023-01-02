@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d62d86c0637c5049705ce9184dd0898b78bac3dbecf9244fbaca0a6a5659bdf5
-size 328
+if(WITH_ITT)
+  if(BUILD_ITT)
+    add_subdirectory("${OpenCV_SOURCE_DIR}/3rdparty/ittnotify")
+    set(ITT_INCLUDE_DIR "${OpenCV_SOURCE_DIR}/3rdparty/ittnotify/include")
+    set(ITT_INCLUDE_DIRS "${ITT_INCLUDE_DIR}")
+    set(ITT_LIBRARIES "ittnotify")
+    set(HAVE_ITT 1)
+  else()
+    #TODO
+  endif()
+endif()
+
+set(OPENCV_TRACE 1)

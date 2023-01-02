@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:04be1277871b6a0273c30ab849e88abf9266810a182270f9e559512f53cf5f85
-size 306
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/barcode
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/barcode
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

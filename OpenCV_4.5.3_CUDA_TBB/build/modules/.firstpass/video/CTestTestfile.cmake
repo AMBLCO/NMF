@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:399c91b3dd27c167262937b426db8707680ac5f8a37e99cce63210d95f70dcc8
-size 294
+# CMake generated Testfile for 
+# Source directory: C:/opencv-4.5.3/modules/video
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/video
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

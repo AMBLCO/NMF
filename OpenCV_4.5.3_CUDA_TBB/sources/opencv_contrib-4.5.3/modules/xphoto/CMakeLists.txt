@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8b6caae38888b78324ccc7a87c6986304913fe8f28948faecf6e8667330c259b
-size 139
+set(the_description "Addon to basic photo module")
+ocv_define_module(xphoto opencv_core opencv_imgproc opencv_photo WRAP python java objc)

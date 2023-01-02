@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5d4aa4b6b1416b0afb7ad8b660535d78be05b38d258685f8cf80706269c16303
-size 420
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+#ifndef __OPENCV_TEST_TEXT_PRECOMP_HPP__
+#define __OPENCV_TEST_TEXT_PRECOMP_HPP__
+
+#include "opencv2/core.hpp"
+#include "opencv2/ts.hpp"
+#include "opencv2/text.hpp"
+
+namespace opencv_test {
+using namespace cv::text;
+}
+
+#endif

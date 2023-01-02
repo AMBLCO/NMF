@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2b89241ea11babc7464f421f52b516a979060cd7cbaf709cc1133df0d3d5bb82
-size 96
+#include <nmmintrin.h>
+
+int main()
+{
+    unsigned int res = _mm_crc32_u8(1, 2);
+    return 0;
+}

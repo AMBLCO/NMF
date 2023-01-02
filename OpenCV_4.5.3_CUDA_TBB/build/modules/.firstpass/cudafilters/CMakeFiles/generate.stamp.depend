@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f9045e4de245b418ea8cc8f3050f403a3084bf80ff5b46464c03ec538a85dd5c
-size 116
+# CMake generation dependency list for this directory.
+C:/opencv_contrib-4.5.3/modules/cudafilters/CMakeLists.txt

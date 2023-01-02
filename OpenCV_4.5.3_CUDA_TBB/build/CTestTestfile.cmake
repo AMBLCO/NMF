@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e5f5c32f653c242195ee3060e3d2ad0fe8a64a6afcb418cf12db2a32eadfd195
-size 563
+# CMake generated Testfile for 
+# Source directory: C:/opencv-4.5.3
+# Build directory: C:/opencv-4.5.3/build
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+subdirs("3rdparty/zlib")
+subdirs("3rdparty/libjpeg-turbo")
+subdirs("3rdparty/libtiff")
+subdirs("3rdparty/openjpeg")
+subdirs("3rdparty/libpng")
+subdirs("3rdparty/openexr")
+subdirs("3rdparty/ippiw")
+subdirs("3rdparty/ittnotify")
+subdirs("include")
+subdirs("modules")
+subdirs("doc")
+subdirs("data")

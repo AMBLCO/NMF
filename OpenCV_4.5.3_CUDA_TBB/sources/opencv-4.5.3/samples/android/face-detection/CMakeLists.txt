@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7b37eba35bfd85936476b5d9f85091a39acc9524e7435c7f96fb54db7efaaaa5
-size 392
+set(sample example-face-detection)
+
+if(BUILD_FAT_JAVA_LIB)
+  set(native_deps opencv_java)
+else()
+  set(native_deps opencv_objdetect)
+endif()
+
+add_android_project(${sample} "${CMAKE_CURRENT_SOURCE_DIR}" LIBRARY_DEPS "${OPENCV_ANDROID_LIB_DIR}" SDK_TARGET 11 "${ANDROID_SDK_TARGET}" NATIVE_DEPS ${native_deps})
+if(TARGET ${sample})
+  add_dependencies(opencv_android_examples ${sample})
+endif()

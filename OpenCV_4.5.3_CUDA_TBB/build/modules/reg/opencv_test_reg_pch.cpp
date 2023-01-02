@@ -1,3 +1,1 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4b4feb8bf811f4ebb410b9e6f33514fd9ec930aa1b92b0c3be6951247f61924a
-size 70
+#include "C:/opencv_contrib-4.5.3/modules/reg/test/test_precomp.hpp"

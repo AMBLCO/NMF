@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d1778d4722d0a11fb4a440c5b67af2a204a7ed79c17292b238b6181bff2dffe4
-size 294
+# CMake generated Testfile for 
+# Source directory: C:/opencv-4.5.3/modules/flann
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/flann
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

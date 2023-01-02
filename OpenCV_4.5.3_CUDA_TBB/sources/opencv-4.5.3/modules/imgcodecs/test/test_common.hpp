@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:df093991c478d176c0a857c5625cabf0b473a64570c46077e00e888007632724
-size 426
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html
+
+#ifndef OPENCV_TEST_IMGCODECS_COMMON_HPP
+#define OPENCV_TEST_IMGCODECS_COMMON_HPP
+
+namespace opencv_test {
+
+Mat generateTestImageBGR();
+Mat generateTestImageGrayscale();
+
+}  // namespace
+
+#endif  // OPENCV_TEST_IMGCODECS_COMMON_HPP

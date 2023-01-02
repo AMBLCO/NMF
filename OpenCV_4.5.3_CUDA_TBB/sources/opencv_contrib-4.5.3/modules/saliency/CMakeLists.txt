@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5faf14536cc6aeb2eb86b4913639ee52d392a4ffec934500dad501f9ba832946
-size 234
+if(CV_ICC AND NOT MSVC)
+  ocv_module_disable(saliency)
+endif()
+
+set(the_description "Saliency API")
+
+ocv_define_module(saliency opencv_imgproc opencv_features2d WRAP python)
+
+ocv_warnings_disable(CMAKE_CXX_FLAGS -Woverloaded-virtual)

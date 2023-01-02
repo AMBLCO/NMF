@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:774b0045fedc8643500f71cad9fae490aca0961a3e0d8683981d7694a2e6e014
-size 224
+{
+    "const_fix" : {
+        "TrackerKCF" : { "MODE": { "CUSTOM": "MODE_CUSTOM" } }
+    },
+    "AdditionalImports" : {
+        "*" : [ "\"tracking.hpp\"" ]
+    },
+    "namespace_ignore_list" : [
+        "cv.legacy"
+    ]
+}

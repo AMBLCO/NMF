@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b7aa6d12c58a34205a0fa484adb53af6ecfd77b41080bdb5f641e16bf1b2bb65
-size 517
+if(OPENCV_INITIAL_PASS)
+  # generator for Objective-C source code and documentation signatures
+  add_subdirectory(generator)
+endif()
+
+if(NOT APPLE_FRAMEWORK)
+  return()
+endif()
+
+set(the_description "The Objective-C bindings")
+ocv_add_module(objc BINDINGS opencv_core opencv_imgproc PRIVATE_REQUIRED opencv_objc_bindings_generator)
+
+add_custom_target(${the_module}
+    ALL
+    COMMENT "Objective-C framework"
+)
+add_dependencies(${the_module} gen_opencv_objc_source)
+
+#include(${CMAKE_CURRENT_SOURCE_DIR}/common.cmake)

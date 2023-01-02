@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7af87dfb03c652a1c7fc15606f0ae482b21e90eb3810231985f6d1f9b719ea9d
-size 281
+CXX ?= g++
+
+CXXFLAGS += -c -Wall $(shell pkg-config --cflags opencv)
+LDFLAGS += $(shell pkg-config --libs --static opencv)
+
+all: opencv_example
+
+opencv_example: example.o; $(CXX) $< -o $@ $(LDFLAGS)
+
+%.o: %.cpp; $(CXX) $< -o $@ $(CXXFLAGS)
+
+clean: ; rm -f example.o opencv_example

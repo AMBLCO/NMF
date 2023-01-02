@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:56ca46ab50f63ec7feeb330a06fe2befa4f52f37b44c494b11fa12284b31fd29
-size 298
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/cvv
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/cvv
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

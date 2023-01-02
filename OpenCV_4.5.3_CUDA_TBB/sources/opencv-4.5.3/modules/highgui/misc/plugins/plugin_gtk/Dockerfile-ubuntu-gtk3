@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:677259e7c6711524d7be8a3d3c1c39ebaefbf96d6823744f91b29ecb8daaf924
-size 403
+ARG VER
+FROM ubuntu:$VER
+
+RUN \
+  apt-get update && \
+  DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+    pkg-config \
+    cmake \
+    g++ \
+    ninja-build \
+  && \
+  rm -rf /var/lib/apt/lists/*
+
+RUN \
+  apt-get update && \
+  DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+    libgtk-3-dev \
+  && \
+  rm -rf /var/lib/apt/lists/*
+
+WORKDIR /tmp

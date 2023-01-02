@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:734c3f2e47541d4659d1ac4ec164fc2dccbc7e69c3097930a3bcba2c1966a077
-size 531
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.21/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/CheckIncludeFiles.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/TestBigEndian.cmake
+C:/opencv-4.5.3/3rdparty/openjpeg/CMakeLists.txt
+C:/opencv-4.5.3/3rdparty/openjpeg/openjp2/opj_config.h.cmake.in
+C:/opencv-4.5.3/3rdparty/openjpeg/openjp2/opj_config_private.h.cmake.in

@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:45183fa3864fca28d0691e5f0f25cc304f52b038d0d7929324f6648965bcd6ae
-size 621
+# Copyright (C) 2018 Intel Corporation
+#
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+project( ade-tests )
+
+include_directories(${GTEST_INCLUDE_DIRS})
+
+# Required by gtest
+find_package(Threads REQUIRED)
+
+file( GLOB sources *.cpp )
+file( GLOB include *.hpp )
+
+add_executable(${PROJECT_NAME} ${include} ${sources})
+
+add_security_flags( ${PROJECT_NAME} )
+
+target_link_libraries(${PROJECT_NAME} ${GTEST_BOTH_LIBRARIES} Threads::Threads ade)
+
+install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION bin COMPONENT test)
+
+add_test(NAME ADETests COMMAND ${PROJECT_NAME} --gtest_output=xml:${CMAKE_BINARY_DIR}/${PROJECT_NAME}_test.xml)

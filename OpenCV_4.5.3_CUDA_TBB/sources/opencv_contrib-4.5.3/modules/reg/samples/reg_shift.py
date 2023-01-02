@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6055642c40123b178d1f588a68d947c01f0094f578e53734e6859b4d791ffed4
-size 405
+#!/usr/bin/python
+
+import cv2 as cv
+import numpy as np
+import sys
+
+img1 = cv.imread(sys.argv[1])
+img1 = img1.astype(np.float32)
+shift = np.array([5., 5.])
+mapTest = cv.reg_MapShift(shift)
+
+img2 = mapTest.warp(img1)
+
+mapper = cv.reg_MapperGradShift()
+mappPyr = cv.reg_MapperPyramid(mapper)
+
+resMap = mappPyr.calculate(img1, img2)
+mapShift = cv.reg.MapTypeCaster_toShift(resMap)
+
+print(mapShift.getShift())

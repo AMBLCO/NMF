@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d8ed0aa8f97ce4ef898eba9b59f81a585f68fe6c20b89107079d2e0d152229d2
-size 288
+# CMake generated Testfile for 
+# Source directory: C:/opencv-4.5.3/modules/ts
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/ts
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b98b9f410eff1d695f0b615b173471981ee2df6650203f2dfebe75dc9fe18b74
-size 205
+applyPatch('20200701-dldt-disable-unused-targets.patch')
+applyPatch('20200413-dldt-pdb.patch')
+applyPatch('20200604-dldt-disable-multidevice.patch')
+applyPatch('20201005-dldt-fix-cldnn-compilation.patch')

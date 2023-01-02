@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8c703e158448c42f9964f50ff23791e2c1391ea14bf5ccad20db11099becf136
-size 759
+cmake_minimum_required(VERSION 2.8.8 FATAL_ERROR)
+
+set(PROJECT_NAME "c_hal")
+set(HAL_LIB_NAME "c_hal")
+
+add_library(${HAL_LIB_NAME} impl.c)
+set_target_properties(${HAL_LIB_NAME} PROPERTIES POSITION_INDEPENDENT_CODE TRUE)
+set(OPENCV_SRC_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../../..")
+target_include_directories(${HAL_LIB_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR} ${OPENCV_SRC_DIR}/modules/core/include)
+
+set(OpenCV_HAL_FOUND TRUE)
+set(OpenCV_HAL_VERSION 0.0.1)
+set(OpenCV_HAL_LIBRARIES ${CMAKE_CURRENT_BINARY_DIR}/lib${HAL_LIB_NAME}.a)
+set(OpenCV_HAL_HEADERS "impl.h")
+set(OpenCV_HAL_INCLUDE_DIRS ${CMAKE_CURRENT_LIST_DIR})
+
+configure_file("impl.h" "${CMAKE_BINARY_DIR}/impl.h" COPYONLY)
+configure_file("config.cmake" "${CMAKE_BINARY_DIR}/OpenCV_HALConfig.cmake")

@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:abe7becf770d39928d39006d0549bdcf30684e703b61964dea7dcc20ed76d33e
-size 194
+set(GCC_COMPILER_VERSION "" CACHE STRING "GCC Compiler version")
+set(GNU_MACHINE "arm-linux-gnueabi" CACHE STRING "GNU compiler triple")
+include("${CMAKE_CURRENT_LIST_DIR}/arm.toolchain.cmake")

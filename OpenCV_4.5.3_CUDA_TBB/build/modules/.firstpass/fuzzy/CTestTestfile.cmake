@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:efbdce9d2678019d0e32cb21a46c3e44f7fcc171db6f5749916e4cd82dadb149
-size 302
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/fuzzy
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/fuzzy
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

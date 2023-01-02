@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1f1f8b1cf42baa51a560cf20238486ebdf45cd65c27ce58ececc38bc3fa4386c
-size 310
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\opencv-4.5.3\build\CMakeFiles\3.21.3\CompilerIdC\CompilerIdC.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

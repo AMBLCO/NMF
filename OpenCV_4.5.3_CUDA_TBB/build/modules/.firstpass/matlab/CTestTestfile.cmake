@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b370e278fd5df3eccb70262424ee76601bb61d3dfc139ed7bd5c8f6d83b66039
-size 304
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/matlab
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/matlab
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

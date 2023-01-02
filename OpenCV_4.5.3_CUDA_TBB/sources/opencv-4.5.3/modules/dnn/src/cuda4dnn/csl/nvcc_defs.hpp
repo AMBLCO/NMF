@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bcc7a262b9972e72e48ac5ef58d4081256f53c66ee12f6f3ccb6ef59644ed3e4
-size 632
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+
+#ifndef OPENCV_DNN_SRC_CUDA4DNN_CSL_NVCC_DEFS_HPP
+#define OPENCV_DNN_SRC_CUDA4DNN_CSL_NVCC_DEFS_HPP
+
+#include <cuda_runtime_api.h>
+
+#ifdef __CUDACC__
+#   define CUDA4DNN_HOST __host__
+#   define CUDA4DNN_DEVICE __device__
+#   define CUDA4DNN_HOST_DEVICE CUDA4DNN_HOST CUDA4DNN_DEVICE
+#else
+#   define CUDA4DNN_HOST
+#   define CUDA4DNN_DEVICE
+#   define CUDA4DNN_HOST_DEVICE
+#endif
+
+#endif /* OPENCV_DNN_SRC_CUDA4DNN_CSL_NVCC_DEFS_HPP */

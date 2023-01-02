@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c04d0e82027b5071ed6d64eb249beb85666ac1e11e577b57f94d7eabe006f7cf
-size 485
+#include <opencv2/core.hpp>
+#include <opencv2/stereo.hpp>
+
+using namespace cv;
+using namespace std;
+
+int main(int argc, char* argv[])
+{
+//!     [create]
+    Ptr<stereo::QuasiDenseStereo> stereo =  stereo::QuasiDenseStereo::create(cv::Size(5,5));
+//!     [create]
+
+
+//!     [write]
+    std::string parameterFileLocation = "./parameters.yaml";
+    if (argc > 1)
+        parameterFileLocation = argv[1];
+    stereo->saveParameters(parameterFileLocation);
+//!     [write]
+
+    return 0;
+}

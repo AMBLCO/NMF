@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b5749b35155bd6731ed8203b1606ae47781bc3ac5a0b254e2208eafa4bce477f
-size 310
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/videostab
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/videostab
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

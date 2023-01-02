@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d8bb9a68d2c9d776efedd7141b2d9987e7acd5a7e2d33b05a4ea5506ce1e0d38
-size 308
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/tracking
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/tracking
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

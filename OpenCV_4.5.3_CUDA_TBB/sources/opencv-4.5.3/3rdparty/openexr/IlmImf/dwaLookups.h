@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8ea8e8ebe7ba69da371e726fa8c9b24303a9a6b692001f0de0ffe76af0dc81c7
-size 573
+#include "ImfHeader.h"
+#include "ImfNamespace.h"
+#include "ImfExport.h"
+
+#include <cstddef>
+
+OPENEXR_IMF_INTERNAL_NAMESPACE_HEADER_ENTER
+
+
+const unsigned short* get_dwaCompressorNoOp();
+const unsigned short* get_dwaCompressorToLinear();
+const unsigned short* get_dwaCompressorToNonlinear();
+
+//const unsigned int* get_closestDataOffset();
+//const unsigned short* get_closestData();
+static inline
+const unsigned short* get_dwaClosest(int idx)
+{
+    throw std::runtime_error("OpenEXR: DW* compression tables are not available");
+}
+
+OPENEXR_IMF_INTERNAL_NAMESPACE_HEADER_EXIT

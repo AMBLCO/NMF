@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:62b932712cd50e368d2a8abad2df5b8262308c0d9b0eb55bce9da3b81b13cd9d
-size 396
+#ifndef POLYNOM_SOLVER_H
+#define POLYNOM_SOLVER_H
+
+int solve_deg2(double a, double b, double c, double & x1, double & x2);
+
+int solve_deg3(double a, double b, double c, double d,
+               double & x0, double & x1, double & x2);
+
+int solve_deg4(double a, double b, double c, double d, double e,
+               double & x0, double & x1, double & x2, double & x3);
+
+#endif // POLYNOM_SOLVER_H

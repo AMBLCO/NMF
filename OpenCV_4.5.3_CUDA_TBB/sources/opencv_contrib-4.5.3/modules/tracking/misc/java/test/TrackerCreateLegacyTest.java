@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:931f700f66d7d40d55f62c188b3f9383056dd54f53ab2176b52a65c6574255a3
-size 538
+package org.opencv.test.tracking;
+
+import org.opencv.core.Core;
+import org.opencv.core.CvException;
+import org.opencv.test.OpenCVTestCase;
+
+import org.opencv.tracking.Tracking;
+import org.opencv.tracking.legacy_Tracker;
+import org.opencv.tracking.legacy_TrackerTLD;
+
+public class TrackerCreateLegacyTest extends OpenCVTestCase {
+
+    @Override
+    protected void setUp() throws Exception {
+        super.setUp();
+    }
+
+
+    public void testCreateLegacyTrackerTLD() {
+        legacy_Tracker tracker = legacy_TrackerTLD.create();
+    }
+
+}

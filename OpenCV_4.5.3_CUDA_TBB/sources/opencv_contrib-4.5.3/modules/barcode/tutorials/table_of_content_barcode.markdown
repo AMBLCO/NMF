@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4911d956a26bd2fa540c4231ab054fda9f473bbbdd49e71b1cc340ae8d5ea72c
-size 335
+Tutorials for barcode module {#tutorial_table_of_content_barcode}
+===============================================================
+
+-   @subpage tutorial_barcode_detect_and_decode
+
+    Bar code is a widely used technology in real goods, we often need to detect and decode the bar code. It can be easy to implement via `barcode` module.

@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:43f607078484380cf0346ce703304fd3cd938130fc566551b8f3b25deeba90da
-size 304
+Extra 2D Features Framework
+===========================
+
+1. Experimental 2D feature algorithms
+2. Non-free 2D feature algorithms
+
+Extra 2D Features Framework containing experimental and non-free 2D feature detector/descriptor algorithms:
+ SURF, BRIEF, Censure, Freak, LUCID, Daisy, BEBLID, Self-similar.

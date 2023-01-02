@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d2154d141a091a3157b94809332eb5c4d41a6dcace485d3bc640e0373f8f2238
-size 719
+#include <QVBoxLayout>
+
+#include "matchportionselector.hpp"
+
+namespace cvv {namespace qtutil{
+
+MatchPortionSelection::MatchPortionSelection(std::vector<cv::DMatch> , QWidget *parent):
+	MatchSelection{parent}
+{
+	auto layout=util::make_unique<QVBoxLayout>();
+	auto selector=util::make_unique<PortionSelector>();
+
+	selector_=selector.get();
+
+	connect(&(selector->signalSettingsChanged()),SIGNAL(signal()),this,SIGNAL(settingsChanged()));
+
+	layout->addWidget(selector.release());
+
+	setLayout(layout.release());
+}
+
+std::vector<cv::DMatch> MatchPortionSelection::select(const std::vector<cv::DMatch> &selection)
+{
+	return selector_->select(  selection ,
+			[&](cv::DMatch arg1,cv::DMatch arg2)
+			{return arg1<arg2;});
+}
+
+}}

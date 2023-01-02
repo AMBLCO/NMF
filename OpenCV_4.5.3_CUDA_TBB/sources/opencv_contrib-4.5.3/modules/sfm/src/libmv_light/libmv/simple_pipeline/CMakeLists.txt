@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b90a8c36efab7b4850c534868af1c6afd8eb66dfd6270eec3518a3b8a5f6fb7b
-size 554
+SET(SIMPLE_PIPELINE_SRC
+    bundle.cc
+    camera_intrinsics.cc
+    distortion_models.cc
+    initialize_reconstruction.cc
+    intersect.cc
+    keyframe_selection.cc
+    pipeline.cc
+    reconstruction.cc
+    reconstruction_scale.cc
+    resect.cc
+    tracks.cc
+)
+
+# Define the header files so that they appear in IDEs.
+FILE(GLOB SIMPLE_PIPELINE_HDRS *.h)
+
+ADD_LIBRARY(simple_pipeline STATIC ${SIMPLE_PIPELINE_SRC} ${SIMPLE_PIPELINE_HDRS})
+
+TARGET_LINK_LIBRARIES(simple_pipeline LINK_PRIVATE multiview ${CERES_LIBRARIES})
+
+LIBMV_INSTALL_LIB(simple_pipeline)

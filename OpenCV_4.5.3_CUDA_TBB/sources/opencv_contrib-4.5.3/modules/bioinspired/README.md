@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c102dc7494e7c5dbf638152261658d017dddff96b25d5a5a0f86c59c26b6250b
-size 409
+Biologically inspired vision models and derivated tools
+=======================================================
+
+1. A biological retina model for image spatio-temporal noise and luminance changes enhancement
+2. A transient areas (spatio-temporal events) segmentation tool to use at the output of the Retina
+3. High Dynamic Range (HDR >8bit images) tone mapping to (conversion to 8bit) use cas of the retina  

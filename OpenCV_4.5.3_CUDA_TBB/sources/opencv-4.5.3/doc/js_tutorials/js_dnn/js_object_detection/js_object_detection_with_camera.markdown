@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7f70063382762bf8ce92f15936ea256986eaee18aacd85550db14416b9e4f6e8
-size 417
+Object Detection Example with Camera{#tutorial_js_object_detection_with_camera}
+=======================================
+
+Goal
+----
+
+- In this tutorial you will learn how to use OpenCV.js dnn module for object detection with camera.
+
+\htmlonly
+<iframe src="../../js_object_detection_with_camera.html" width="100%"
+        onload="this.style.height=this.contentDocument.body.scrollHeight +'px';">
+</iframe>
+\endhtmlonly

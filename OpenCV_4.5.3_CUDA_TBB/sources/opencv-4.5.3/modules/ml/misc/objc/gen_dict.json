@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c8d5bebd2734565f6587358314a9520efb8d2cc627b60d183f84478730a2902b
-size 258
+{
+    "enum_fix" : {
+        "EM" : { "Types": "EMTypes" },
+        "SVM" : { "Types": "SVMTypes" },
+        "KNearest" : { "Types": "KNearestTypes" },
+        "DTrees" : { "Flags": "DTreeFlags" },
+        "StatModel" : { "Flags": "StatModelFlags" }
+    }
+}

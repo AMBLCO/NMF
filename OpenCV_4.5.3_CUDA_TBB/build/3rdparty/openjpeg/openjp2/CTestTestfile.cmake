@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:45f2d07efb56f605e234009d4f0b800aad7b8bb90a5f893f7c5b638c852cf67d
-size 307
+# CMake generated Testfile for 
+# Source directory: C:/opencv-4.5.3/3rdparty/openjpeg/openjp2
+# Build directory: C:/opencv-4.5.3/build/3rdparty/openjpeg/openjp2
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:02279fc58bfb2b55aba233c93f79038941664a720da31e9e2cea313e43539598
-size 268
+#define CV_CPU_SIMD_FILENAME "C:/opencv-4.5.3/modules/core/src/split.simd.hpp"
+#define CV_CPU_DISPATCH_MODE AVX2
+#include "opencv2/core/private/cv_cpu_include_simd_declarations.hpp"
+
+#define CV_CPU_DISPATCH_MODES_ALL AVX2, BASELINE
+
+#undef CV_CPU_SIMD_FILENAME

@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5dab5cbb7a5bb4c1ffabe1770c915e309c5239508048f6fbdd1e80eec8226bde
-size 311
+# --- VideoInput/DirectShow ---
+if(NOT HAVE_DSHOW AND MSVC AND NOT MSVC_VERSION LESS 1500)
+  set(HAVE_DSHOW TRUE)
+endif()
+
+if(NOT HAVE_DSHOW)
+  check_include_file(dshow.h HAVE_DSHOW)
+endif()
+
+if(HAVE_DSHOW)
+  ocv_add_external_target(dshow "" "" "HAVE_DSHOW")
+endif()
+
+set(HAVE_DSHOW ${HAVE_DSHOW} PARENT_SCOPE)

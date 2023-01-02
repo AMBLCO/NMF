@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:59c7c0c9c669491d37f84bc5f67eab74b2922e890939f9d5ca4b75097aa66588
-size 646
+A demo of the Java wrapper for OpenCV with two examples:
+1) feature detection and matching and
+2) face detection.
+The examples are coded in Scala and Java.
+Anyone familiar with Java should be able to read the Scala examples.
+Please feel free to contribute code examples in Scala or Java, or any JVM language.
+
+To run the examples:
+1) Install OpenCV and copy the OpenCV jar to lib/.
+   This jar must match the native libraries installed in your system.
+   If this isn't the case, you may get a java.lang.UnsatisfiedLinkError at runtime.
+2) Go to the root directory and type "sbt/sbt run".
+   This should generate images in your current directory.

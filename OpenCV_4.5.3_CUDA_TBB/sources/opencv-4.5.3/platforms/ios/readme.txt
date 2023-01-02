@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:10ea84605919d4f9a4ac93563c873cb9c61b3a67d3df6702cfa91705224c8aee
-size 351
+Building OpenCV from Source, using CMake and Command Line
+=========================================================
+
+cd ~/<my_working_directory>
+python opencv/platforms/ios/build_framework.py ios
+
+If everything's fine, a few minutes later you will get ~/<my_working_directory>/ios/opencv2.framework. You can add this framework to your Xcode projects.

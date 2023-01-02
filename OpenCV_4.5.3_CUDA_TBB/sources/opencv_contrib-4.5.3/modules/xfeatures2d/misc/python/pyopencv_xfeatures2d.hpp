@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:97a5c27d7cff5eb34208e50513a318a77fa96225707c7223cbce70524f514ef0
-size 163
+#ifdef HAVE_OPENCV_XFEATURES2D
+
+#include "opencv2/xfeatures2d.hpp"
+using cv::xfeatures2d::DAISY;
+
+typedef DAISY::NormalizationType DAISY_NormalizationType;
+#endif

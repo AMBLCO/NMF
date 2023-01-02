@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:64c0a8fbcda369eb502a72d3540eae5808e64db231a0dc2f7bec534ab8d63113
-size 406
+Extended Image Processing
+=========================
+
+- Structured Forests
+- Edge Boxes
+- Domain Transform Filter
+- Guided Filter
+- Adaptive Manifold Filter
+- Joint Bilateral Filter
+- Superpixels
+- Graph segmentation
+- Selective search from segmentation
+- Paillou Filter
+- Fast Line Detector
+- Deriche Filter
+- Pei&Lin Normalization
+- Ridge Detection Filter
+- Binary morphology on run-length encoded images

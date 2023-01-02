@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:68c3670858074136b0b20684b8cfeba9dbb941e22cf1dd93d05f1531c257f33f
-size 1072
+Deep Neural Networks (dnn module) {#tutorial_table_of_content_dnn}
+=====================================
+
+-   @subpage tutorial_dnn_googlenet
+-   @subpage tutorial_dnn_halide
+-   @subpage tutorial_dnn_halide_scheduling
+-   @subpage tutorial_dnn_android
+-   @subpage tutorial_dnn_yolo
+-   @subpage tutorial_dnn_javascript
+-   @subpage tutorial_dnn_custom_layers
+-   @subpage tutorial_dnn_OCR
+-   @subpage tutorial_dnn_text_spotting
+
+#### PyTorch models with OpenCV
+In this section you will find the guides, which describe how to run classification, segmentation and detection PyTorch DNN models with OpenCV.
+-   @subpage pytorch_cls_tutorial_dnn_conversion
+-   @subpage pytorch_cls_c_tutorial_dnn_conversion
+-   @subpage pytorch_segm_tutorial_dnn_conversion
+
+#### TensorFlow models with OpenCV
+In this section you will find the guides, which describe how to run classification, segmentation and detection TensorFlow DNN models with OpenCV.
+-   @subpage tf_cls_tutorial_dnn_conversion
+-   @subpage tf_det_tutorial_dnn_conversion
+-   @subpage tf_segm_tutorial_dnn_conversion

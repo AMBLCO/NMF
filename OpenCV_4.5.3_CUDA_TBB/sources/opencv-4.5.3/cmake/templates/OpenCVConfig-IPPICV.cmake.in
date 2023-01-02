@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:850140ca0887cfeb28e3c0a51030540b30e2b9d5502e2eb4394c689c19f8afa3
-size 245
+if(NOT TARGET ippicv)
+  add_library(ippicv STATIC IMPORTED)
+  set_target_properties(ippicv PROPERTIES
+    IMPORTED_LINK_INTERFACE_LIBRARIES ""
+    IMPORTED_LOCATION "${OpenCV_INSTALL_PATH}/@IPPICV_INSTALL_PATH_RELATIVE_CONFIGCMAKE@"
+  )
+endif()

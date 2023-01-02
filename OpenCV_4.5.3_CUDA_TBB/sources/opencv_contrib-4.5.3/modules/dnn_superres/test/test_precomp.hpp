@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0bb248b771c96fa3b703ba1dade3f121f4b0bbd1de016e00e7d04cb08dc184d7
-size 403
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+
+#ifndef __OPENCV_TEST_PRECOMP_HPP__
+#define __OPENCV_TEST_PRECOMP_HPP__
+
+#include "opencv2/ts.hpp"
+#include "opencv2/dnn_superres.hpp"
+
+namespace opencv_test {
+    using namespace cv::dnn_superres;
+}
+
+#endif

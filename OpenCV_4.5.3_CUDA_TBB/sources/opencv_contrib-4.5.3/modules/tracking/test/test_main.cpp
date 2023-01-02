@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a5e08b0977df978fb8758352d8d780ec438118ac5b217dbfe875613e030e0769
-size 610
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+#include "test_precomp.hpp"
+
+static
+void initTrackingTests()
+{
+    const char* extraTestDataPath =
+#ifdef WINRT
+        NULL;
+#else
+        getenv("OPENCV_DNN_TEST_DATA_PATH");
+#endif
+    if (extraTestDataPath)
+        cvtest::addDataSearchPath(extraTestDataPath);
+
+    cvtest::addDataSearchSubDirectory("");  // override "cv" prefix below to access without "../dnn" hacks
+}
+
+CV_TEST_MAIN("cv", initTrackingTests())

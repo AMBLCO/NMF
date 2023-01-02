@@ -1,3 +1,42 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f0e0d281791b23522af3d3b0d276afbaa1b7d9eca2ba1394d6bf48d07a2f8e3f
-size 1102
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+
+#ifndef _WIN32
+#error "Build configuration error"
+#endif
+#ifndef CVAPI_EXPORTS
+#error "Build configuration error"
+#endif
+
+#define WIN32_LEAN_AND_MEAN
+#include <windows.h>
+
+#define OPENCV_MODULE_S "opencv_cudaoptflow"
+
+namespace cv {
+extern __declspec(dllimport) bool __termination;  // Details: #12750
+}
+
+#ifdef _WIN32_WCE
+#define DLL_MAIN_ARG0 HANDLE
+#else
+#define DLL_MAIN_ARG0 HINSTANCE
+#endif
+
+extern "C"
+BOOL WINAPI DllMain(DLL_MAIN_ARG0, DWORD fdwReason, LPVOID lpReserved);
+
+extern "C"
+BOOL WINAPI DllMain(DLL_MAIN_ARG0, DWORD fdwReason, LPVOID lpReserved)
+{
+    if (fdwReason == DLL_THREAD_DETACH || fdwReason == DLL_PROCESS_DETACH)
+    {
+        if (lpReserved != NULL) // called after ExitProcess() call
+        {
+            //printf("OpenCV: terminating: " OPENCV_MODULE_S "\n");
+            cv::__termination = true;
+        }
+    }
+    return TRUE;
+}

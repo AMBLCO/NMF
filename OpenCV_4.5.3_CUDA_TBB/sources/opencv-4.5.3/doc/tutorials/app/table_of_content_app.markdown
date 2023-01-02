@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a62158023101c3b3b9618136c07f6e81a6179b09258d71bd210181624a5e073e
-size 395
+Application utils (highgui, imgcodecs, videoio modules) {#tutorial_table_of_content_app}
+=======================================================
+
+-   @subpage tutorial_trackbar
+-   @subpage tutorial_raster_io_gdal
+-   @subpage tutorial_video_input_psnr_ssim
+-   @subpage tutorial_video_write
+-   @subpage tutorial_kinect_openni
+-   @subpage tutorial_orbbec_astra
+-   @subpage tutorial_intelperc

@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f3cca87acd85ea2556a8657ceac2b8226d3d68cbb392b27f69f5aa164398b4c2
-size 219
+set(the_description "Extended image processing module. It includes edge-aware filters and etc.")
+ocv_define_module(ximgproc opencv_core opencv_imgproc opencv_calib3d opencv_imgcodecs opencv_video WRAP python java objc)

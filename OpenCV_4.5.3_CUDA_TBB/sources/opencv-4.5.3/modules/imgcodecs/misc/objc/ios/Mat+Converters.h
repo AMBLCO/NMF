@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:439abf7d1e9c178f767397647b3f583c9f4903e36422a1a98aaf7a5c3980c704
-size 650
+//
+//  Mat+UIImage.h
+//
+//  Created by Giles Payne on 2020/03/03.
+//
+
+#pragma once
+
+#ifdef __cplusplus
+#import "opencv2/core.hpp"
+#else
+#define CV_EXPORTS
+#endif
+
+#import "Mat.h"
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+CV_EXPORTS @interface Mat (Converters)
+
+-(CGImageRef)toCGImage CF_RETURNS_RETAINED;
+-(instancetype)initWithCGImage:(CGImageRef)image;
+-(instancetype)initWithCGImage:(CGImageRef)image alphaExist:(BOOL)alphaExist;
+-(UIImage*)toUIImage;
+-(instancetype)initWithUIImage:(UIImage*)image;
+-(instancetype)initWithUIImage:(UIImage*)image alphaExist:(BOOL)alphaExist;
+
+@end
+
+NS_ASSUME_NONNULL_END

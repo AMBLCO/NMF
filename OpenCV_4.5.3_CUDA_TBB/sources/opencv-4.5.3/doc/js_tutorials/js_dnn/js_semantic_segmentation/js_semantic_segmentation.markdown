@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:01d1fb476b6ede509f3057247874a0d59420aea894deba541f8b5a417dc34469
-size 390
+Semantic Segmentation Example {#tutorial_js_semantic_segmentation}
+=======================================
+
+Goal
+----
+
+- In this tutorial you will learn how to use OpenCV.js dnn module for semantic segmentation.
+
+\htmlonly
+<iframe src="../../js_semantic_segmentation.html" width="100%"
+        onload="this.style.height=this.contentDocument.body.scrollHeight +'px';">
+</iframe>
+\endhtmlonly

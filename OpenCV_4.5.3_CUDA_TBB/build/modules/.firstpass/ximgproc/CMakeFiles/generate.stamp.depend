@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c44cc3e9bf55cda4e1d408b00e98cab611d3b6bd21ee7f0c3fd4512f2fd652aa
-size 113
+# CMake generation dependency list for this directory.
+C:/opencv_contrib-4.5.3/modules/ximgproc/CMakeLists.txt

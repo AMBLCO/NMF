@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:942b660a3e25d127f6791663c32c46899a90727e2a71b9a33cf245522e9c2ab0
-size 372
+Discovering the human retina and its use for image processing {#tutorial_table_of_content_retina}
+============================
+
+-   @subpage tutorial_bioinspired_retina_model
+
+    *Author:* Alexandre Benoit
+
+    Processing regular images
+
+-   @subpage tutorial_bioinspired_retina_illusion
+
+    *Author:* Andrea Merello
+
+    See how to reproduce human eye optical illusions

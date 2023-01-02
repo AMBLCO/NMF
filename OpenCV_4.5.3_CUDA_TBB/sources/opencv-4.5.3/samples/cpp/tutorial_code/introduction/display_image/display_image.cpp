@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:05243c7289b931503fda55d8a678d9ed2b25ed5c02e26570934534b99d09a8f0
-size 744
+//! [includes]
+#include <opencv2/core.hpp>
+#include <opencv2/imgcodecs.hpp>
+#include <opencv2/highgui.hpp>
+
+#include <iostream>
+
+using namespace cv;
+//! [includes]
+
+int main()
+{
+    //! [imread]
+    std::string image_path = samples::findFile("starry_night.jpg");
+    Mat img = imread(image_path, IMREAD_COLOR);
+    //! [imread]
+
+    //! [empty]
+    if(img.empty())
+    {
+        std::cout << "Could not read the image: " << image_path << std::endl;
+        return 1;
+    }
+    //! [empty]
+
+    //! [imshow]
+    imshow("Display window", img);
+    int k = waitKey(0); // Wait for a keystroke in the window
+    //! [imshow]
+
+    //! [imsave]
+    if(k == 's')
+    {
+        imwrite("starry_night.png", img);
+    }
+    //! [imsave]
+
+    return 0;
+}

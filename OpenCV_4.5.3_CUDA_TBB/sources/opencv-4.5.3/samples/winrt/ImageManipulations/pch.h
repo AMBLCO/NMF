@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9c36c4770c1c5b51c4c054a7a9c53325693f8bd807d6d0322bf353db5ac282e0
-size 622
+﻿//*********************************************************
+//
+// Copyright (c) Microsoft. All rights reserved.
+// THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF
+// ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY
+// IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR
+// PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.
+//
+//*********************************************************
+
+//
+// pch.h
+// Header for standard system include files.
+//
+
+#pragma once
+
+#include <collection.h>
+#include <ppltasks.h>
+#include <agile.h>
+#include "Common\LayoutAwarePage.h"
+#include "Common\SuspensionManager.h"
+#include "App.xaml.h"

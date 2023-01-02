@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:166e95562f11484a53d0a5414eeea0790390251478c1d4069907b4b70f389c14
-size 537
+if(WINCE)
+  # CommCtrl.lib does not exist in headless WINCE Adding this will make CMake
+  # Try_Compile succeed and therefore also C/C++ ABI Detetection work
+  # https://gitlab.kitware.com/cmake/cmake/blob/master/Modules/Platform/Windows-
+  # MSVC.cmake
+  set(CMAKE_C_STANDARD_LIBRARIES_INIT "coredll.lib oldnames.lib")
+  set(CMAKE_CXX_STANDARD_LIBRARIES_INIT ${CMAKE_C_STANDARD_LIBRARIES_INIT})
+  foreach(ID EXE SHARED MODULE)
+    string(APPEND CMAKE_${ID}_LINKER_FLAGS_INIT
+           " /NODEFAULTLIB:libc.lib")
+  endforeach()
+endif()

@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3c940537f3540fa4e838a2ac405499d17f984dcab21b947cd01a47d732e5a6bc
-size 737
+﻿//
+// MainPage.xaml.h
+// Declaration of the MainPage class.
+//
+
+#pragma once
+
+#include "MainPage.g.h"
+#include <opencv2\core\core.hpp>
+#include <opencv2\objdetect.hpp>
+
+
+namespace FaceDetection
+{
+    /// <summary>
+    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// </summary>
+    public ref class MainPage sealed
+    {
+    public:
+        MainPage();
+
+    private:
+        void InitBtn_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
+        void detectBtn_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
+
+    private:
+        cv::Mat groupFaces;
+        void UpdateImage(const cv::Mat& image);
+        cv::CascadeClassifier face_cascade;
+    };
+}

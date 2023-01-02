@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e42f03899e53b1b3e29dd1cd95ec20e2a8a07be518b8a01f47f3db6cb14e2b9c
-size 432
+#include <iostream>
+
+#include <opencv2/core.hpp>
+
+#include <opencv2/imgcodecs/legacy/constants_c.h>
+#include <opencv2/videoio/legacy/constants_c.h>
+#include <opencv2/photo/legacy/constants_c.h>
+#include <opencv2/video/legacy/constants_c.h>
+
+using namespace cv;
+
+int main(int /*argc*/, const char** /*argv*/)
+{
+    std::cout
+        << (int)CV_LOAD_IMAGE_GRAYSCALE
+        << (int)CV_CAP_FFMPEG
+        << std::endl;
+    return 0;
+}

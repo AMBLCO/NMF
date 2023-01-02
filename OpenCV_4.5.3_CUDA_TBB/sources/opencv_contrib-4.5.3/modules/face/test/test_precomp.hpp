@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:055c75c4212f5c3f09895e470fe86a1511bbe2dbeba10737b4113517c08b49c0
-size 478
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+#ifndef __OPENCV_TEST_PRECOMP_HPP__
+#define __OPENCV_TEST_PRECOMP_HPP__
+
+#include "opencv2/ts.hpp"
+#include "opencv2/imgproc.hpp"
+#include "opencv2/objdetect.hpp"
+#include "opencv2/face.hpp"
+#include "opencv2/face/bif.hpp"
+
+namespace opencv_test {
+using namespace cv::face;
+}
+
+#endif

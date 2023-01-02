@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:439663b5416a8eb3c5010cacef73955d5c7c3bfbc0475eb37b5617c46be321a8
-size 500
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+//
+// Copyright (C) 2021 Intel Corporation
+
+#include <opencv2/gapi/stereo.hpp>
+
+namespace cv { namespace gapi {
+
+GMat stereo(const GMat& left, const GMat& right,
+            const cv::gapi::StereoOutputFormat of)
+{
+    return calib3d::GStereo::on(left, right, of);
+}
+
+} // namespace cv
+} // namespace gapi

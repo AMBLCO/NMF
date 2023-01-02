@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:353062a7121676747571ee33e7e9eea1cd732f5a75fea5c4f690854179fb9d86
-size 416
+#if defined __AVX512__ || defined __AVX512F__
+#include <immintrin.h>
+void test()
+{
+    __m512i a, b, c;
+    a = _mm512_popcnt_epi8(a);                   // BITALG
+    a = _mm512_shrdv_epi64(a, b, c);             // VBMI2
+    a = _mm512_popcnt_epi64(a);                  // VPOPCNTDQ
+    a = _mm512_dpwssd_epi32(a, b, c);            // VNNI
+}
+#else
+#error "AVX512-ICL is not supported"
+#endif
+int main() { return 0; }

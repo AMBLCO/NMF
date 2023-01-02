@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4e4194b91704237073542611b0c119e83d30702ef004982682842aab3e804be6
-size 250
+print("Loading module\n")
+
+using OpenCV
+using Test
+
+
+test_dir = joinpath(ENV["OPENCV_TEST_DATA_PATH"], "cv")
+
+include("test_mat.jl")
+include("test_feature2d.jl")
+include("test_imgproc.jl")
+include("test_objdetect.jl")
+include("test_dnn.jl")
+
+exit(0)

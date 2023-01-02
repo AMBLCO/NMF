@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f561607da834a13118b5006b883199bc347cfae75dca6de46a24e396eb402886
-size 593
+Intelligent Scissors Demo {#tutorial_js_intelligent_scissors}
+=========================
+
+Goal
+----
+
+- Here you can check how to use IntelligentScissors tool for image segmentation task.
+- Available methods and parameters: @ref cv::segmentation::IntelligentScissorsMB
+
+@note The feature is integrated into [CVAT](https://github.com/openvinotoolkit/cvat) annotation tool and you can try it online on https://cvat.org
+
+\htmlonly
+<iframe src="../../js_intelligent_scissors.html" width="100%"
+        onload="this.style.height=this.contentDocument.body.scrollHeight +'px';">
+</iframe>
+\endhtmlonly

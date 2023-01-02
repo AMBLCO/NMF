@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:262253c26f3d85d0d31bd99897944708fddbb8fe4f0ebdaa3ef2d0052b8f3292
-size 308
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/freetype
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/freetype
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

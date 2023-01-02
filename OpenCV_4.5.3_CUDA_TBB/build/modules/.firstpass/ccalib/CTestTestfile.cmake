@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b75b8606470ecee2ad0a52dc4b0b61c4e6d22b97875a936caba55148f669b5e2
-size 304
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/ccalib
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/ccalib
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

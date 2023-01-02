@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ac5d26219519c87061d3ff106927b950d96a4f67f9b5e5a7b007c987fa33ae5c
-size 546
+{
+    "missing_consts": {
+        "Video" : {
+            "private" : [
+                ["CV_LKFLOW_INITIAL_GUESSES",    4 ],
+                ["CV_LKFLOW_GET_MIN_EIGENVALS",  8 ]
+            ]
+        }
+    },
+    "func_arg_fix" : {
+        "calcOpticalFlowPyrLK" : { "prevPts" : {"ctype" : "vector_Point2f"},
+                                   "nextPts" : {"ctype" : "vector_Point2f"},
+                                   "status"  : {"ctype" : "vector_uchar"},
+                                   "err"     : {"ctype" : "vector_float"} }
+    }
+}

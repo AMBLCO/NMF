@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3529ad18faeaa498c43974aaef5fe82996f94db93157392e8873b1a6fe15edfe
-size 304
+# CMake generated Testfile for 
+# Source directory: C:/opencv-4.5.3/modules/features2d
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/features2d
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

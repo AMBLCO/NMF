@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b9089f5039047be323824f8bf37d615d883dda8d3c96fa3ca8bdf2fe1d662f5a
-size 318
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/wechat_qrcode
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/wechat_qrcode
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d882b5c1f048a4f0d48bfc7b0e1347bb930434b9f0dd2cc9f21430fa8da9bfcd
-size 408
+//
+// This file is auto-generated. Please don't modify it!
+//
+#pragma once
+
+#ifdef __cplusplus
+//#import "opencv.hpp"
+$additionalImports
+#else
+#define CV_EXPORTS
+#endif
+
+#import <Foundation/Foundation.h>
+$importBaseClass
+
+$forwardDeclarations
+
+$enumDeclarations
+
+NS_ASSUME_NONNULL_BEGIN
+
+$docs
+CV_EXPORTS @interface $objcName : $base
+
+$nativePointerHandling
+
+$methodDeclarations
+
+@end
+
+NS_ASSUME_NONNULL_END

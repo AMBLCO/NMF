@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e8b636ad87fde0d0fe94c6dad81d2df448c6a80d023b83376e750e9b170aa032
-size 312
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/cudalegacy
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/cudalegacy
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

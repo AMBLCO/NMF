@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9dd14c2baa5ac50f92b5510c8818c60d24be7985040e5d3da19e12076d121009
-size 1033
+// Copyright (C) 2018 Intel Corporation
+//
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+/// @file graph_listener.hpp
+
+#ifndef ADE_GRAPH_LISTENER_HPP
+#define ADE_GRAPH_LISTENER_HPP
+
+#include "handle.hpp"
+
+namespace ade
+{
+
+class Graph;
+class Node;
+class Edge;
+using EdgeHandle = Handle<Edge>;
+using NodeHandle = Handle<Node>;
+
+class IGraphListener
+{
+public:
+    virtual ~IGraphListener() = default;
+
+    virtual void nodeCreated(const Graph& graph, const NodeHandle& node) = 0;
+    virtual void nodeAboutToBeDestroyed(const Graph& graph, const NodeHandle& node) = 0;
+
+    virtual void edgeCreated(const Graph&, const EdgeHandle& edge) = 0;
+    virtual void edgeAboutToBeDestroyed(const Graph& graph, const EdgeHandle& edge) = 0;
+    virtual void edgeAboutToBeRelinked(const Graph& graph,
+                                       const EdgeHandle& edge,
+                                       const NodeHandle& newSrcNode,
+                                       const NodeHandle& newDstNode) = 0;
+};
+
+}
+
+#endif // ADE_GRAPH_LISTENER_HPP

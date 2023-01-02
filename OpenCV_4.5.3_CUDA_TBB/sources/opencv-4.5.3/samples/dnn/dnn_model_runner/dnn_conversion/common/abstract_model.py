@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:95b9788be877dcbc18fdd46942eb78e71d9a020bdb8751a5bf349ed83b7e66ef
-size 373
+from abc import ABC, ABCMeta, abstractmethod
+
+
+class AbstractModel(ABC):
+
+    @abstractmethod
+    def get_prepared_models(self):
+        pass
+
+
+class Framework(object):
+    in_blob_name = ''
+    out_blob_name = ''
+
+    __metaclass__ = ABCMeta
+
+    @abstractmethod
+    def get_name(self):
+        pass
+
+    @abstractmethod
+    def get_output(self, input_blob):
+        pass

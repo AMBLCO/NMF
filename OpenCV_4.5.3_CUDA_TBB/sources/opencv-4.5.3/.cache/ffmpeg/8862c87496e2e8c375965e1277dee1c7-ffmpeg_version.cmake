@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:94d8bef0d4441f4dc4198f55278ae42cda5da762c9991daf83be76167d82c447
-size 362
+set(FFMPEG_libavcodec_FOUND 1)
+set(FFMPEG_libavformat_FOUND 1)
+set(FFMPEG_libavutil_FOUND 1)
+set(FFMPEG_libswscale_FOUND 1)
+set(FFMPEG_libavresample_FOUND 1)
+
+set(FFMPEG_libavcodec_VERSION 58.134.100)
+set(FFMPEG_libavformat_VERSION 58.76.100)
+set(FFMPEG_libavutil_VERSION 56.70.100)
+set(FFMPEG_libswscale_VERSION 5.9.100)
+set(FFMPEG_libavresample_VERSION 4.0.0)

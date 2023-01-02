@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b4b8273dbe77026e778912b2fb5ff073c69f8b785ae8a3c471f140529d6c4980
-size 124
+# CMake generation dependency list for this directory.
+C:/opencv_contrib-4.5.3/modules/intensity_transform/CMakeLists.txt

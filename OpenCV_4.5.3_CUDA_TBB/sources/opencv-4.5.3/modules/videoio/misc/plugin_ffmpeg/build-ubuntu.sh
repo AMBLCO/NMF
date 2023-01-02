@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9a26120cdbe059c26186e52b90eea372e5c61fa133b45a2e0a9a2f6fd3d6db4a
-size 214
+#!/bin/bash
+
+set -e
+
+cmake -GNinja \
+    -DOPENCV_PLUGIN_NAME=opencv_videoio_ffmpeg_ubuntu_$2 \
+    -DOPENCV_PLUGIN_DESTINATION=$1 \
+    -DCMAKE_BUILD_TYPE=$3 \
+    /opencv/modules/videoio/misc/plugin_ffmpeg
+ninja

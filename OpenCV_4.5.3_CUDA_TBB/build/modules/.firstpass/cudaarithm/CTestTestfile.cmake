@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:61a2370a22bd77cd4ccc5bf039b4bc4df26c9f15741d7260d65455178d8c9bd8
-size 312
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/cudaarithm
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/cudaarithm
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

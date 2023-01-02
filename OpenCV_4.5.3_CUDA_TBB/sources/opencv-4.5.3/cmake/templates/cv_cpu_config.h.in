@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d8efc97f1c188b1688eb72a5cfb2bf34eee6ed24d78cc1eccf35ab89626cd986
-size 167
+// OpenCV CPU baseline features
+@OPENCV_CPU_BASELINE_DEFINITIONS_CONFIGMAKE@
+
+// OpenCV supported CPU dispatched features
+@OPENCV_CPU_DISPATCH_DEFINITIONS_CONFIGMAKE@

@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1d9ee119960a1fdd2acedda162f8de8bd8502969690e4bea2f1a76b84d44ddf9
-size 616
+#ifndef CVVISUAL_KEY_POINT_PORTION_SELECTOR
+#define CVVISUAL_KEY_POINT_PORTION_SELECTOR
+
+#include <vector>
+
+#include "opencv2/features2d.hpp"
+
+#include "keypointselection.hpp"
+#include "keypointvaluechooser.hpp"
+#include "../portionselector.hpp"
+
+namespace cvv {namespace qtutil{
+
+class KeyPointPortionSelection:public KeyPointSelection{
+public:
+	KeyPointPortionSelection(std::vector<cv::KeyPoint>, QWidget * parent=nullptr);
+
+
+	virtual std::vector<cv::KeyPoint> select(const std::vector<cv::KeyPoint>& selection)override;
+
+private:
+	PortionSelector* selector_;
+	KeyPointValueChooser * valueChooser_;
+};
+
+}}
+
+#endif

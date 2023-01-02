@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9df9bce182f9184ce65c02148706ae1776009edbc01a9252ece6e91357f37b8d
-size 276
+^C:\OPENCV-4.5.3\BUILD\CMAKEFILES\18C0939A9166E3F07922D9490D530539\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c7b6599bcb8b751c18cb4adc22858496289e90b5d681b2b851c26ae2e58fa380
-size 1248
+#include "impl.hpp"
+
+int slow_and8u(const uchar* src1, size_t step1, const uchar* src2, size_t step2, uchar* dst, size_t step, int width, int height)
+{
+    for(; height--; src1 = src1 + step1, src2 = src2 + step2, dst = dst + step)
+        for(int x = 0 ; x < width; x++ )
+            dst[x] = src1[x] & src2[x];
+    return CV_HAL_ERROR_OK;
+}
+
+int slow_or8u(const uchar* src1, size_t step1, const uchar* src2, size_t step2, uchar* dst, size_t step, int width, int height)
+{
+    for(; height--; src1 = src1 + step1, src2 = src2 + step2, dst = dst + step)
+        for(int x = 0 ; x < width; x++ )
+            dst[x] = src1[x] | src2[x];
+    return CV_HAL_ERROR_OK;
+}
+
+int slow_xor8u(const uchar* src1, size_t step1, const uchar* src2, size_t step2, uchar* dst, size_t step, int width, int height)
+{
+    for(; height--; src1 = src1 + step1, src2 = src2 + step2, dst = dst + step)
+        for(int x = 0 ; x < width; x++ )
+            dst[x] = src1[x] ^ src2[x];
+    return CV_HAL_ERROR_OK;
+}
+
+int slow_not8u(const uchar* src1, size_t step1, uchar* dst, size_t step, int width, int height)
+{
+    for(; height--; src1 = src1 + step1, dst = dst + step)
+        for(int x = 0 ; x < width; x++ )
+            dst[x] = ~src1[x];
+    return CV_HAL_ERROR_OK;
+}

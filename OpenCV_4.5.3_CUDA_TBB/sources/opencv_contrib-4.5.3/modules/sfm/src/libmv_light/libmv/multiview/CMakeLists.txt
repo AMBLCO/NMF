@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a319c543c17d1c74f57d7087d83ccb3e910f62b259451a06a3d2b77aa1168be7
-size 953
+# define the source files
+SET(MULTIVIEW_SRC conditioning.cc
+                  euclidean_resection.cc
+                  fundamental.cc
+                  fundamental_kernel.cc
+                  homography.cc
+                  panography.cc
+                  panography_kernel.cc
+                  projection.cc
+                  robust_estimation.cc
+                  robust_fundamental.cc
+                  robust_resection.cc
+                  triangulation.cc
+                  twoviewtriangulation.cc)
+
+# define the header files (make the headers appear in IDEs.)
+FILE(GLOB MULTIVIEW_HDRS *.h)
+
+ADD_LIBRARY(multiview STATIC ${MULTIVIEW_SRC} ${MULTIVIEW_HDRS})
+TARGET_LINK_LIBRARIES(multiview LINK_PRIVATE ${GLOG_LIBRARIES} numeric)
+IF(TARGET Eigen3::Eigen)
+  TARGET_LINK_LIBRARIES(multiview LINK_PUBLIC Eigen3::Eigen)
+ENDIF()
+IF(CERES_LIBRARIES)
+  TARGET_LINK_LIBRARIES(multiview LINK_PRIVATE ${CERES_LIBRARIES})
+ENDIF()
+
+LIBMV_INSTALL_LIB(multiview)

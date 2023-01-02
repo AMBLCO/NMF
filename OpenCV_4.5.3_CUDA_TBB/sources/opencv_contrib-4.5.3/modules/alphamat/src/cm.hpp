@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:52b561df916b7feafc8c53c9a778a0c4cda93c56f6c7fd91b13424df444f66c0
-size 448
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+
+#ifndef __OPENCV_ALPHAMAT_CM_H__
+#define __OPENCV_ALPHAMAT_CM_H__
+
+namespace cv { namespace alphamat {
+
+using namespace Eigen;
+using namespace nanoflann;
+
+void cm(Mat& image, Mat& tmap, SparseMatrix<double>& Wcm, SparseMatrix<double>& Dcm);
+
+}}
+
+#endif

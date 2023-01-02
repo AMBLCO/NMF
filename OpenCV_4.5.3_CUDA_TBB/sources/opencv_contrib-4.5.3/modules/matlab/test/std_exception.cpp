@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:74132714752b8594acd2dbae6f8d43280b2388528e137dad896c5988ff0a3e7e
-size 818
+/*
+ * file:   exception.cpp
+ * author: Hilton Bristow
+ * date:   Wed, 19 Jun 2013 11:15:15
+ *
+ * See LICENCE for full modification and redistribution details.
+ * Copyright 2013 The OpenCV Foundation
+ */
+#include <exception>
+#include "mex.h"
+
+/*
+ * exception
+ * Gateway routine
+ *   nlhs - number of return arguments
+ *   plhs - pointers to return arguments
+ *   nrhs - number of input arguments
+ *   prhs - pointers to input arguments
+ */
+void mexFunction(int nlhs, mxArray* plhs[],
+                 int nrhs, const mxArray* prhs[]) {
+
+  // call the opencv function
+  // [out =] namespace.fun(src1, ..., srcn, dst1, ..., dstn, opt1, ..., optn);
+  try {
+    throw std::exception();
+  } catch(const std::exception& e) {
+    mexErrMsgTxt(e.what());
+  } catch(...) {
+    mexErrMsgTxt("Incorrect exception caught!");
+  }
+}

@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:338f1b97e29dea0e7b23de360351814f971ea2d87673bccbdfea38a40e9e56ea
-size 266
+#include "perf_precomp.hpp"
+#ifdef _MSC_VER
+# if _MSC_VER >= 1700
+#  pragma warning(disable:4447) // Disable warning 'main' signature found without threading model
+# endif
+#endif
+
+#if defined(HAVE_HPX)
+    #include <hpx/hpx_main.hpp>
+#endif
+
+CV_PERF_TEST_MAIN(core)

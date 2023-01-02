@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d6e94466b520fdfe7b2750c0ce8cb1a0f46cc7cad0047fbf6d029ca46c63ced3
-size 628
+ABIs = [
+    ABI("2", "armeabi-v7a", None, cmake_vars=dict(ANDROID_ABI='armeabi-v7a with NEON', ANDROID_GRADLE_PLUGIN_VERSION='4.1.2', GRADLE_VERSION='6.5', KOTLIN_PLUGIN_VERSION='1.5.10')),
+    ABI("3", "arm64-v8a",   None, cmake_vars=dict(ANDROID_GRADLE_PLUGIN_VERSION='4.1.2', GRADLE_VERSION='6.5', KOTLIN_PLUGIN_VERSION='1.5.10')),
+    ABI("5", "x86_64",      None, cmake_vars=dict(ANDROID_GRADLE_PLUGIN_VERSION='4.1.2', GRADLE_VERSION='6.5', KOTLIN_PLUGIN_VERSION='1.5.10')),
+    ABI("4", "x86",         None, cmake_vars=dict(ANDROID_GRADLE_PLUGIN_VERSION='4.1.2', GRADLE_VERSION='6.5', KOTLIN_PLUGIN_VERSION='1.5.10')),
+]

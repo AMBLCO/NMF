@@ -1,3 +1,1 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:06f8a3ed86203fda53b96db29046ecfa2f2fd1a93dff5b45cc1ce863631d2323
-size 314
+./classify_test --src_dir=/Users/yidawang/Downloads/PASCAL3D+_release1.1/ImageCollection/ --network_forIMG=/Users/yidawang/Documents/buildboat/caffe/examples/triplet/pascal_triplet.prototxt --caffemodel=/Users/yidawang/Documents/buildboat/caffe/examples/triplet/pascal_triplet_iter_10000.caffemodel --gallery_out=1

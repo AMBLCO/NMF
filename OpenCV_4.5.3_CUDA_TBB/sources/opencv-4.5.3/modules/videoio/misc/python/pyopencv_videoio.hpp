@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1a45dbbfb03496b13ec3e564c79e844ef731067a7b1f0ea2eb3d76da108c41c6
-size 671
+#ifdef HAVE_OPENCV_VIDEOIO
+typedef std::vector<VideoCaptureAPIs> vector_VideoCaptureAPIs;
+
+template<> struct pyopencvVecConverter<cv::VideoCaptureAPIs>
+{
+    static bool to(PyObject* obj, std::vector<cv::VideoCaptureAPIs>& value, const ArgInfo& info)
+    {
+        return pyopencv_to_generic_vec(obj, value, info);
+    }
+
+    static PyObject* from(const std::vector<cv::VideoCaptureAPIs>& value)
+    {
+        return pyopencv_from_generic_vec(value);
+    }
+};
+
+template<>
+bool pyopencv_to(PyObject *o, std::vector<cv::VideoCaptureAPIs>& apis, const ArgInfo& info)
+{
+  return pyopencvVecConverter<cv::VideoCaptureAPIs>::to(o, apis, info);
+}
+
+#endif // HAVE_OPENCV_VIDEOIO

@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d47b66ccc5b578f549a7ef17e3766f391653e3360eb500d1383a6f542b553564
-size 393
+if(CMAKE_VERSION VERSION_LESS "3.9")
+  message(STATUS "OpenMP detection requires CMake 3.9+")  # OpenMP::OpenMP_CXX target
+endif()
+
+find_package(OpenMP)
+if(OpenMP_FOUND)
+  if(TARGET OpenMP::OpenMP_CXX)
+    set(HAVE_OPENMP 1)
+    ocv_add_external_target(openmp "" "OpenMP::OpenMP_CXX" "HAVE_OPENMP=1")
+  else()
+    message(WARNING "OpenMP: missing OpenMP::OpenMP_CXX target")
+  endif()
+endif()

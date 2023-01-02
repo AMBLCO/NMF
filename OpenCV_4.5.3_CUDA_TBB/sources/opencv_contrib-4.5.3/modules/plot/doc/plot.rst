@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b423b8c650df4ac47d9187d25a9e53185c5d220e34465e0bdcefb35fa592d056
-size 230
+Plot - Module to Plot Data
+==========================
+
+.. highlight:: cpp
+
+This Plot module allows you to easily plot data in 1D or 2D. You can change the size of the window, the limits of the axis and the colors of each element.

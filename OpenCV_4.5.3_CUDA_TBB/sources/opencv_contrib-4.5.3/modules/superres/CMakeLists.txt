@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:92066bacd1034457bbb739ff7ac9762bc588255b5c63c40a5098e3a4d52d3eef
-size 430
+if(IOS OR WINRT)
+  ocv_module_disable(superres)
+endif()
+
+set(the_description "Super Resolution")
+if(HAVE_CUDA)
+  ocv_warnings_disable(CMAKE_CXX_FLAGS -Wundef -Wshadow)
+endif()
+ocv_define_module(superres opencv_imgproc opencv_video opencv_optflow
+                  OPTIONAL opencv_videoio opencv_cudaarithm opencv_cudafilters opencv_cudawarping opencv_cudaimgproc opencv_cudaoptflow opencv_cudacodec
+                  WRAP python)

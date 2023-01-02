@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2c406b556d395be6ab84f49e9777af8bc11fef15d67770a8195d637197a002af
-size 314
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/cudaimgproc
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/cudaimgproc
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

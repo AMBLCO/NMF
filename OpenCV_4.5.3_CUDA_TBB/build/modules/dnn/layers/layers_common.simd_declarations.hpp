@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:09a425c713f4ae8d38edd7c10b9e8a06f1519f9c6313621eea17dac326d6e78a
-size 518
+#define CV_CPU_SIMD_FILENAME "C:/opencv-4.5.3/modules/dnn/src/layers/layers_common.simd.hpp"
+#define CV_CPU_DISPATCH_MODE AVX
+#include "opencv2/core/private/cv_cpu_include_simd_declarations.hpp"
+
+#define CV_CPU_DISPATCH_MODE AVX2
+#include "opencv2/core/private/cv_cpu_include_simd_declarations.hpp"
+
+#define CV_CPU_DISPATCH_MODE AVX512_SKX
+#include "opencv2/core/private/cv_cpu_include_simd_declarations.hpp"
+
+#define CV_CPU_DISPATCH_MODES_ALL AVX512_SKX, AVX2, AVX, BASELINE
+
+#undef CV_CPU_SIMD_FILENAME

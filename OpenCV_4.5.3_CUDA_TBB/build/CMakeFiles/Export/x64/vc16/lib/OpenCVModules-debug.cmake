@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:18a4a83a8f35f152b1c651b5ea45ec38ed9a64b9c91aeb18c4c5b1a06db01831
-size 950
+#----------------------------------------------------------------
+# Generated CMake target import file for configuration "Debug".
+#----------------------------------------------------------------
+
+# Commands may need to know the format version.
+set(CMAKE_IMPORT_FILE_VERSION 1)
+
+# Import target "opencv_world" for configuration "Debug"
+set_property(TARGET opencv_world APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(opencv_world PROPERTIES
+  IMPORTED_IMPLIB_DEBUG "${_IMPORT_PREFIX}/x64/vc16/lib/opencv_world453d.lib"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/x64/vc16/bin/opencv_world453d.dll"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS opencv_world )
+list(APPEND _IMPORT_CHECK_FILES_FOR_opencv_world "${_IMPORT_PREFIX}/x64/vc16/lib/opencv_world453d.lib" "${_IMPORT_PREFIX}/x64/vc16/bin/opencv_world453d.dll" )
+
+# Commands beyond this point should not need to know the version.
+set(CMAKE_IMPORT_FILE_VERSION)

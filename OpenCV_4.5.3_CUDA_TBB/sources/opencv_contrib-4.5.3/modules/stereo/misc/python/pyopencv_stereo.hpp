@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3139fd596e3cdb12a6a9e73629ed250f7575b245998a53f0daaaf460bf045bec
-size 482
+#ifdef HAVE_OPENCV_STEREO
+typedef std::vector<stereo::MatchQuasiDense> vector_MatchQuasiDense;
+
+template<> struct pyopencvVecConverter<stereo::MatchQuasiDense>
+{
+    static bool to(PyObject* obj, std::vector<stereo::MatchQuasiDense>& value, const ArgInfo& info)
+    {
+        return pyopencv_to_generic_vec(obj, value, info);
+    }
+
+    static PyObject* from(const std::vector<stereo::MatchQuasiDense>& value)
+    {
+        return pyopencv_from_generic_vec(value);
+    }
+};
+
+#endif

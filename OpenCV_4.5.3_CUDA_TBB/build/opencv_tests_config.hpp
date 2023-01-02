@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a8b57e8dd367fcd847e33ca20956bbefc5dbdabe0c765a386b70e3d65f89b76e
-size 117
+
+#define OPENCV_INSTALL_PREFIX "C:/opencv-4.5.3/build/install"
+
+#define OPENCV_TEST_DATA_INSTALL_PATH "testdata"

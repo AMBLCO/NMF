@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7aab21f63dc37ae82e4c9546a9cf6836d82d1242092cf4cacec1957db40edd46
-size 382
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name = "CameraBridgeViewBase" >
+       <attr name="show_fps" format="boolean"/>
+       <attr name="camera_id" format="integer" >
+          <enum name="any" value="-1" />
+          <enum name="back" value="99" />
+          <enum name="front" value="98" />
+       </attr>
+    </declare-styleable>
+</resources>

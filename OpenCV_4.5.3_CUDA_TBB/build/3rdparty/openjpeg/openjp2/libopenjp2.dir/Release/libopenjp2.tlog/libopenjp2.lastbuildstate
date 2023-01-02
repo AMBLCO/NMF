@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:737925255e6de5e6be359a76051c5369946bdb7f0b869d7456d6bd42250698b6
-size 294
+PlatformToolSet=v142:VCToolArchitecture=Native64Bit:VCToolsVersion=14.29.30133:VCServicingVersionATL=14.29.30136:VCServicingVersionCrtHeaders=14.29.30136:VCServicingVersionCompilers=14.29.30136:TargetPlatformVersion=10.0.19041.0:
+Release|x64|C:\opencv-4.5.3\build\3rdparty\openjpeg\openjp2\|

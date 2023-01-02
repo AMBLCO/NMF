@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3550d97ed89fc65bffea2041670a6ca16c44fe24204bf8a11a848d55b072e452
-size 300
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/face
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/face
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

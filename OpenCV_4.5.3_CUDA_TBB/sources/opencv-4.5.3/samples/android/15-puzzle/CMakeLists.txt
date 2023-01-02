@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:91f4efef6ced85d63c7adbf51d9816662d1135d53ed361db8773295fc7d91a36
-size 254
+set(sample example-15-puzzle)
+
+add_android_project(${sample} "${CMAKE_CURRENT_SOURCE_DIR}" LIBRARY_DEPS "${OPENCV_ANDROID_LIB_DIR}" SDK_TARGET 11 "${ANDROID_SDK_TARGET}")
+if(TARGET ${sample})
+  add_dependencies(opencv_android_examples ${sample})
+endif()

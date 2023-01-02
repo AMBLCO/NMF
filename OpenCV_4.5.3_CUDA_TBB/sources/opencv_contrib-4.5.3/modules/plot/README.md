@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c58a0cb787792d3c9b1e2100af389102be644191dd0a0b3ed14dc6c8fd12adf1
-size 299
+Plot Module
+===========
+
+Created by Nuno Moutinho
+
+This Plot module allows you to easily plot data in 1D or 2D. You can change the size of the window, the limits of the axis and the colors of each element. You can also show in real time the plot you are building or save the plot as an image (png).

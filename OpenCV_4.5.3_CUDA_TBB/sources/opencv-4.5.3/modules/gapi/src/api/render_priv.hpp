@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:527e70af0d5dbf81d9ba51d18cdeceb1d081ca9853239a3125d4db61bf2730d8
-size 707
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+//
+// Copyright (C) 2018 Intel Corporation
+
+
+#ifndef OPENCV_RENDER_PRIV_HPP
+#define OPENCV_RENDER_PRIV_HPP
+
+#include <opencv2/gapi/render/render.hpp>
+
+namespace cv
+{
+namespace gapi
+{
+namespace wip
+{
+namespace draw
+{
+
+// FIXME only for tests
+GAPI_EXPORTS void cvtNV12ToYUV(const cv::Mat& y, const cv::Mat& uv, cv::Mat& yuv);
+GAPI_EXPORTS void cvtYUVToNV12(const cv::Mat& yuv, cv::Mat& y, cv::Mat& uv);
+
+} // namespace draw
+} // namespace wip
+} // namespace gapi
+} // namespace cv
+
+#endif // OPENCV_RENDER_PRIV_HPP

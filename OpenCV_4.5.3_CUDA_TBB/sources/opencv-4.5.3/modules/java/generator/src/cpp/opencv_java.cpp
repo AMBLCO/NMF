@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:159647f3b5a13416071521c297ba56a3c55e4ef7459e3831a221e65c15b1b0c9
-size 275
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html
+
+#include "common.h"
+
+// Include all generated JNI code
+#include "opencv_jni.hpp"

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1ea50fa7df7975135469b8f75f8514f7d437a0d7cffe1c3aeb2d33dbf842895d
-size 456
+Machine Learning {#tutorial_py_table_of_contents_ml}
+================
+
+-   @subpage tutorial_py_knn_index
+
+    Learn to use kNN for classification
+    Plus learn about handwritten digit recognition using kNN
+
+-   @subpage tutorial_py_svm_index
+
+    Understand concepts of SVM
+
+-   @subpage tutorial_py_kmeans_index
+
+    Learn to use K-Means Clustering to group data to a number of clusters.
+    Plus learn to do color quantization using K-Means Clustering

@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e13af4d4640eef5eaa90a8da35af8ce9f3a131fd2f3ecfd45fa4da5fb317d8b7
-size 303
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+
+#include "precomp.hpp"
+
+// see modules/video/src/tracking/tracker.cpp
+
+#include "legacy/tracker.legacy.hpp"

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:afc347030d8d3859a30fd1f68bab5c3892c5d350287f682c70f6e6c72ac71a76
-size 572
+[MESSAGES CONTROL]
+
+# Disable all to choose the Tests one by one
+disable=all
+
+# Tests
+enable=bad-indentation,       # Used when an unexpected number of indentation’s tabulations or spaces has been found.
+       mixed-indentation,     # Used when there are some mixed tabs and spaces in a module.
+       unnecessary-semicolon, # Used when a statement is ended by a semi-colon (”;”), which isn’t necessary.
+       unused-variable        # Used when a variable is defined but not used. (Use _var to ignore var).
+
+
+[REPORTS]
+
+# Activate the evaluation score.
+score=no

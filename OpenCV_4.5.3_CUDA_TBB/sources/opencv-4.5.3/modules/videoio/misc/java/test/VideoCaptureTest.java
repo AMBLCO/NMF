@@ -1,3 +1,64 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f838ba03a62c1a8c16159d48bf2980f1235d3a450e33d1735463fb8033d4a605
-size 1592
+package org.opencv.test.videoio;
+
+import java.util.List;
+
+import org.opencv.core.Size;
+import org.opencv.videoio.Videoio;
+import org.opencv.videoio.VideoCapture;
+
+import org.opencv.test.OpenCVTestCase;
+
+public class VideoCaptureTest extends OpenCVTestCase {
+
+    private VideoCapture capture;
+    private boolean isOpened;
+    private boolean isSucceed;
+
+    @Override
+    protected void setUp() throws Exception {
+        super.setUp();
+
+        capture = null;
+        isTestCaseEnabled = false;
+        isSucceed = false;
+        isOpened = false;
+    }
+
+    public void testGrab() {
+        capture = new VideoCapture();
+        isSucceed = capture.grab();
+        assertFalse(isSucceed);
+    }
+
+    public void testIsOpened() {
+        capture = new VideoCapture();
+        assertFalse(capture.isOpened());
+    }
+
+    public void testDefaultConstructor() {
+        capture = new VideoCapture();
+        assertNotNull(capture);
+        assertFalse(capture.isOpened());
+    }
+
+    public void testConstructorWithFilename() {
+        capture = new VideoCapture("some_file.avi");
+        assertNotNull(capture);
+    }
+
+    public void testConstructorWithFilenameAndExplicitlySpecifiedAPI() {
+        capture = new VideoCapture("some_file.avi", Videoio.CAP_ANY);
+        assertNotNull(capture);
+    }
+
+    public void testConstructorWithIndex() {
+        capture = new VideoCapture(0);
+        assertNotNull(capture);
+    }
+
+    public void testConstructorWithIndexAndExplicitlySpecifiedAPI() {
+        capture = new VideoCapture(0, Videoio.CAP_ANY);
+        assertNotNull(capture);
+    }
+
+}

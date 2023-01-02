@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e8b188195688395e2e96c91aca902ac9275aff34f4ea47abff6b3db0b9e88642
-size 678
+﻿//
+// App.xaml.h
+// Declaration of the App class.
+//
+
+#pragma once
+
+#include "App.g.h"
+
+namespace FaceDetection
+{
+    /// <summary>
+    /// Provides application-specific behavior to supplement the default Application class.
+    /// </summary>
+    ref class App sealed
+    {
+    protected:
+        virtual void OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEventArgs^ e) override;
+
+    internal:
+        App();
+
+    private:
+        void OnSuspending(Platform::Object^ sender, Windows::ApplicationModel::SuspendingEventArgs^ e);
+        void OnNavigationFailed(Platform::Object ^sender, Windows::UI::Xaml::Navigation::NavigationFailedEventArgs ^e);
+    };
+}

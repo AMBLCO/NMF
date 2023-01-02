@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e8af1823ba9ea99e4916abfeee3fab04c9342c90f0cec1febedcf74d406e9249
-size 437
+ABIs = [
+    ABI("2", "armeabi-v7a", "arm-linux-androideabi-4.8", cmake_vars=dict(ANDROID_ABI='armeabi-v7a with NEON')),
+    ABI("1", "armeabi",     "arm-linux-androideabi-4.8"),
+    ABI("3", "arm64-v8a",   "aarch64-linux-android-4.9"),
+    ABI("5", "x86_64",      "x86_64-4.9"),
+    ABI("4", "x86",         "x86-4.8"),
+    ABI("7", "mips64",      "mips64el-linux-android-4.9"),
+    ABI("6", "mips",        "mipsel-linux-android-4.8")
+]

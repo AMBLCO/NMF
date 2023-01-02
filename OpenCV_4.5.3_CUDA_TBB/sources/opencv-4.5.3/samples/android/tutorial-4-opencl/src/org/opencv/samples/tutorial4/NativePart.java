@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c59ea2782039c4613a4b5864e78669fe78446693f68bf816f74b45ccbcaa1c3f
-size 576
+package org.opencv.samples.tutorial4;
+
+public class NativePart {
+    static
+    {
+        System.loadLibrary("opencv_java4");
+        System.loadLibrary("JNIpart");
+    }
+
+    public static final int PROCESSING_MODE_NO_PROCESSING = 0;
+    public static final int PROCESSING_MODE_CPU = 1;
+    public static final int PROCESSING_MODE_OCL_DIRECT = 2;
+    public static final int PROCESSING_MODE_OCL_OCV = 3;
+
+    public static native int initCL();
+    public static native void closeCL();
+    public static native void processFrame(int tex1, int tex2, int w, int h, int mode);
+}

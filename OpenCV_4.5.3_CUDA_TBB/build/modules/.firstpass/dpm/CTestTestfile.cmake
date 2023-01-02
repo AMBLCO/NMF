@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:835700b2c92a1e83b97cad9e1cc29e23eda29cc200b0566a1237ab86e88f2998
-size 298
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/dpm
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/dpm
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6e12b29aba52e911d08d13868ad673f49f2b04cc892ac6c5a156ff6c0c4c854b
-size 298
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/mcc
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/mcc
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

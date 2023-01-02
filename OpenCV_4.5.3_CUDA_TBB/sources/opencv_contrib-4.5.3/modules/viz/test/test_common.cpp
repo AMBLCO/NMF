@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4939b355493f12705e54bae99a4e6852635086a88d23ee7dea8543f938fc0532
-size 881
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+#include "test_precomp.hpp"
+
+cv::String cv::Path::combine(const String& item1, const String& item2)
+{
+    if (item1.empty())
+        return item2;
+
+    if (item2.empty())
+        return item1;
+
+    char last = item1[item1.size()-1];
+
+    bool need_append = last != '/' && last != '\\';
+    return item1 + (need_append ? "/" : "") + item2;
+}
+
+cv::String cv::Path::combine(const String& item1, const String& item2, const String& item3)
+{ return combine(combine(item1, item2), item3); }
+
+cv::String cv::Path::change_extension(const String& file, const String& ext)
+{
+    String::size_type pos = file.find_last_of('.');
+    return pos == String::npos ? file : file.substr(0, pos+1) + ext;
+}

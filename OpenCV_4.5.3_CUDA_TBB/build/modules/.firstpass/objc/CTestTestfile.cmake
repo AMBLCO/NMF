@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:351782dbe096a1d4e550698a7a4bb98d19069dfec82381edccd2522a21e8ccb7
-size 314
+# CMake generated Testfile for 
+# Source directory: C:/opencv-4.5.3/modules/objc
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/objc
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+subdirs("generator")

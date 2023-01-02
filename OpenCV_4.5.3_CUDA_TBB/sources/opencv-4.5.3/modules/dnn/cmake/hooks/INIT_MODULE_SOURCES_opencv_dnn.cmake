@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b0160af51528da8e0c9fe953b201a58081637d88f946e801f64fecbc7be8fcca
-size 541
+if(NOT (OPENCV_DNN_OPENCL AND HAVE_OPENCL))
+  message(STATUS "opencv_dnn: filter out ocl4dnn source code")
+  ocv_list_filterout(OPENCV_MODULE_${the_module}_SOURCES "/ocl4dnn/")
+  ocv_list_filterout(OPENCV_MODULE_${the_module}_HEADERS "/ocl4dnn/")
+endif()
+
+if(NOT (OPENCV_DNN_CUDA AND HAVE_CUDA AND HAVE_CUBLAS AND HAVE_CUDNN))
+  message(STATUS "opencv_dnn: filter out cuda4dnn source code")
+  ocv_list_filterout(OPENCV_MODULE_${the_module}_SOURCES "/cuda4dnn/")
+  ocv_list_filterout(OPENCV_MODULE_${the_module}_HEADERS "/cuda4dnn/")
+endif()

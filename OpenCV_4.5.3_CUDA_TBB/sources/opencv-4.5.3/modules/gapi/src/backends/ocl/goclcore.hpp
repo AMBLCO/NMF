@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2e34d4a1bebc322ea896c93f241511a93869d6b3944ef781deb0f3b7b342ccdb
-size 599
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+//
+// Copyright (C) 2018 Intel Corporation
+
+
+#ifndef OPENCV_GAPI_GOCLCORE_HPP
+#define OPENCV_GAPI_GOCLCORE_HPP
+
+#include <map>
+#include <string>
+
+#include <opencv2/gapi/ocl/goclkernel.hpp>
+
+namespace cv { namespace gimpl {
+
+// NB: This is what a "Kernel Package" from the original Wiki doc should be.
+void loadOCLCore(std::map<std::string, cv::GOCLKernel> &kmap);
+
+}
+}
+
+#endif // OPENCV_GAPI_GOCLCORE_HPP

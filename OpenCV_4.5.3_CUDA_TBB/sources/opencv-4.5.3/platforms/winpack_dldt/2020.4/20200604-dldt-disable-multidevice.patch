@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:38957c4c1305be8078767eb7b8d3ae168a4facd2590122d08b94a16825288394
-size 383
+diff --git a/inference-engine/src/CMakeLists.txt b/inference-engine/src/CMakeLists.txt
+index 0ba0dd78..7d34e7cb 100644
+--- a/inference-engine/src/CMakeLists.txt
++++ b/inference-engine/src/CMakeLists.txt
+@@ -26,7 +26,7 @@ endif()
+ 
+ add_subdirectory(hetero_plugin)
+ 
+-add_subdirectory(multi_device)
++#add_subdirectory(multi_device)
+ 
+ add_subdirectory(transformations)
+ 

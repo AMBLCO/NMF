@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cf57a63ca887cf68543baac99bc932282984960983b0fbdd1d3d8b8e7f71a8b7
-size 557
+#if defined(__VSX__)
+    #if defined(__PPC64__) && defined(__LITTLE_ENDIAN__)
+        #include <altivec.h>
+    #else
+        #error "OpenCV only supports little-endian mode"
+    #endif
+#else
+    #error "VSX is not supported"
+#endif
+
+/*
+ * xlc and wide versions of clang don't support %x<n> in the inline asm template which fixes register number
+ * when using any of the register constraints wa, wd, wf
+*/
+int main()
+{
+    __vector float vf;
+    __vector signed int vi;
+    __asm__ __volatile__ ("xvcvsxwsp %x0,%x1" : "=wa" (vf) : "wa" (vi));
+    return 0;
+}

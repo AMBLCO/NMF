@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1fdb9abfe8e2902b056ba235c7885ff16c8c0de549df5195e88f361fed38db88
-size 306
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/optflow
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/optflow
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

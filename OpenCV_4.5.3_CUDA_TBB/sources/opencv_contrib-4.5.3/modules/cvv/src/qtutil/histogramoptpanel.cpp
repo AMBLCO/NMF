@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:94d386ae854c1763e89e637c14f690b438a7711acb50e2d19d284f90e4a76c07
-size 579
+#include "histogramoptpanel.hpp"
+
+#include <QVBoxLayout>
+#include <QCheckBox>
+
+
+namespace cvv
+{
+namespace qtutil
+{
+
+HistogramOptPanel::HistogramOptPanel(const Histogram& hist, bool showHideButton, QWidget* parent)
+  :QWidget{parent}
+{
+  auto layout = new QVBoxLayout();
+  layout->setContentsMargins(0,0,0,0);
+
+  if (showHideButton) {
+    auto showCheckbox = new QCheckBox("Show Histogram");
+    showCheckbox->setChecked(false);
+    connect(showCheckbox, SIGNAL(clicked(bool)), &hist, SLOT(setVisible(bool)));
+    layout->addWidget(showCheckbox);
+  }
+
+  setLayout(layout);
+}
+
+}
+}

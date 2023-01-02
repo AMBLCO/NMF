@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:11cf7abbe7d3cee3f62bc0c63747e68065b03340e34c861e607979c198566ddb
-size 405
+set(sample example-tutorial-2-mixedprocessing)
+
+if(BUILD_FAT_JAVA_LIB)
+  set(native_deps opencv_java)
+else()
+  set(native_deps opencv_features2d)
+endif()
+
+add_android_project(${sample} "${CMAKE_CURRENT_SOURCE_DIR}" LIBRARY_DEPS "${OPENCV_ANDROID_LIB_DIR}" SDK_TARGET 11 "${ANDROID_SDK_TARGET}" NATIVE_DEPS ${native_deps})
+if(TARGET ${sample})
+  add_dependencies(opencv_android_examples ${sample})
+endif()

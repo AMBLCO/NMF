@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d3f1af4961998b51fc6789c33a9891fe4047ff3e80219d24c7e7116767da1fd4
-size 372
+## [imports]
+import cv2 as cv
+import sys
+## [imports]
+## [imread]
+img = cv.imread(cv.samples.findFile("starry_night.jpg"))
+## [imread]
+## [empty]
+if img is None:
+    sys.exit("Could not read the image.")
+## [empty]
+## [imshow]
+cv.imshow("Display window", img)
+k = cv.waitKey(0)
+## [imshow]
+## [imsave]
+if k == ord("s"):
+    cv.imwrite("starry_night.png", img)
+## [imsave]

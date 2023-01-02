@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d9816c163842b25a1bd8a7fadf4dcee43d50efb8a395a15f68f01b037cbd69fc
-size 116
+# CMake generation dependency list for this directory.
+C:/opencv_contrib-4.5.3/modules/cudawarping/CMakeLists.txt

@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d3fd02ea582ed9867926dee3388f30b31c3e0b580a6f4e7829446b522c24afe0
-size 649
+// Compatibility
+// SIFT is moved to the main repository
+
+namespace cv {
+namespace xfeatures2d {
+
+/** Use cv.SIFT_create() instead */
+CV_WRAP static inline
+Ptr<cv::SIFT> SIFT_create(int nfeatures = 0, int nOctaveLayers = 3,
+        double contrastThreshold = 0.04, double edgeThreshold = 10,
+        double sigma = 1.6)
+{
+    CV_LOG_ONCE_WARNING(NULL, "DEPRECATED: cv.xfeatures2d.SIFT_create() is deprecated due SIFT tranfer to the main repository. "
+                              "https://github.com/opencv/opencv/issues/16736"
+    );
+
+    return SIFT::create(nfeatures, nOctaveLayers, contrastThreshold, edgeThreshold, sigma);
+}
+
+}}  // namespace

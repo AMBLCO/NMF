@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:524c008a4e404211b2937106b8ee7ac3bee0297ce8bee47fc39c3cd00e8cfa31
-size 116
+# CMake generation dependency list for this directory.
+C:/opencv_contrib-4.5.3/modules/cudaimgproc/CMakeLists.txt

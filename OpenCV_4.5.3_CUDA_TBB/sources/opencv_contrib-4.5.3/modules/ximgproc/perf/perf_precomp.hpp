@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:045b9b5b218275063cf5448a8f9dc318db2184d9b27e2f97c3adcb2c612a1c71
-size 412
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+#ifndef __OPENCV_PERF_PRECOMP_HPP__
+#define __OPENCV_PERF_PRECOMP_HPP__
+
+#include <opencv2/ts.hpp>
+#include <opencv2/ximgproc.hpp>
+
+namespace opencv_test {
+using namespace perf;
+using namespace cv::ximgproc;
+}
+
+#endif

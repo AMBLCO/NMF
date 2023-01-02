@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:73a69dd75778b1c5dd074a48ecf17cbcce5ab8f7e0eac9a617bb41410460b0e8
-size 264
+set(the_description "RGBD algorithms")
+
+ocv_define_module(rgbd opencv_core opencv_calib3d opencv_imgproc OPTIONAL opencv_viz WRAP python)
+
+if(NOT HAVE_EIGEN)
+  message(STATUS "rgbd: Eigen support is disabled. Eigen is Required for Posegraph optimization")
+endif()

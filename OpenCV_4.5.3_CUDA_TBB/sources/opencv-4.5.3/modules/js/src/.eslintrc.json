@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dd67853fb299aa2cea5ae05fd3ea2e4b1bd4abd165688e448231885db6e872c0
-size 433
+{
+  "extends": "google",
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "rules": {
+    "max-len": ["error", 100, {"ignoreUrls": true}],
+    "quotes": ["error", "single"],
+    "indent": ["error", 4, {"ArrayExpression": "first",
+                            "CallExpression": {"arguments": "first"},
+                            "SwitchCase": 1}],
+    "no-var": "off",
+    "prefer-rest-params": "off",
+    "require-jsdoc": "off"
+  }
+}

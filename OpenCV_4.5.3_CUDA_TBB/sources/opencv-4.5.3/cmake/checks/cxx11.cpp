@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:91059530f9dcb5a3a3dde79c2f0a5f4cb4e4ced4444657ece9b79f8cbe797860
-size 209
+#if __cplusplus >= 201103L || (defined(_MSC_VER) && _MSC_VER >= 1600)
+// OK
+#else
+#error "C++11 is not supported"
+#endif
+
+static int test() { return 0; }
+
+int main()
+{
+    auto res = test();
+    return res;
+}

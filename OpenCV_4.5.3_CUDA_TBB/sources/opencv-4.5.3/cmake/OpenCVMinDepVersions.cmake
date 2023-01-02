@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8b60ef24e80f0264113a6fcfe5dae2b81302972feff3eca1d6ac6e0307986259
-size 184
+if(NOT DEFINED MIN_VER_CMAKE)
+  set(MIN_VER_CMAKE 3.5.1)
+endif()
+set(MIN_VER_CUDA 6.5)
+set(MIN_VER_CUDNN 7.5)
+set(MIN_VER_PYTHON2 2.7)
+set(MIN_VER_PYTHON3 3.2)
+set(MIN_VER_ZLIB 1.2.3)

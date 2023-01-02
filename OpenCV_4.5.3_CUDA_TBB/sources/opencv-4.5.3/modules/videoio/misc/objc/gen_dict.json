@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a081ff92fd09d5ffe0918ec7c973c71a661ea6c7480312eba5717889f07c3e45
-size 695
+{
+    "AdditionalImports" : {
+        "Videoio" :
+            [ "\"videoio/registry.hpp\"" ]
+    },
+    "ManualFuncs" : {
+        "VideoCapture" : {
+            "release"         : {"declaration" : [""], "implementation" : [""] }
+        },
+        "VideoWriter" : {
+            "release"         : {"declaration" : [""], "implementation" : [""] }
+        }
+    },
+    "func_arg_fix" : {
+        "VideoCapture" : {
+            "(BOOL)open:(int)index apiPreference:(int)apiPreference" : { "open" : {"name" : "openWithIndex"} },
+            "(BOOL)open:(int)index apiPreference:(int)apiPreference params:(IntVector*)params" : { "open" : {"name" : "openWithIndexAndParameters"} }
+        }
+    }
+}

@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ac68446b81bd50a6a36835ba55ca0b9ad9f86c6c64285805a20579c4f954db5f
-size 394
+//
+// This file is auto-generated. Please don't modify it!
+//
+package org.opencv.$module;
+
+$imports
+
+$docs$annotation
+public class $jname {
+
+    protected final long nativeObj;
+    protected $jname(long addr) { nativeObj = addr; }
+
+    public long getNativeObjAddr() { return nativeObj; }
+
+    // internal usage only
+    public static $jname __fromPtr__(long addr) { return new $jname(addr); }

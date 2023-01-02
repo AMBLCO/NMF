@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:42108809eb22006c1c2dddc16959a03edbbbfbb5dcdb79dd874dd1e2cad7ba82
-size 164
+# Glog package for CNN Triplet training
+unset(Glog_FOUND)
+
+find_library(Glog_LIBS NAMES glog
+  HINTS
+  /usr/local/lib)
+
+if(Glog_LIBS)
+    set(Glog_FOUND 1)
+endif()

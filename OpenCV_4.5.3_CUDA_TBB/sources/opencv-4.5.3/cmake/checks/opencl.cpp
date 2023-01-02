@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a89f00ab750952a7644c346fe0d0748a940cac83d3c3999b5a4ce3109480756a
-size 383
+// custom OpenCL headers are located in "CL" subfolder (3rdparty/include/...)
+#include <CL/cl.h>
+
+#ifndef _MSC_VER
+#ifdef CL_VERSION_1_2
+#error OpenCL is valid
+#else
+#error OpenCL check failed
+#endif
+#else
+#ifdef CL_VERSION_1_2
+#pragma message ("OpenCL is valid")
+#else
+#pragma message ("OpenCL check failed")
+#endif
+#endif
+
+int main(int /*argc*/, char** /*argv*/)
+{
+    return 0;
+}

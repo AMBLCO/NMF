@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:caa82eafbcb0b90199e2c03e7a282588e30c7fe9f17aa66c86ec613ca4b88f69
-size 333
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+#ifndef __OPENCV_TEST_PRECOMP_HPP__
+#define __OPENCV_TEST_PRECOMP_HPP__
+
+#include "opencv2/ts.hpp"
+#include "opencv2/tracking.hpp"
+
+#endif

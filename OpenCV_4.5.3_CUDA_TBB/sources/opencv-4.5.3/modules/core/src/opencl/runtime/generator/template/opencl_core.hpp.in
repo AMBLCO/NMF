@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6b6d61e372e31949085ba448c2a1ee224d1639f5c9b6ea4cd7b9b33e89239c86
-size 248
+#ifndef OPENCV_CORE_OCL_RUNTIME_OPENCL_CORE_HPP
+#error "Invalid usage"
+#endif
+
+@CL_REMAP_ORIGIN@
+
+#if defined __APPLE__
+#define CL_SILENCE_DEPRECATION
+#include <OpenCL/cl.h>
+#else
+#include <CL/cl.h>
+#endif
+
+@CL_REMAP_DYNAMIC@
+
+@CL_FN_DECLARATIONS@

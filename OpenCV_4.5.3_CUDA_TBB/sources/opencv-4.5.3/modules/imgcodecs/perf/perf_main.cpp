@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6f571ae422689210d85b72ab7b9e2327d81d40163f5f37400e822e501fdf5c3a
-size 313
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html
+#include "perf_precomp.hpp"
+
+#if defined(HAVE_HPX)
+    #include <hpx/hpx_main.hpp>
+#endif
+
+CV_PERF_TEST_MAIN(imgcodecs)

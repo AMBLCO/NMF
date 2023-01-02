@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f7e861f149cd4769699e59e264851b8bd7e675e1d117571de3475bbea2fc88ad
-size 574
+// Copyright (C) 2018 Intel Corporation
+//
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+/// @file memory_types.hpp
+
+#ifndef ADE_MEMORY_TYPES_HPP
+#define ADE_MEMORY_TYPES_HPP
+
+#include "ade/util/md_size.hpp"
+#include "ade/util/md_span.hpp"
+#include "ade/util/md_view.hpp"
+
+namespace ade
+{
+namespace memory
+{
+static const constexpr std::size_t MaxDimensions = 6;
+using DynMdSize = util::DynMdSize<MaxDimensions>;
+using DynMdSpan = util::DynMdSpan<MaxDimensions>;
+
+template<typename T>
+using DynMdView = util::DynMdView<MaxDimensions, T>;
+
+}
+}
+
+#endif // ADE_MEMORY_TYPES_HPP

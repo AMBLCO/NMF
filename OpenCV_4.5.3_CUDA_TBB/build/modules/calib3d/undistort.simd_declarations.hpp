@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ecc07c129276e732756428b5721fb85cd63d1c0fe24019f0fbfbc699ad53aa84
-size 275
+#define CV_CPU_SIMD_FILENAME "C:/opencv-4.5.3/modules/calib3d/src/undistort.simd.hpp"
+#define CV_CPU_DISPATCH_MODE AVX2
+#include "opencv2/core/private/cv_cpu_include_simd_declarations.hpp"
+
+#define CV_CPU_DISPATCH_MODES_ALL AVX2, BASELINE
+
+#undef CV_CPU_SIMD_FILENAME

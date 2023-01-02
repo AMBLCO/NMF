@@ -1,3 +1,45 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9062505c6e66bc095732336ff0831f26f35bdf9e9477e55acf037eddf68d1772
-size 903
+FROM ubuntu:18.04
+
+RUN apt-get update && apt-get --no-install-recommends install -y \
+        pkg-config \
+        cmake \
+        g++ \
+        ninja-build \
+        make \
+        nasm \
+    && \
+    rm -rf /var/lib/apt/lists/*
+
+ARG VER
+
+ADD ffmpeg-${VER}.tar.xz /ffmpeg/
+
+WORKDIR /ffmpeg/ffmpeg-${VER}
+RUN ./configure \
+    --enable-avresample \
+    --prefix=/ffmpeg-shared \
+    --enable-shared \
+    --disable-static \
+    --disable-programs \
+    --disable-doc \
+    --disable-avdevice \
+    --disable-postproc \
+    && make -j8 install \
+    && make clean \
+    && make distclean
+
+RUN ./configure \
+    --enable-avresample \
+    --prefix=/ffmpeg-static \
+    --disable-shared \
+    --enable-static \
+    --enable-pic \
+    --disable-programs \
+    --disable-doc \
+    --disable-avdevice \
+    --disable-postproc \
+    && make -j8 install \
+    && make clean \
+    && make distclean
+
+WORKDIR /tmp

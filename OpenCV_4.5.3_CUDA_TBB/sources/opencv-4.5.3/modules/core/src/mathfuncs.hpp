@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6da850b1875d2dc63e36eda54574f2594e642debc141bd2c13f37f2edade3e24
-size 484
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+
+#ifndef OPENCV_CORE_SRC_MATHFUNCS_HPP
+#define OPENCV_CORE_SRC_MATHFUNCS_HPP
+
+namespace cv { namespace details {
+const double* getExpTab64f();
+const float*  getExpTab32f();
+const double* getLogTab64f();
+const float*  getLogTab32f();
+}} // namespace
+
+#endif // OPENCV_CORE_SRC_MATHFUNCS_HPP

@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e5531d137da26ef55053dc6873f63f57e30ea92474d952d9d9814bf7a4a832ee
-size 298
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/viz
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/viz
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

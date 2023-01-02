@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8ae5beb2e6a761f964cbfa645dc060e28178c7715c6b89946e7c01bf7f52c534
-size 263
+macro(ocv_add_core_parallel_backend backend_id cond_var)
+  if(${cond_var})
+    include("${CMAKE_CURRENT_LIST_DIR}/detect_${backend_id}.cmake")
+  endif()
+endmacro()
+
+ocv_add_core_parallel_backend("tbb" WITH_TBB)
+ocv_add_core_parallel_backend("openmp" WITH_OPENMP)

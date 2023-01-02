@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:136e3df27a673ad03f8e2c6585a195160b388423814e56ebb7b9eb77f4f822c8
-size 293
+#!/bin/bash -e
+echo "Generate files for CL runtime..."
+python parser_cl.py opencl_core < sources/cl.h
+python parser_cl.py opencl_gl < sources/cl_gl.h
+
+python parser_clamdblas.py < sources/clAmdBlas.h
+python parser_clamdfft.py < sources/clAmdFft.h
+
+echo "Generate files for CL runtime... Done"

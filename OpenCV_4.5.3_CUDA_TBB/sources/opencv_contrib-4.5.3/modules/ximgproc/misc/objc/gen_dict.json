@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:53a3a0ba88d97870d0e1b8832c2f460fcda2a99ef703342139bc055c9c3f329c
-size 1220
+{
+    "AdditionalImports" : {
+        "*" : [ "\"ximgproc.hpp\"" ]
+    },
+    "missing_consts" : {
+        "Ximgproc" : {
+            "private" : [],
+            "public" : [
+                ["RO_IGNORE_BORDERS", 1], ["RO_STRICT", 0]
+            ]
+        }
+    },
+    "func_arg_fix" : {
+        "Ximgproc" : {
+            "niBlackThreshold" : { "binarizationMethod" : {"ctype" : "LocalBinarizationMethods"} },
+            "HoughPoint2Line" : { "angleRange" : {"ctype" : "AngleRangeOption"},
+                                  "makeSkew" : {"ctype" : "HoughDeskewOption"} },
+            "weightedMedianFilter" : { "weightType" : {"ctype" : "WMFWeightType"} },
+            "createDTFilter" : { "mode" : {"ctype" : "EdgeAwareFiltersList"} },
+            "dtFilter" : { "mode" : {"ctype" : "EdgeAwareFiltersList"} },
+            "thinning" : { "thinningType" : {"ctype" : "ThinningTypes"} },
+            "FastHoughTransform" : { "angleRange" : {"ctype" : "AngleRangeOption"},
+                                     "makeSkew" : {"ctype" : "HoughDeskewOption"},
+                                     "op" : {"ctype" : "HoughOp"} },
+            "createSuperpixelSLIC" : { "algorithm" : {"ctype" : "SLICType"} }
+        }
+    }
+}

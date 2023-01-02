@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:40814188cf9f5d73ccb4904d5fe4609a88426eaa59f24087b0a3a021f1cfd489
-size 290
+#define CV_CPU_SIMD_FILENAME "C:/opencv-4.5.3/modules/core/test/test_intrin512.simd.hpp"
+#define CV_CPU_DISPATCH_MODE AVX512_SKX
+#include "opencv2/core/private/cv_cpu_include_simd_declarations.hpp"
+
+#define CV_CPU_DISPATCH_MODES_ALL AVX512_SKX, BASELINE
+
+#undef CV_CPU_SIMD_FILENAME

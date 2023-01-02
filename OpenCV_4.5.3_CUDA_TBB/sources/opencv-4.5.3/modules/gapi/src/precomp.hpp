@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:50187320709fe7bd9573ec83c1f93e21d39005f3d7def09c0c0f902aef383c18
-size 743
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+//
+// Copyright (C) 2018 Intel Corporation
+
+
+#ifndef __OPENCV_GAPI_PRECOMP_HPP__
+#define __OPENCV_GAPI_PRECOMP_HPP__
+
+#if !defined(GAPI_STANDALONE)
+#  include <opencv2/core.hpp>
+#  include <opencv2/imgproc.hpp>
+#  include <opencv2/gapi/core.hpp>
+#  include <opencv2/gapi/imgproc.hpp>
+#endif //  !defined(GAPI_STANDALONE)
+
+#include <opencv2/gapi.hpp>
+#include <opencv2/gapi/gkernel.hpp>
+
+// FIXME: Should this file be extended with our new headers?
+// (which sometimes may be implicitly included here already?)
+
+#endif // __OPENCV_GAPI_PRECOMP_HPP__

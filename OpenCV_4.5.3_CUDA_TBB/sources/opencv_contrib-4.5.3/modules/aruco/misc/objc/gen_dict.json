@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:713ad4f252d24d78651510fa356133cbda36d4b6233e5c44de0ad533007bc427
-size 318
+{
+    "AdditionalImports" : {
+        "*" : [ "\"aruco.hpp\"" ],
+        "CharucoBoard" : [ "\"aruco/charuco.hpp\"" ],
+        "Dictionary" : [ "\"aruco/dictionary.hpp\"" ]
+    },
+    "func_arg_fix" : {
+        "Board" : {
+            "(void)setIds:(Mat*)ids" : { "setIds" : {"name" : "setIdsMat"} }
+        }
+    }
+}

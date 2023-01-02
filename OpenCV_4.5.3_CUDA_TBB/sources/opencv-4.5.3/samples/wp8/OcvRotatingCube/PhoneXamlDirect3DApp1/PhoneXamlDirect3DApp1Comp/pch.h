@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4e49f9b03f60b1afa2e430bf3689b46d6fd12bc3e3ee198baf1010921dd1c1b6
-size 124
+﻿#pragma once
+
+#include <wrl/client.h>
+#include <d3d11_1.h>
+#include <DirectXMath.h>
+#include <memory>
+#include <agile.h>

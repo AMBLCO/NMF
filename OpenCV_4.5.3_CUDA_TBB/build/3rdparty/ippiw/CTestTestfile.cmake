@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2e9457bc996fd09b471a926dd0676584c07625d6c1dabbbf739b88241347b658
-size 306
+# CMake generated Testfile for 
+# Source directory: C:/opencv-4.5.3/build/3rdparty/ippicv/ippicv_win/iw
+# Build directory: C:/opencv-4.5.3/build/3rdparty/ippiw
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

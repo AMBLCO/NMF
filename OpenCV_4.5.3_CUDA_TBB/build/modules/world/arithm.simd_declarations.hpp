@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a67a53bc6ea3b2f506c6dc53fd2d35d7afd91d986529acfee6109d810c498e52
-size 386
+#define CV_CPU_SIMD_FILENAME "C:/opencv-4.5.3/modules/core/src/arithm.simd.hpp"
+#define CV_CPU_DISPATCH_MODE SSE4_1
+#include "opencv2/core/private/cv_cpu_include_simd_declarations.hpp"
+
+#define CV_CPU_DISPATCH_MODE AVX2
+#include "opencv2/core/private/cv_cpu_include_simd_declarations.hpp"
+
+#define CV_CPU_DISPATCH_MODES_ALL AVX2, SSE4_1, BASELINE
+
+#undef CV_CPU_SIMD_FILENAME

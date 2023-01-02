@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2efa77a4eba9fe5b7d9f28c1954a07ece5c41710ec104387a95df5d0be03081f
-size 842
+BASE_IMG_SCALE_FACTOR = 1 / 255.0
+PYTORCH_RSZ_HEIGHT = 256
+PYTORCH_RSZ_WIDTH = 256
+
+pytorch_resize_input_blob = {
+    "mean": ["123.675", "116.28", "103.53"],
+    "scale": str(BASE_IMG_SCALE_FACTOR),
+    "std": ["0.229", "0.224", "0.225"],
+    "crop": "True",
+    "rgb": True,
+    "rsz_height": str(PYTORCH_RSZ_HEIGHT),
+    "rsz_width": str(PYTORCH_RSZ_WIDTH)
+}
+
+pytorch_input_blob = {
+    "mean": ["123.675", "116.28", "103.53"],
+    "scale": str(BASE_IMG_SCALE_FACTOR),
+    "std": ["0.229", "0.224", "0.225"],
+    "crop": "True",
+    "rgb": True
+}
+
+tf_input_blob = {
+    "scale": str(1 / 127.5),
+    "mean": ["127.5", "127.5", "127.5"],
+    "std": [],
+    "crop": "True",
+    "rgb": True
+}
+
+tf_model_blob_caffe_mode = {
+    "mean": ["103.939", "116.779", "123.68"],
+    "scale": "1.0",
+    "std": [],
+    "crop": "True",
+    "rgb": False
+}

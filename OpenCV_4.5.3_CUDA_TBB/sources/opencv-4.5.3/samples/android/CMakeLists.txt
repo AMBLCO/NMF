@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:85b549503ef8e8a2cbeda82819a8f8aaab95565ec747d6bd8210e50a7c72a0c6
-size 667
+# ----------------------------------------------------------------------------
+#  CMake file for Android samples. See root CMakeLists.txt
+#
+# ----------------------------------------------------------------------------
+add_custom_target(opencv_android_examples)
+
+ocv_warnings_disable(CMAKE_CXX_FLAGS -Wmissing-declarations)
+
+add_subdirectory(15-puzzle)
+add_subdirectory(face-detection)
+add_subdirectory(image-manipulations)
+add_subdirectory(camera-calibration)
+add_subdirectory(color-blob-detection)
+add_subdirectory(tutorial-1-camerapreview)
+add_subdirectory(tutorial-2-mixedprocessing)
+add_subdirectory(tutorial-3-cameracontrol)
+add_subdirectory(tutorial-4-opencl)

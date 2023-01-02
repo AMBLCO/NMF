@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5f939856673a6c111a5341fb6ecca5e893e4b301b55ec455ee203491122af1f0
-size 342
+/* create opj_config.h for CMake */
+#define OPJ_HAVE_STDINT_H 		1
+
+/*--------------------------------------------------------------------------*/
+/* OpenJPEG Versioning                                                      */
+
+/* Version number. */
+#define OPJ_VERSION_MAJOR 2
+#define OPJ_VERSION_MINOR 4
+#define OPJ_VERSION_BUILD 0

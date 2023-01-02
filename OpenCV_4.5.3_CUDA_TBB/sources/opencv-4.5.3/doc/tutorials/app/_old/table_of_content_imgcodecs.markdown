@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e350aa967ef9e40780ad31d4fbb9b117cbbfe24a8f932eb18e4fdac7ca33e0a8
-size 196
+Image Input and Output (imgcodecs module) {#tutorial_table_of_content_imgcodecs}
+=========================================
+
+Content has been moved to this page: @ref tutorial_table_of_content_app

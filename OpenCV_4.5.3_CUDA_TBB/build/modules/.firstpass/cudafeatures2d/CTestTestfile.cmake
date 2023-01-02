@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8c4ecae1aedc3ca32eb1d7e17fccea892adae4dea47c0a350ad0216cb311683b
-size 320
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/cudafeatures2d
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/cudafeatures2d
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

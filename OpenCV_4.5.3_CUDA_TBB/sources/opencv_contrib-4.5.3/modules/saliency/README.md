@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6140058be189f0acaa0cc453d3c102c8cfeb43db4c44b9d4f00b65c5abcd4827
-size 339
+Saliency API, Where to Focus in a Scene
+=======================================
+
+The purpose of this module is to create, group and make available to the users, different saliency algorithms, belonging to different categories. Saliency API -- Where humans would look in a scene. Has routines for static, motion and "objectness" saliency.
+

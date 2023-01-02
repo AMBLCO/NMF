@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a1235d1ebfc895220fdc9e2328f1250f57e2b7e910bc6bed136d6c3d45517fe1
-size 361
+Hierarchical Data Format (hdf) I/O
+==================================
+
+The module contains I/O routines for Hierarchical Data Format: https://en.m.wikipedia.org/wiki/Hierarchical_Data_Format meant to store large amounts of data. This module does not implement the specs from scratch, it's a wrapper on top of libhdf5, which should be pre-installed by the user.

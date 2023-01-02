@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:18d99e4fc8293454cd3d71a2afafc0de1c2b36d4dd587723bcc99bc97f3129ea
-size 304
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/stereo
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/stereo
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

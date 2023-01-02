@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:946a22eb35a453abde1898c9d31355d6aff3c3ca0e8317e4b285e7dd8acc4e99
-size 260
+This folder contains toolchains and additional files that are needed for cross compilation.
+For more information see introduction tutorials for target platform in documentation:
+https://docs.opencv.org/master/df/d65/tutorial_table_of_content_introduction.html

@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:84ed4c221b5495c21d85a814edc411376ac6075f6c21b0c9d69ed75b909ae629
-size 207
+#if !defined __AVX__ // MSVC supports this flag since MSVS 2013
+#error "__AVX__ define is missing"
+#endif
+#include <immintrin.h>
+void test()
+{
+    __m256 a = _mm256_set1_ps(0.0f);
+}
+int main() { return 0; }

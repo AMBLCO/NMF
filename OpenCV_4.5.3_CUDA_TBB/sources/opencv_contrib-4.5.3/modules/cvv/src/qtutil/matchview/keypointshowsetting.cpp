@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:30bf80e48580936960efc3049fdb29d19e2f682aa691988d6cdf6884534102e2
-size 782
+
+#include <QVBoxLayout>
+
+#include "keypointshowsetting.hpp"
+
+namespace cvv{ namespace qtutil {
+
+KeyPointShowSetting::KeyPointShowSetting(std::vector<cv::KeyPoint>, QWidget *parent):
+	KeyPointSettings{parent}
+{
+	auto layout=util::make_unique<QVBoxLayout>();
+	auto button=util::make_unique<QPushButton>();
+
+	button_=button.get();
+
+	button_->setEnabled(true);
+	button_->setCheckable(true);
+
+
+	connect(button.get(),SIGNAL(clicked()),this,SLOT(updateAll()));
+	connect(button.get(),SIGNAL(clicked()),this,SLOT(updateButton()));
+
+	button->setChecked(true);
+	layout->addWidget(button.release());
+
+	setLayout(layout.release());
+	updateButton();
+}
+
+void KeyPointShowSetting::updateButton()
+{
+	if(button_->isChecked()){
+		button_->setText("show");
+	}else{
+		button_->setText("hide");
+	}
+}
+
+}}

@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4b98ca48440b8a651194d8ee70229319c1d4651cbfaa4b5a0c249d329e0a0132
-size 416
+Binary Descriptors for Line Segments
+====================================
+
+This module shows how to extract line segments from an image by 2 different methods: First segmenting lines with Line Segment Detector LSDDetector and then (or just) using the Binary Descriptor to get the lines and give them a descriptor -- BinaryDescriptor. Finally, we can then match line segments using the BinaryDescriptorMatcher class.

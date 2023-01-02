@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f0abb8e219ec59cf7d4046b439405adf8c6549c10164726a369a96973ca1a9b2
-size 718
+Structured Light tutorials {#tutorial_structured_light}
+=============================================================
+
+-   @subpage tutorial_capture_graycode_pattern
+
+    _Compatibility:_ \> OpenCV 3.0.0
+
+    _Author:_ Roberta Ravanelli
+
+    You will learn how to acquire a dataset using *GrayCodePattern* class.
+
+-   @subpage tutorial_decode_graycode_pattern
+
+    _Compatibility:_ \> OpenCV 3.0.0
+
+    _Author:_ Roberta Ravanelli
+
+    You will learn how to decode a previously acquired Gray code pattern, generating a pointcloud.
+
+-	@subpage tutorial_capture_sinusoidal_pattern
+
+	_Compatibility:_ \> OpenCV 3.0.0
+
+	_Author:_ Ambroise Moreau
+
+	You will learn how to compute phase maps using *SinusoidalPattern* class.

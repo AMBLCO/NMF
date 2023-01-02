@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f96f5c73457d9c522a95021e30c5791c175bcc16eb11519d69c32cad39ca1d73
-size 667
+Fuzzy image processing tutorials {#tutorial_fuzzy}
+=============================================================
+
+-   @subpage tutorial_fuzzy_theory
+
+    _Compatibility:_ \> OpenCV 3.2.0
+
+    _Author:_ Pavel Vlasanek
+
+    You will learn basics about fuzzy mathematics namely F-transform of certain degree.
+
+-   @subpage tutorial_fuzzy_inpainting
+
+    _Compatibility:_ \> OpenCV 3.2.0
+
+    _Author:_ Pavel Vlasanek
+
+    You will learn how to use fuzzy mathematics in task of image inpainting.
+
+-	@subpage tutorial_fuzzy_filtering
+
+	_Compatibility:_ \> OpenCV 3.2.0
+
+	_Author:_ Pavel Vlasanek
+
+    You will learn how to use fuzzy mathematics in task of image filtering.

@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:82afe9e37b9aff92410410f0b9991beeeb743d031c4144f29f89de73061b5426
-size 626
+
+#include <stdio.h>
+#include <omp.h>
+const char ompver_str[] = { 'I', 'N', 'F', 'O', ':', 'O', 'p', 'e', 'n', 'M',
+                            'P', '-', 'd', 'a', 't', 'e', '[',
+                            ('0' + ((_OPENMP/100000)%10)),
+                            ('0' + ((_OPENMP/10000)%10)),
+                            ('0' + ((_OPENMP/1000)%10)),
+                            ('0' + ((_OPENMP/100)%10)),
+                            ('0' + ((_OPENMP/10)%10)),
+                            ('0' + ((_OPENMP/1)%10)),
+                            ']', '\0' };
+int main(void)
+{
+  puts(ompver_str);
+  return 0;
+}

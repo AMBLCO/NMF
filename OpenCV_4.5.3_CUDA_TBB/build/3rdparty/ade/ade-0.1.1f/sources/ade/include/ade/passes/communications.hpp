@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:52e2ea913846330c0a648bd2edf17f81a92fe62586092ed97daab4cda846c843
-size 972
+// Copyright (C) 2018 Intel Corporation
+//
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+/// @file communications.hpp
+
+#ifndef ADE_COMMUNICATIONS_HPP
+#define ADE_COMMUNICATIONS_HPP
+
+#include "ade/passes/pass_base.hpp"
+
+#include "ade/metatypes/metatypes.hpp"
+
+namespace ade
+{
+namespace passes
+{
+
+struct ConnectCommChannels final
+{
+    using Context = ade::passes::TypedPassContext<ade::meta::CommNode,
+                                                  ade::meta::DataObject,
+                                                  ade::meta::CommChannel,
+                                                  ade::meta::NodeInfo,
+                                                  ade::meta::CommConsumerCallback,
+                                                  ade::meta::CommProducerCallback,
+                                                  ade::meta::Finalizers>;
+    void operator()(Context ctx) const;
+    static const char* name();
+};
+
+}
+}
+
+#endif // ADE_COMMUNICATIONS_HPP

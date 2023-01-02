@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:31a56c649993a3d91247f81159fe7a7d9e7bf39a3b82b6f1fab4662278356262
-size 221
+message(STATUS "Setting up iPhoneSimulator toolchain for IOS_ARCH='${IOS_ARCH}'")
+set(IPHONESIMULATOR TRUE)
+include(${CMAKE_CURRENT_LIST_DIR}/common-ios-toolchain.cmake)
+message(STATUS "iPhoneSimulator toolchain loaded")

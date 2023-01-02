@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:12017e0fcb26c42ad4ac300fb93745550cbbc9329b1bdc5635bc998fc9fdac24
-size 681
+CNN for 3D Object Classification and Pose Estimation {#tutorial_table_of_content_cnn_3dobj}
+==========
+
+-   @subpage tutorial_data_generation
+
+    *Compatibility:* \> OpenCV 3.0.0
+
+    *Author:* Yida Wang
+
+    You will learn how to generate training images from 3D models with proper poses for CNN training.
+
+-   @subpage tutorial_feature_classification
+
+    *Compatibility:* \> OpenCV 3.0.0
+
+    *Author:* Yida Wang
+
+    You will learn how to extract features from images and make a prediction using descriptor.
+
+-   @subpage tutorial_model_analysis
+
+    *Compatibility:* \> OpenCV 3.0.0
+
+    *Author:* Yida Wang
+
+    You will learn how to analyze performance of a trained Model.

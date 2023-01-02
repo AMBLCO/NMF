@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:532cc35af5e7a2ee1f52d1fc3e517d0420d8e36c1195b4e3a206704c1d40ff18
-size 953
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+
+#include "apple_conversions.h"
+#import <AppKit/AppKit.h>
+
+CV_EXPORTS NSImage* MatToNSImage(const cv::Mat& image);
+CV_EXPORTS void NSImageToMat(const NSImage* image, cv::Mat& m, bool alphaExist);
+
+NSImage* MatToNSImage(const cv::Mat& image) {
+    // Creating CGImage from cv::Mat
+    CGImageRef imageRef = MatToCGImage(image);
+
+    // Getting NSImage from CGImage
+    NSImage *nsImage = [[NSImage alloc] initWithCGImage:imageRef size:CGSizeMake(CGImageGetWidth(imageRef), CGImageGetHeight(imageRef))];
+    CGImageRelease(imageRef);
+
+    return nsImage;
+}
+
+void NSImageToMat(const NSImage* image, cv::Mat& m, bool alphaExist) {
+    CGImageRef imageRef = [image CGImageForProposedRect:NULL context:NULL hints:NULL];
+    CGImageToMat(imageRef, m, alphaExist);
+}

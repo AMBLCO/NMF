@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:954ba7be70c3becfcafc05303b5a413d9ca47383a86a828577ad9787a3626844
-size 345
+# Caffe package for CNN Triplet training
+unset(Caffe_FOUND)
+
+find_path(Caffe_INCLUDE_DIR NAMES caffe/caffe.hpp caffe/common.hpp caffe/net.hpp caffe/proto/caffe.pb.h caffe/util/io.hpp
+  HINTS
+  /usr/local/include)
+
+find_library(Caffe_LIBS NAMES caffe
+  HINTS
+  /usr/local/lib)
+
+if(Caffe_LIBS AND Caffe_INCLUDE_DIR)
+    set(Caffe_FOUND 1)
+endif()

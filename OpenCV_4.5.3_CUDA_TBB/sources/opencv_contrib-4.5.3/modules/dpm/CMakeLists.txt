@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:507fb40c8c389131d8306ec1a3bb8f0b96498946a4631380875043ce1516db09
-size 218
+set(the_description "Object Detection")
+
+ocv_define_module(dpm opencv_core opencv_imgproc opencv_objdetect OPTIONAL opencv_highgui WRAP python)
+
+ocv_warnings_disable(CMAKE_CXX_FLAGS /wd4512) # disable warning on Win64

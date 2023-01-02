@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6f8b66a176fe68e2929810484f2e3f8f97a98ab379ff4a685d04f4fef1dc0c1a
-size 685
+# test simple blob detector
+img_gray = OpenCV.imread(joinpath(test_dir, "shared", "pic1.png"), OpenCV.IMREAD_GRAYSCALE)
+
+detector = OpenCV.SimpleBlobDetector_create()
+
+# Compare centers of keypoints and se how many of them match,
+kps = OpenCV.detect(detector, img_gray)
+
+kps_expect = [OpenCV.Point{Float32}(174.9114f0, 227.75146f0),OpenCV.Point{Float32}(106.925545f0, 179.5765f0)]
+for kp in kps
+    closest_match = 100000
+    for kpe in kps_expect
+        dx = kpe.x - kp.pt.x
+        dy = kpe.y - kp.pt.y
+        if sqrt(dx*dx+dy*dy) < closest_match
+            closest_match = sqrt(dx*dx+dy*dy)
+        end
+    end
+
+    @test closest_match < 10
+end
+
+println("feature2d test passed")

@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:80e35d0aefa7fbed0f0f4ed0becd1bb9f415ffdce56d6646488ceb25925ad891
-size 511
+# Output:
+#   HAVE_VA - libva is available
+#   HAVE_VA_INTEL - OpenCL/libva Intel interoperability extension is available
+
+find_path(
+    VA_INCLUDE_DIR
+    NAMES va/va.h
+    PATHS ${VA_ROOT_DIR}
+    PATH_SUFFIXES include
+    DOC "Path to libva headers"
+)
+
+if(VA_INCLUDE_DIR)
+    set(HAVE_VA TRUE)
+    if(NOT DEFINED VA_LIBRARIES AND NOT OPENCV_LIBVA_LINK)
+      set(VA_LIBRARIES "va" "va-drm")
+    endif()
+else()
+    set(HAVE_VA FALSE)
+    message(STATUS "libva: missing va.h header (VA_INCLUDE_DIR)")
+endif()

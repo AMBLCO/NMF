@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:96bc5fffda1e8d7bb973a0f5028ada5a6adad57da243f606bf6323a83bd16fd2
-size 314
+# CMake generated Testfile for 
+# Source directory: C:/opencv-4.5.3/modules/java
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/java
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+subdirs("generator")

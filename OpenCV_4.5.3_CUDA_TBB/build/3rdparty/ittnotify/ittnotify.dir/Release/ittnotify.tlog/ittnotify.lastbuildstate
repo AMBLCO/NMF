@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:03d040b843472f3f5ec07cd0faa2eb5e48ccf513728cdec10ad31e8c3575afbe
-size 287
+PlatformToolSet=v142:VCToolArchitecture=Native64Bit:VCToolsVersion=14.29.30133:VCServicingVersionATL=14.29.30136:VCServicingVersionCrtHeaders=14.29.30136:VCServicingVersionCompilers=14.29.30136:TargetPlatformVersion=10.0.19041.0:
+Release|x64|C:\opencv-4.5.3\build\3rdparty\ittnotify\|

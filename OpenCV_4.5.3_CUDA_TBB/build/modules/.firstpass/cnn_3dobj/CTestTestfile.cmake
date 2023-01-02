@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5ae951959a28f2512290f18362abb915d31be3f583065cb9332c19bfc188ed4a
-size 310
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/cnn_3dobj
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/cnn_3dobj
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

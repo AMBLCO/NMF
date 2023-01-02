@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6847d42ef1cae8b38f6f8fdb2af6e191712d29e9e32980a08831d134845c506b
-size 320
+// Copyright (C) 2018 Intel Corporation
+//
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+/// @file alloc.hpp
+
+#ifndef ADE_ALLOC_HPP
+#define ADE_ALLOC_HPP
+
+#include <cstddef> //size_t
+
+namespace ade
+{
+void* aligned_alloc(std::size_t size, std::size_t alignment);
+void aligned_free(void* ptr);
+
+}
+
+#endif // ADE_ALLOC_HPP

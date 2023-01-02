@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:967c6b4553a11848633fcb02ede490db429d25469c4c050671f342ffb1c4fdad
-size 148
+@CL_FN_ENUMS@
+
+namespace {
+@CL_FN_SWITCH@
+} // anonymous namespace
+
+@CL_FN_ENTRY_DEFINITIONS@
+
+@CL_FN_ENTRY_LIST@
+
+@CL_NUMBER_OF_ENABLED_FUNCTIONS@

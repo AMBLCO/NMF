@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e77012c776388aefacf8804bd2d51b66b17f681b8fada535e2b281e7b3985b5d
-size 659
+Contours in OpenCV {#tutorial_py_table_of_contents_contours}
+==================
+
+-   @subpage tutorial_py_contours_begin
+
+    Learn to find and draw Contours
+
+-   @subpage tutorial_py_contour_features
+
+    Learn
+    to find different features of contours like area, perimeter, bounding rectangle etc.
+
+-   @subpage tutorial_py_contour_properties
+
+    Learn
+    to find different properties of contours like Solidity, Mean Intensity etc.
+
+-   @subpage tutorial_py_contours_more_functions
+
+    Learn
+    to find convexity defects, pointPolygonTest, match different shapes etc.
+
+-   @subpage tutorial_py_contours_hierarchy
+
+    Learn
+    about Contour Hierarchy

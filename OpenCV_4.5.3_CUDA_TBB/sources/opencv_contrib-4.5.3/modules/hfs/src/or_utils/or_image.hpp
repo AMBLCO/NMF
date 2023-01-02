@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ebba4a89b3e5b3523862e93c625528a648f7f070926f30cd702657a3c5b6500d
-size 643
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+
+#ifndef _OPENCV_OR_IMAGE_HPP_
+#define _OPENCV_OR_IMAGE_HPP_
+
+
+#include "or_memory_block.hpp"
+namespace cv { namespace hfs { namespace orutils {
+
+template <typename T>
+class Image : public MemoryBlock < T >
+{
+public:
+    Vector2<int> noDims;
+
+    Image( Vector2<int> noDims_ )
+        : MemoryBlock<T>( noDims_.x * noDims_.y )
+    {
+        this->noDims = noDims_;
+    }
+
+    Image(const Image&);
+    Image& operator=(const Image&);
+};
+
+}}}
+
+#endif

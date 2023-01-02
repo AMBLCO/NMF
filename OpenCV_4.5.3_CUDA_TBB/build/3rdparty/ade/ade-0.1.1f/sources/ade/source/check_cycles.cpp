@@ -1,3 +1,74 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:91147cc46c00dce9e07853cfcc5a00b0824b5f6df6b9d9148644e05fccc0037d
-size 1442
+// Copyright (C) 2018 Intel Corporation
+//
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+#include "ade/passes/check_cycles.hpp"
+
+#include <unordered_map>
+
+#include "ade/util/assert.hpp"
+#include "ade/util/map_range.hpp"
+
+#include "ade/graph.hpp"
+#include "ade/node.hpp"
+
+namespace ade
+{
+namespace passes
+{
+enum class TraverseState
+{
+    visiting,
+    visited,
+};
+
+using state_t = std::unordered_map<Node*, TraverseState>;
+
+static void visit(state_t& state, const NodeHandle& node)
+{
+    ADE_ASSERT(nullptr != node);
+    state[node.get()] = TraverseState::visiting;
+    for (auto adj:
+         util::map(node->outEdges(), [](const EdgeHandle& e) { return e->dstNode(); }))
+    {
+        auto it = state.find(adj.get());
+        if (state.end() == it) // not visited
+        {
+            visit(state, adj);
+        }
+        else if (TraverseState::visiting == it->second)
+        {
+            throw_error(CycleFound());
+        }
+    }
+    state[node.get()] = TraverseState::visited;
+
+}
+
+void CheckCycles::operator()(const PassContext& context) const
+{
+    state_t state;
+    for (auto node: context.graph.nodes())
+    {
+        if (state.end() == state.find(node.get()))
+        {
+            // not yet visited during recursion
+            visit(state, node);
+        }
+    }
+}
+
+std::string CheckCycles::name()
+{
+    return "CheckCycles";
+}
+
+const char* CycleFound::what() const noexcept
+{
+    return "Cycle was detected in graph";
+}
+
+}
+}

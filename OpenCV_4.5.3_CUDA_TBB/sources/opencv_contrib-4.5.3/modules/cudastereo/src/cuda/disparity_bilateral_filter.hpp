@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a527ef88a116c3ca2bd0f9206ad966c99635d285c3260a284ff8d2e844d8d454
-size 332
+namespace cv { namespace cuda { namespace device
+{
+    namespace disp_bilateral_filter
+    {
+        template<typename T>
+        void disp_bilateral_filter(PtrStepSz<T> disp, PtrStepSzb img, int channels, int iters, const float *, const float *, size_t, int radius, short edge_disc, short max_disc, cudaStream_t stream);
+    }
+}}}

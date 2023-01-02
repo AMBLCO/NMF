@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8e15d57300abc4c8c89fe8898a0597f89b9b5a04855118cfa7d9b8d271c39371
-size 349
+#if defined(__VSX__)
+    #if defined(__PPC64__) && defined(__LITTLE_ENDIAN__)
+        #include <altivec.h>
+    #else
+        #error "OpenCV only supports little-endian mode"
+    #endif
+#else
+    #error "VSX is not supported"
+#endif
+
+int main()
+{
+    __vector float testF = vec_splats(0.f);
+    testF = vec_madd(testF, testF, testF);
+    return 0;
+}

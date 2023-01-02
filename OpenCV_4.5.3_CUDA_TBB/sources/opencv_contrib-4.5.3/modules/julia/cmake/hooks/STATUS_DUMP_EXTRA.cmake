@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5a66b5bef78b94ecee4b4c2a7f7e0af5c6f3665cc1891dc3cf42a5a0de33d16f
-size 434
+# ========================= julia =========================
+if(WITH_JULIA OR HAVE_JULIA)
+  status("")
+  status("  JULIA:" HAVE_JULIA THEN "YES" ELSE "NO")
+  if(HAVE_JULIA)
+    status("    Julia_EXECUTABLE:"         ${Julia_EXECUTABLE})
+    status("    JlCxx_DIR:"         ${JlCxx_DIR})
+    if(HAVE_JULIA MATCHES "YES")
+        status("    JULIA_PKG_INSTALL_PATH:"         ${JULIA_PKG_INSTALL_PATH_HOOK})
+    endif()
+  endif()
+endif()

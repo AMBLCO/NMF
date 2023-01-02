@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:698ad3e512735e6ef059fc0c3036991623ba23f46481d05ce3ee7fd2f329aabc
-size 340
+Tutorials for bgsegm module {#tutorial_table_of_content_bgsegm}
+===============================================================
+
+-   @subpage tutorial_bgsegm_bg_subtraction
+
+    In several applications, we need to extract foreground for further operations like object tracking. Background Subtraction is a well-known method in those cases.

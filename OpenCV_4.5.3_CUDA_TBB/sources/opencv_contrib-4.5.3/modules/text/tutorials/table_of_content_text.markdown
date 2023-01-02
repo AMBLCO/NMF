@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4432209492d91bc603e5d065efbcd58f3788fd4fcf9f8b97f25ff285e962b408
-size 262
+Text module {#tutorial_table_of_content_text}
+=====================
+
+-   @subpage tutorial_install_tesseract
+
+    *Compatibility:* \> OpenCV 3.4
+
+    *Author:* Laurent Berger
+
+    Instructions in order to properly setup tesseract on windows for the text module.

@@ -1,3 +1,142 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:559271775d1930737150962975338be234f2311a9de95cdeabf6778af0c59435
-size 17593
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{295A4C49-5DA7-382C-A2C6-F27E4E13E5CE}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>opencv_world_SSE4_2</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">opencv_world_SSE4_2.dir\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">opencv_world_SSE4_2.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">opencv_world_SSE4_2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">opencv_world_SSE4_2.dir\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">opencv_world_SSE4_2.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">opencv_world_SSE4_2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\opencv-4.5.3\build\3rdparty\zlib;C:\opencv-4.5.3\3rdparty\zlib;C:\opencv-4.5.3\build;C:\opencv-4.5.3\3rdparty\openjpeg\openjp2;C:\opencv-4.5.3\build\3rdparty\openjpeg\openjp2;C:\opencv-4.5.3\build\3rdparty\libtiff;C:\opencv-4.5.3\3rdparty\libtiff;C:\opencv-4.5.3\3rdparty\libpng;C:\opencv-4.5.3\build\3rdparty\libjpeg-turbo;C:\opencv-4.5.3\3rdparty\libjpeg-turbo\src;C:\opencv-4.5.3\build\3rdparty\ippicv\ippicv_win\icv\include;C:\opencv-4.5.3\build\3rdparty\ippicv\ippicv_win\iw\include;C:\opencv_contrib-4.5.3\modules\cudev\include;C:\opencv-4.5.3\build\modules\world;C:\opencv-4.5.3\modules\core\include;C:\opencv-4.5.3\3rdparty\ittnotify\include;C:\opencv_contrib-4.5.3\modules\cudaarithm\include;C:\opencv-4.5.3\modules\imgproc\include;C:\opencv_contrib-4.5.3\modules\cudaimgproc\include;C:\opencv-4.5.3\modules\imgcodecs\include;C:\opencv-4.5.3\modules\highgui\include;C:\opencv-4.5.3\modules\world\include;C:\Program Files (x86)\Intel\oneAPI\tbb\2021.4.0\include;C:\opencv-4.5.3\3rdparty\openexr\Half;C:\opencv-4.5.3\3rdparty\openexr\Iex;C:\opencv-4.5.3\3rdparty\openexr\IlmThread;C:\opencv-4.5.3\3rdparty\openexr\Imath;C:\opencv-4.5.3\3rdparty\openexr\IlmImf;C:\opencv-4.5.3\build\3rdparty\openexr;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4251;4324;4275;4512;4589;4189;4505;4127;4324;4512;4127;4100;4324;4512;4515</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;_VARIADIC_MAX=10;_WIN32_WINNT=0x0601;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;OPENCV_ALLOCATOR_STATS_COUNTER_TYPE=long long;HAVE_IMGCODEC_HDR;HAVE_IMGCODEC_SUNRASTER;HAVE_IMGCODEC_PXM;HAVE_IMGCODEC_PFM;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;_VARIADIC_MAX=10;_WIN32_WINNT=0x0601;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;OPENCV_ALLOCATOR_STATS_COUNTER_TYPE=long long;HAVE_IMGCODEC_HDR;HAVE_IMGCODEC_SUNRASTER;HAVE_IMGCODEC_PXM;HAVE_IMGCODEC_PFM;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\opencv-4.5.3\build\3rdparty\zlib;C:\opencv-4.5.3\3rdparty\zlib;C:\opencv-4.5.3\build;C:\opencv-4.5.3\3rdparty\openjpeg\openjp2;C:\opencv-4.5.3\build\3rdparty\openjpeg\openjp2;C:\opencv-4.5.3\build\3rdparty\libtiff;C:\opencv-4.5.3\3rdparty\libtiff;C:\opencv-4.5.3\3rdparty\libpng;C:\opencv-4.5.3\build\3rdparty\libjpeg-turbo;C:\opencv-4.5.3\3rdparty\libjpeg-turbo\src;C:\opencv-4.5.3\build\3rdparty\ippicv\ippicv_win\icv\include;C:\opencv-4.5.3\build\3rdparty\ippicv\ippicv_win\iw\include;C:\opencv_contrib-4.5.3\modules\cudev\include;C:\opencv-4.5.3\build\modules\world;C:\opencv-4.5.3\modules\core\include;C:\opencv-4.5.3\3rdparty\ittnotify\include;C:\opencv_contrib-4.5.3\modules\cudaarithm\include;C:\opencv-4.5.3\modules\imgproc\include;C:\opencv_contrib-4.5.3\modules\cudaimgproc\include;C:\opencv-4.5.3\modules\imgcodecs\include;C:\opencv-4.5.3\modules\highgui\include;C:\opencv-4.5.3\modules\world\include;C:\Program Files (x86)\Intel\oneAPI\tbb\2021.4.0\include;C:\opencv-4.5.3\3rdparty\openexr\Half;C:\opencv-4.5.3\3rdparty\openexr\Iex;C:\opencv-4.5.3\3rdparty\openexr\IlmThread;C:\opencv-4.5.3\3rdparty\openexr\Imath;C:\opencv-4.5.3\3rdparty\openexr\IlmImf;C:\opencv-4.5.3\build\3rdparty\openexr;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\opencv-4.5.3\build\3rdparty\zlib;C:\opencv-4.5.3\3rdparty\zlib;C:\opencv-4.5.3\build;C:\opencv-4.5.3\3rdparty\openjpeg\openjp2;C:\opencv-4.5.3\build\3rdparty\openjpeg\openjp2;C:\opencv-4.5.3\build\3rdparty\libtiff;C:\opencv-4.5.3\3rdparty\libtiff;C:\opencv-4.5.3\3rdparty\libpng;C:\opencv-4.5.3\build\3rdparty\libjpeg-turbo;C:\opencv-4.5.3\3rdparty\libjpeg-turbo\src;C:\opencv-4.5.3\build\3rdparty\ippicv\ippicv_win\icv\include;C:\opencv-4.5.3\build\3rdparty\ippicv\ippicv_win\iw\include;C:\opencv_contrib-4.5.3\modules\cudev\include;C:\opencv-4.5.3\build\modules\world;C:\opencv-4.5.3\modules\core\include;C:\opencv-4.5.3\3rdparty\ittnotify\include;C:\opencv_contrib-4.5.3\modules\cudaarithm\include;C:\opencv-4.5.3\modules\imgproc\include;C:\opencv_contrib-4.5.3\modules\cudaimgproc\include;C:\opencv-4.5.3\modules\imgcodecs\include;C:\opencv-4.5.3\modules\highgui\include;C:\opencv-4.5.3\modules\world\include;C:\Program Files (x86)\Intel\oneAPI\tbb\2021.4.0\include;C:\opencv-4.5.3\3rdparty\openexr\Half;C:\opencv-4.5.3\3rdparty\openexr\Iex;C:\opencv-4.5.3\3rdparty\openexr\IlmThread;C:\opencv-4.5.3\3rdparty\openexr\Imath;C:\opencv-4.5.3\3rdparty\openexr\IlmImf;C:\opencv-4.5.3\build\3rdparty\openexr;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /IGNORE:4221</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\opencv-4.5.3\build\3rdparty\zlib;C:\opencv-4.5.3\3rdparty\zlib;C:\opencv-4.5.3\build;C:\opencv-4.5.3\3rdparty\openjpeg\openjp2;C:\opencv-4.5.3\build\3rdparty\openjpeg\openjp2;C:\opencv-4.5.3\build\3rdparty\libtiff;C:\opencv-4.5.3\3rdparty\libtiff;C:\opencv-4.5.3\3rdparty\libpng;C:\opencv-4.5.3\build\3rdparty\libjpeg-turbo;C:\opencv-4.5.3\3rdparty\libjpeg-turbo\src;C:\opencv-4.5.3\build\3rdparty\ippicv\ippicv_win\icv\include;C:\opencv-4.5.3\build\3rdparty\ippicv\ippicv_win\iw\include;C:\opencv_contrib-4.5.3\modules\cudev\include;C:\opencv-4.5.3\build\modules\world;C:\opencv-4.5.3\modules\core\include;C:\opencv-4.5.3\3rdparty\ittnotify\include;C:\opencv_contrib-4.5.3\modules\cudaarithm\include;C:\opencv-4.5.3\modules\imgproc\include;C:\opencv_contrib-4.5.3\modules\cudaimgproc\include;C:\opencv-4.5.3\modules\imgcodecs\include;C:\opencv-4.5.3\modules\highgui\include;C:\opencv-4.5.3\modules\world\include;C:\Program Files (x86)\Intel\oneAPI\tbb\2021.4.0\include;C:\opencv-4.5.3\3rdparty\openexr\Half;C:\opencv-4.5.3\3rdparty\openexr\Iex;C:\opencv-4.5.3\3rdparty\openexr\IlmThread;C:\opencv-4.5.3\3rdparty\openexr\Imath;C:\opencv-4.5.3\3rdparty\openexr\IlmImf;C:\opencv-4.5.3\build\3rdparty\openexr;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4127;4251;4324;4275;4512;4589;4189;4505;4127;4324;4512;4127;4100;4324;4512;4515</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;_VARIADIC_MAX=10;_WIN32_WINNT=0x0601;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;OPENCV_ALLOCATOR_STATS_COUNTER_TYPE=long long;HAVE_IMGCODEC_HDR;HAVE_IMGCODEC_SUNRASTER;HAVE_IMGCODEC_PXM;HAVE_IMGCODEC_PFM;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;_VARIADIC_MAX=10;_WIN32_WINNT=0x0601;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;OPENCV_ALLOCATOR_STATS_COUNTER_TYPE=long long;HAVE_IMGCODEC_HDR;HAVE_IMGCODEC_SUNRASTER;HAVE_IMGCODEC_PXM;HAVE_IMGCODEC_PFM;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\opencv-4.5.3\build\3rdparty\zlib;C:\opencv-4.5.3\3rdparty\zlib;C:\opencv-4.5.3\build;C:\opencv-4.5.3\3rdparty\openjpeg\openjp2;C:\opencv-4.5.3\build\3rdparty\openjpeg\openjp2;C:\opencv-4.5.3\build\3rdparty\libtiff;C:\opencv-4.5.3\3rdparty\libtiff;C:\opencv-4.5.3\3rdparty\libpng;C:\opencv-4.5.3\build\3rdparty\libjpeg-turbo;C:\opencv-4.5.3\3rdparty\libjpeg-turbo\src;C:\opencv-4.5.3\build\3rdparty\ippicv\ippicv_win\icv\include;C:\opencv-4.5.3\build\3rdparty\ippicv\ippicv_win\iw\include;C:\opencv_contrib-4.5.3\modules\cudev\include;C:\opencv-4.5.3\build\modules\world;C:\opencv-4.5.3\modules\core\include;C:\opencv-4.5.3\3rdparty\ittnotify\include;C:\opencv_contrib-4.5.3\modules\cudaarithm\include;C:\opencv-4.5.3\modules\imgproc\include;C:\opencv_contrib-4.5.3\modules\cudaimgproc\include;C:\opencv-4.5.3\modules\imgcodecs\include;C:\opencv-4.5.3\modules\highgui\include;C:\opencv-4.5.3\modules\world\include;C:\Program Files (x86)\Intel\oneAPI\tbb\2021.4.0\include;C:\opencv-4.5.3\3rdparty\openexr\Half;C:\opencv-4.5.3\3rdparty\openexr\Iex;C:\opencv-4.5.3\3rdparty\openexr\IlmThread;C:\opencv-4.5.3\3rdparty\openexr\Imath;C:\opencv-4.5.3\3rdparty\openexr\IlmImf;C:\opencv-4.5.3\build\3rdparty\openexr;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\opencv-4.5.3\build\3rdparty\zlib;C:\opencv-4.5.3\3rdparty\zlib;C:\opencv-4.5.3\build;C:\opencv-4.5.3\3rdparty\openjpeg\openjp2;C:\opencv-4.5.3\build\3rdparty\openjpeg\openjp2;C:\opencv-4.5.3\build\3rdparty\libtiff;C:\opencv-4.5.3\3rdparty\libtiff;C:\opencv-4.5.3\3rdparty\libpng;C:\opencv-4.5.3\build\3rdparty\libjpeg-turbo;C:\opencv-4.5.3\3rdparty\libjpeg-turbo\src;C:\opencv-4.5.3\build\3rdparty\ippicv\ippicv_win\icv\include;C:\opencv-4.5.3\build\3rdparty\ippicv\ippicv_win\iw\include;C:\opencv_contrib-4.5.3\modules\cudev\include;C:\opencv-4.5.3\build\modules\world;C:\opencv-4.5.3\modules\core\include;C:\opencv-4.5.3\3rdparty\ittnotify\include;C:\opencv_contrib-4.5.3\modules\cudaarithm\include;C:\opencv-4.5.3\modules\imgproc\include;C:\opencv_contrib-4.5.3\modules\cudaimgproc\include;C:\opencv-4.5.3\modules\imgcodecs\include;C:\opencv-4.5.3\modules\highgui\include;C:\opencv-4.5.3\modules\world\include;C:\Program Files (x86)\Intel\oneAPI\tbb\2021.4.0\include;C:\opencv-4.5.3\3rdparty\openexr\Half;C:\opencv-4.5.3\3rdparty\openexr\Iex;C:\opencv-4.5.3\3rdparty\openexr\IlmThread;C:\opencv-4.5.3\3rdparty\openexr\Imath;C:\opencv-4.5.3\3rdparty\openexr\IlmImf;C:\opencv-4.5.3\build\3rdparty\openexr;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /IGNORE:4221</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\opencv-4.5.3\build\modules\world\stat.sse4_2.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions);CV_CPU_DISPATCH_MODE=SSE4_2</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions);CV_CPU_DISPATCH_MODE=SSE4_2</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

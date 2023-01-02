@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:98a121b65711a0dcf2e505905f7949d078f16d4d2889740e439ac74740177422
-size 258
+using OpenCV
+const cv = OpenCV
+
+img = rand(UInt8, 3, 500, 500)
+filter = rand(Float32, 1, 5, 5)/25
+
+out = OpenCV.filter2D(img, Int32(-1), filter)
+
+cv.namedWindow("orig")
+cv.namedWindow("out")
+
+cv.imshow("orig", img)
+cv.imshow("out", out)
+
+cv.waitKey(Int32(0))

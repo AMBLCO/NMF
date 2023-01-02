@@ -1,3 +1,265 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:039622dcbf69062abe71f66aefc247a6b66b8f501c667cd23f9aed74b531d4fc
-size 20550
+Determining if the function fseeko exists failed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_706f1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_FUNCTION_EXISTS=fseeko /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_706f1.dir\Debug\\" /Fd"cmTC_706f1.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: symbole externe non r‚solu fseeko r‚f‚renc‚ dans la fonction main [C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\cmTC_706f1.vcxproj]
+C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_706f1.exe : fatal error LNK1120: 1 externes non r‚solus [C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\cmTC_706f1.vcxproj]
+
+
+
+Determining size of off64_t failed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_b4053.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  OFF64_T.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b4053.dir\Debug\\" /Fd"cmTC_b4053.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CheckTypeSize\OFF64_T.c"
+C:\opencv-4.5.3\build\CMakeFiles\CheckTypeSize\OFF64_T.c(29,12): error C2065: 'off64_t'ÿ: identificateur non d‚clar‚ [C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\cmTC_b4053.vcxproj]
+C:\opencv-4.5.3\build\CMakeFiles\CheckTypeSize\OFF64_T.c(30,12): error C2065: 'off64_t'ÿ: identificateur non d‚clar‚ [C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\cmTC_b4053.vcxproj]
+C:\opencv-4.5.3\build\CMakeFiles\CheckTypeSize\OFF64_T.c(31,12): error C2065: 'off64_t'ÿ: identificateur non d‚clar‚ [C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\cmTC_b4053.vcxproj]
+C:\opencv-4.5.3\build\CMakeFiles\CheckTypeSize\OFF64_T.c(32,12): error C2065: 'off64_t'ÿ: identificateur non d‚clar‚ [C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\cmTC_b4053.vcxproj]
+C:\opencv-4.5.3\build\CMakeFiles\CheckTypeSize\OFF64_T.c(33,12): error C2065: 'off64_t'ÿ: identificateur non d‚clar‚ [C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\cmTC_b4053.vcxproj]
+
+
+C:/opencv-4.5.3/build/CMakeFiles/CheckTypeSize/OFF64_T.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__PPC64__)
+# define KEY '_','_','P','P','C','6','4','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__PPC__)
+# define KEY '_','_','P','P','C','_','_'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(off64_t))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function memmove exists failed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_df9ac.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_FUNCTION_EXISTS=memmove /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_df9ac.dir\Debug\\" /Fd"cmTC_df9ac.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c"
+C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c(7,3): warning C4391: 'char memmove(void)'ÿ: type de retour incorrect pour la fonction intrinsŠque, 'void' attendu [C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\cmTC_df9ac.vcxproj]
+C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c(7,3): warning C4392: 'char memmove(void)'ÿ: nombre d'arguments incorrect pour la fonction intrinsŠque, '3' arguments attendus [C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\cmTC_df9ac.vcxproj]
+C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c(17,24): error C2168: 'memmove'ÿ: nombre de paramŠtres r‚els de fonction intrinsŠque insuffisant [C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\cmTC_df9ac.vcxproj]
+
+
+
+Determining if the function strcasecmp exists failed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_e0960.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_FUNCTION_EXISTS=strcasecmp /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e0960.dir\Debug\\" /Fd"cmTC_e0960.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: symbole externe non r‚solu strcasecmp r‚f‚renc‚ dans la fonction main [C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\cmTC_e0960.vcxproj]
+C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_e0960.exe : fatal error LNK1120: 1 externes non r‚solus [C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\cmTC_e0960.vcxproj]
+
+
+
+Build output check failed:
+    Regex: 'warning D9002'
+    Output line: 'cl : ligne de commande warning D9002: option '-std=c99' inconnue ignor‚e [C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\cmTC_2356a.vcxproj]'
+Compilation failed:
+    source file: 'C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp/src.c'
+    check option: ' /DWIN32 /D_WINDOWS /W3  /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /Gy /bigobj /Oi  /fp:precise     /MP -std=c99'
+===== BUILD LOG =====
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_2356a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  src.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2356a.dir\Debug\\" /Fd"cmTC_2356a.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj /bigobj -std=c99 "C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\src.c"
+cl : ligne de commande warning D9002: option '-std=c99' inconnue ignor‚e [C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\cmTC_2356a.vcxproj]
+  cmTC_2356a.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_2356a.exe
+
+
+===== END =====
+
+Determining if the include file strings.h exists failed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_d5160.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d5160.dir\Debug\\" /Fd"cmTC_d5160.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Impossible d'ouvrir le fichier includeÿ: 'strings.h'ÿ: No such file or directory [C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\cmTC_d5160.vcxproj]
+
+
+
+Determining if the include file unistd.h exists failed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_b1381.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b1381.dir\Debug\\" /Fd"cmTC_b1381.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Impossible d'ouvrir le fichier includeÿ: 'unistd.h'ÿ: No such file or directory [C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\cmTC_b1381.vcxproj]
+
+
+
+Determining if the posix_memalign exist failed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_98402.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckSymbolExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D _POSIX_C_SOURCE=200112L /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_98402.dir\Debug\\" /Fd"cmTC_98402.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(8,33): error C2065: 'posix_memalign'ÿ: identificateur non d‚clar‚ [C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\cmTC_98402.vcxproj]
+
+
+File C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef posix_memalign
+  return ((int*)(&posix_memalign))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the memalign exist failed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_f9c93.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckSymbolExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f9c93.dir\Debug\\" /Fd"cmTC_f9c93.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(8,27): error C2065: 'memalign'ÿ: identificateur non d‚clar‚ [C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\cmTC_f9c93.vcxproj]
+
+
+File C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <malloc.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef memalign
+  return ((int*)(&memalign))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_56c2b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_56c2b.dir\Debug\\" /Fd"cmTC_56c2b.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Impossible d'ouvrir le fichier includeÿ: 'pthread.h'ÿ: No such file or directory [C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\cmTC_56c2b.vcxproj]
+
+
+
+Determining if the function sgemm_ exists failed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_12b5d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_FUNCTION_EXISTS=sgemm_ /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_12b5d.dir\Debug\\" /Fd"cmTC_12b5d.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: symbole externe non r‚solu sgemm_ r‚f‚renc‚ dans la fonction main [C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\cmTC_12b5d.vcxproj]
+C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_12b5d.exe : fatal error LNK1120: 1 externes non r‚solus [C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\cmTC_12b5d.vcxproj]
+
+
+
+Determining if the function sgemm_ exists failed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_1a4ec.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_FUNCTION_EXISTS=sgemm_ /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1a4ec.dir\Debug\\" /Fd"cmTC_1a4ec.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c"
+LINK : warning LNK4044: option '/SSL2' non reconnueÿ; ignor‚e [C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\cmTC_1a4ec.vcxproj]
+CheckFunctionExists.obj : error LNK2019: symbole externe non r‚solu sgemm_ r‚f‚renc‚ dans la fonction main [C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\cmTC_1a4ec.vcxproj]
+C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_1a4ec.exe : fatal error LNK1120: 1 externes non r‚solus [C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\cmTC_1a4ec.vcxproj]
+
+
+

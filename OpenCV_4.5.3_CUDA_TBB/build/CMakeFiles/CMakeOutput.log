@@ -1,3 +1,843 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5851e8ea249181ad6958f35f3991af3c5c3069a497703175f01b72687a736c6a
-size 68163
+The system is: Windows - 10.0.18363 - AMD64
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+La g‚n‚ration a d‚marr‚ 06/10/2021 21:52:35.
+Projet "C:\opencv-4.5.3\build\CMakeFiles\3.21.3\CompilerIdCXX\CompilerIdCXX.vcxproj" sur le noud 1 (cibles par d‚faut).
+PrepareForBuild:
+  Cr‚ation du r‚pertoire "Debug\".
+  Cr‚ation du r‚pertoire "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Cr‚ation de "Debug\CompilerIdCXX.tlog\unsuccessfulbuild", car "AlwaysCreate" a ‚t‚ sp‚cifi‚.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\bin\HostX64\x64\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X64 Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\3.21.3\CompilerIdCXX\CompilerIdCXX.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\bin\Hostx64\x64\cl.exe
+FinalizeBuildStatus:
+  Suppression du fichier "Debug\CompilerIdCXX.tlog\unsuccessfulbuild".
+  Mise … jour de l'horodatage "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
+G‚n‚ration du projet "C:\opencv-4.5.3\build\CMakeFiles\3.21.3\CompilerIdCXX\CompilerIdCXX.vcxproj" termin‚e (cibles par d‚faut).
+
+La g‚n‚ration a r‚ussi.
+    0 Avertissement(s)
+    0 Erreur(s)
+
+Temps ‚coul‚ 00:00:00.64
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+The CXX compiler identification is MSVC, found in "C:/opencv-4.5.3/build/CMakeFiles/3.21.3/CompilerIdCXX/CompilerIdCXX.exe"
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+La g‚n‚ration a d‚marr‚ 06/10/2021 21:52:36.
+Projet "C:\opencv-4.5.3\build\CMakeFiles\3.21.3\CompilerIdC\CompilerIdC.vcxproj" sur le noud 1 (cibles par d‚faut).
+PrepareForBuild:
+  Cr‚ation du r‚pertoire "Debug\".
+  Cr‚ation du r‚pertoire "Debug\CompilerIdC.tlog\".
+InitializeBuildStatus:
+  Cr‚ation de "Debug\CompilerIdC.tlog\unsuccessfulbuild", car "AlwaysCreate" a ‚t‚ sp‚cifi‚.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\bin\HostX64\x64\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X64 Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\3.21.3\CompilerIdC\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\bin\Hostx64\x64\cl.exe
+FinalizeBuildStatus:
+  Suppression du fichier "Debug\CompilerIdC.tlog\unsuccessfulbuild".
+  Mise … jour de l'horodatage "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
+G‚n‚ration du projet "C:\opencv-4.5.3\build\CMakeFiles\3.21.3\CompilerIdC\CompilerIdC.vcxproj" termin‚e (cibles par d‚faut).
+
+La g‚n‚ration a r‚ussi.
+    0 Avertissement(s)
+    0 Erreur(s)
+
+Temps ‚coul‚ 00:00:00.50
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "C:/opencv-4.5.3/build/CMakeFiles/3.21.3/CompilerIdC/CompilerIdC.exe"
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_93975.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CMakeCXXCompilerABI.cpp
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_93975.dir\Debug\\" /Fd"cmTC_93975.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCXXCompilerABI.cpp"
+  cmTC_93975.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_93975.exe
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_9f382.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CMakeCCompilerABI.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9f382.dir\Debug\\" /Fd"cmTC_9f382.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCCompilerABI.c"
+  cmTC_9f382.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_9f382.exe
+
+
+
+Determining if the include file malloc.h exists passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_440a8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_440a8.dir\Debug\\" /Fd"cmTC_440a8.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  cmTC_440a8.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_440a8.exe
+
+
+
+Determining if the _aligned_malloc exist passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_06f39.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckSymbolExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_06f39.dir\Debug\\" /Fd"cmTC_06f39.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+  cmTC_06f39.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_06f39.exe
+
+
+File C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <malloc.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _aligned_malloc
+  return ((int*)(&_aligned_malloc))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_dd00e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_dd00e.dir\Debug\\" /Fd"cmTC_dd00e.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  cmTC_dd00e.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_dd00e.exe
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_45dfb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_45dfb.dir\Debug\\" /Fd"cmTC_45dfb.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  cmTC_45dfb.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_45dfb.exe
+
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_e099e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e099e.dir\Debug\\" /Fd"cmTC_e099e.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  cmTC_e099e.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_e099e.exe
+
+
+
+Determining size of size_t passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_c357e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  SIZEOF_SIZE_T.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c357e.dir\Debug\\" /Fd"cmTC_c357e.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CheckTypeSize\SIZEOF_SIZE_T.c"
+  cmTC_c357e.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_c357e.exe
+
+
+
+Determining size of unsigned long passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_62120.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  SIZEOF_UNSIGNED_LONG.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_62120.dir\Debug\\" /Fd"cmTC_62120.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CheckTypeSize\SIZEOF_UNSIGNED_LONG.c"
+  cmTC_62120.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_62120.exe
+
+
+
+Determining if files intrin.h exist passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_9f93f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  HAVE_INTRIN_H.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9f93f.dir\Debug\\" /Fd"cmTC_9f93f.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CheckIncludeFiles\HAVE_INTRIN_H.c"
+  cmTC_9f93f.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_9f93f.exe
+
+
+
+Determining if the include file assert.h exists passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_e99f1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e99f1.dir\Debug\\" /Fd"cmTC_e99f1.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  cmTC_e99f1.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_e99f1.exe
+
+
+
+Determining if the include file fcntl.h exists passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_c8385.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c8385.dir\Debug\\" /Fd"cmTC_c8385.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  cmTC_c8385.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_c8385.exe
+
+
+
+Determining if the include file inttypes.h exists passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_07752.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_07752.dir\Debug\\" /Fd"cmTC_07752.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  cmTC_07752.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_07752.exe
+
+
+
+Determining if the include file io.h exists passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_8a914.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8a914.dir\Debug\\" /Fd"cmTC_8a914.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  cmTC_8a914.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_8a914.exe
+
+
+
+Determining if the include file limits.h exists passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_39a1c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_39a1c.dir\Debug\\" /Fd"cmTC_39a1c.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  cmTC_39a1c.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_39a1c.exe
+
+
+
+Determining if the include file memory.h exists passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_85c00.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_85c00.dir\Debug\\" /Fd"cmTC_85c00.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  cmTC_85c00.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_85c00.exe
+
+
+
+Determining if the include file search.h exists passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_cf6ed.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_cf6ed.dir\Debug\\" /Fd"cmTC_cf6ed.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  cmTC_cf6ed.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_cf6ed.exe
+
+
+
+Determining if the include file string.h exists passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_1ac15.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1ac15.dir\Debug\\" /Fd"cmTC_1ac15.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  cmTC_1ac15.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_1ac15.exe
+
+
+
+Performing C SOURCE FILE Test C_HAS_inline succeeded with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_4ff6b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  src.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D C_HAS_inline /D inline=inline /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4ff6b.dir\Debug\\" /Fd"cmTC_4ff6b.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\src.c"
+  cmTC_4ff6b.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_4ff6b.exe
+
+
+Source file was:
+
+        typedef int foo_t;
+        static inline foo_t static_foo() {return 0;}
+        foo_t foo(){return 0;}
+        int main(int argc, char *argv[]) {return 0;}
+Determining size of signed short passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_40828.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  SIZEOF_SIGNED_SHORT.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_40828.dir\Debug\\" /Fd"cmTC_40828.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CheckTypeSize\SIZEOF_SIGNED_SHORT.c"
+  cmTC_40828.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_40828.exe
+
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_5b38c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  SIZEOF_UNSIGNED_SHORT.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5b38c.dir\Debug\\" /Fd"cmTC_5b38c.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CheckTypeSize\SIZEOF_UNSIGNED_SHORT.c"
+  cmTC_5b38c.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_5b38c.exe
+
+
+
+Determining size of signed int passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_64b70.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  SIZEOF_SIGNED_INT.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_64b70.dir\Debug\\" /Fd"cmTC_64b70.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CheckTypeSize\SIZEOF_SIGNED_INT.c"
+  cmTC_64b70.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_64b70.exe
+
+
+
+Determining size of unsigned int passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_52a30.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  SIZEOF_UNSIGNED_INT.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_52a30.dir\Debug\\" /Fd"cmTC_52a30.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CheckTypeSize\SIZEOF_UNSIGNED_INT.c"
+  cmTC_52a30.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_52a30.exe
+
+
+
+Determining size of signed long passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_5ab69.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  SIZEOF_SIGNED_LONG.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5ab69.dir\Debug\\" /Fd"cmTC_5ab69.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CheckTypeSize\SIZEOF_SIGNED_LONG.c"
+  cmTC_5ab69.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_5ab69.exe
+
+
+
+Determining size of signed long long passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_b94b4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  SIZEOF_SIGNED_LONG_LONG.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b94b4.dir\Debug\\" /Fd"cmTC_b94b4.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CheckTypeSize\SIZEOF_SIGNED_LONG_LONG.c"
+  cmTC_b94b4.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_b94b4.exe
+
+
+
+Determining size of unsigned long long passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_e403d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  SIZEOF_UNSIGNED_LONG_LONG.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e403d.dir\Debug\\" /Fd"cmTC_e403d.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CheckTypeSize\SIZEOF_UNSIGNED_LONG_LONG.c"
+  cmTC_e403d.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_e403d.exe
+
+
+
+Determining size of unsigned char * passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_72efb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  SIZEOF_UNSIGNED_CHAR_P.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_72efb.dir\Debug\\" /Fd"cmTC_72efb.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CheckTypeSize\SIZEOF_UNSIGNED_CHAR_P.c"
+  cmTC_72efb.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_72efb.exe
+
+
+
+Determining size of ptrdiff_t passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_e5a01.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  SIZEOF_PTRDIFF_T.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e5a01.dir\Debug\\" /Fd"cmTC_e5a01.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CheckTypeSize\SIZEOF_PTRDIFF_T.c"
+  cmTC_e5a01.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_e5a01.exe
+
+
+
+Determining if the function setmode exists passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_b8dd6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_FUNCTION_EXISTS=setmode /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b8dd6.dir\Debug\\" /Fd"cmTC_b8dd6.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c"
+  cmTC_b8dd6.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_b8dd6.exe
+
+
+
+Determining if the function strchr exists passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_a57a6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_FUNCTION_EXISTS=strchr /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a57a6.dir\Debug\\" /Fd"cmTC_a57a6.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c"
+  cmTC_a57a6.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_a57a6.exe
+
+
+
+Determining if the function strrchr exists passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_b429f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_FUNCTION_EXISTS=strrchr /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b429f.dir\Debug\\" /Fd"cmTC_b429f.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c"
+  cmTC_b429f.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_b429f.exe
+
+
+
+Determining if the function strstr exists passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_5d8e9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_FUNCTION_EXISTS=strstr /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5d8e9.dir\Debug\\" /Fd"cmTC_5d8e9.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c"
+  cmTC_5d8e9.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_5d8e9.exe
+
+
+
+Determining if the function strtol exists passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_6d3ec.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_FUNCTION_EXISTS=strtol /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6d3ec.dir\Debug\\" /Fd"cmTC_6d3ec.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c"
+  cmTC_6d3ec.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_6d3ec.exe
+
+
+
+Determining if the function strtol exists passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_ce8e8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_FUNCTION_EXISTS=strtol /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ce8e8.dir\Debug\\" /Fd"cmTC_ce8e8.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c"
+  cmTC_ce8e8.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_ce8e8.exe
+
+
+
+Determining if the function strtoull exists passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_d8401.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_FUNCTION_EXISTS=strtoull /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d8401.dir\Debug\\" /Fd"cmTC_d8401.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c"
+  cmTC_d8401.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_d8401.exe
+
+
+
+Determining if the function lfind exists passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_212d3.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_FUNCTION_EXISTS=lfind /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_212d3.dir\Debug\\" /Fd"cmTC_212d3.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c"
+  cmTC_212d3.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_212d3.exe
+
+
+
+Performing C SOURCE FILE Test HAVE_SNPRINTF succeeded with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_37540.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  src.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D HAVE_SNPRINTF /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_37540.dir\Debug\\" /Fd"cmTC_37540.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\src.c"
+  cmTC_37540.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_37540.exe
+
+
+Source file was:
+
+#include <stdio.h>
+int main(void) {
+  char buf[10];
+  snprintf(buf, 10, "Test %d", 1);
+  return 0;
+}
+Determining if the include file stdlib.h exists passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_bd9e0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_bd9e0.dir\Debug\\" /Fd"cmTC_bd9e0.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  cmTC_bd9e0.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_bd9e0.exe
+
+
+
+Determining if the include file stdio.h exists passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_4a5c9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4a5c9.dir\Debug\\" /Fd"cmTC_4a5c9.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  cmTC_4a5c9.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_4a5c9.exe
+
+
+
+Determining if the include file math.h exists passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_470e6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_470e6.dir\Debug\\" /Fd"cmTC_470e6.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  cmTC_470e6.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_470e6.exe
+
+
+
+Determining if the include file float.h exists passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_5d03b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5d03b.dir\Debug\\" /Fd"cmTC_5d03b.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  cmTC_5d03b.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_5d03b.exe
+
+
+
+Determining if the include file time.h exists passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_d008a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d008a.dir\Debug\\" /Fd"cmTC_d008a.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  cmTC_d008a.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_d008a.exe
+
+
+
+Determining if the include file stdarg.h exists passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_2f394.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2f394.dir\Debug\\" /Fd"cmTC_2f394.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  cmTC_2f394.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_2f394.exe
+
+
+
+Determining if the include file ctype.h exists passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_63633.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_63633.dir\Debug\\" /Fd"cmTC_63633.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  cmTC_63633.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_63633.exe
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_6edc5.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6edc5.dir\Debug\\" /Fd"cmTC_6edc5.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  cmTC_6edc5.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_6edc5.exe
+
+
+
+Determining if the include file inttypes.h exists passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_ae6bb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ae6bb.dir\Debug\\" /Fd"cmTC_ae6bb.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  cmTC_ae6bb.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_ae6bb.exe
+
+
+
+Determining if the include file sys/stat.h exists passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_0e8bf.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0e8bf.dir\Debug\\" /Fd"cmTC_0e8bf.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  cmTC_0e8bf.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_0e8bf.exe
+
+
+
+Determining if files malloc.h exist passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_3faae.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  OPJ_HAVE_MALLOC_H.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3faae.dir\Debug\\" /Fd"cmTC_3faae.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CheckIncludeFiles\OPJ_HAVE_MALLOC_H.c"
+  cmTC_3faae.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_3faae.exe
+
+
+
+Determining if the _aligned_malloc exist passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_88cef.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckSymbolExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_88cef.dir\Debug\\" /Fd"cmTC_88cef.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+  cmTC_88cef.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_88cef.exe
+
+
+File C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <malloc.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _aligned_malloc
+  return ((int*)(&_aligned_malloc))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the include file mfapi.h exists passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_b9c09.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b9c09.dir\Debug\\" /Fd"cmTC_b9c09.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  cmTC_b9c09.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_b9c09.exe
+
+
+
+Determining if the include file d3d11_4.h exists passed with the following output:
+Change Dir: C:/opencv-4.5.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe cmTC_2e937.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.1+3e40a09f8 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.29.30136 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /MP /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2e937.dir\Debug\\" /Fd"cmTC_2e937.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue  /bigobj "C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  cmTC_2e937.vcxproj -> C:\opencv-4.5.3\build\CMakeFiles\CMakeTmp\Debug\cmTC_2e937.exe
+
+
+

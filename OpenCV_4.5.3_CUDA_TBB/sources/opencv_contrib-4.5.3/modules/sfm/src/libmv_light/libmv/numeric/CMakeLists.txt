@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2f24e52eb27098db4028725f7274443fcb8a2461e605a20ca59ba8202ce52e76
-size 349
+# define the source files
+SET(NUMERIC_SRC numeric.cc
+                poly.cc)
+
+# define the header files (make the headers appear in IDEs.)
+FILE(GLOB NUMERIC_HDRS *.h)
+
+ADD_LIBRARY(numeric STATIC ${NUMERIC_SRC} ${NUMERIC_HDRS})
+
+IF(TARGET Eigen3::Eigen)
+  TARGET_LINK_LIBRARIES(numeric LINK_PUBLIC Eigen3::Eigen)
+ENDIF()
+
+LIBMV_INSTALL_LIB(numeric)

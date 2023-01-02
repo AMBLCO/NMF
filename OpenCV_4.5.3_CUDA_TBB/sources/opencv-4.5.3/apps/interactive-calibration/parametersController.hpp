@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d7a6ed0f511a2dc187decfb372d395d1ab878ab123f36c63f170c9e2c0b9cfd1
-size 810
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+
+#ifndef PARAMETERS_CONTROLLER_HPP
+#define PARAMETERS_CONTROLLER_HPP
+
+#include <string>
+
+#include <opencv2/core.hpp>
+
+#include "calibCommon.hpp"
+
+namespace calib {
+
+class parametersController
+{
+protected:
+    captureParameters mCapParams;
+    internalParameters mInternalParameters;
+
+    bool loadFromFile(const std::string& inputFileName);
+public:
+    parametersController();
+    parametersController(cv::Ptr<captureParameters> params);
+
+    captureParameters getCaptureParameters() const;
+    internalParameters getInternalParameters() const;
+
+    bool loadFromParser(cv::CommandLineParser& parser);
+};
+
+}
+
+#endif

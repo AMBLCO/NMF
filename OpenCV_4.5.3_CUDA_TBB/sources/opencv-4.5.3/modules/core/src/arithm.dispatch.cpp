@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e67b5ee8807aa991ad6da8e49caf7a47d0e2686d07a0504538813d88e237a25d
-size 369
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html
+
+#include "precomp.hpp"
+#include "arithm_ipp.hpp"
+#include "arithm.simd.hpp"
+#include "arithm.simd_declarations.hpp"
+
+#define ARITHM_DISPATCHING_ONLY
+#include "arithm.simd.hpp"

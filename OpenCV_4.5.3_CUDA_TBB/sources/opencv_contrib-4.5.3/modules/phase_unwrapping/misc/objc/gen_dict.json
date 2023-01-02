@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:03c15081bf4c7050113253e9201af636e96cb9c0c489f1371e7b9ea558472b9a
-size 177
+{
+    "AdditionalImports" : {
+        "*" : [ "\"phase_unwrapping.hpp\"" ],
+        "HistogramPhaseUnwrapping" : [ "\"phase_unwrapping/histogramphaseunwrapping.hpp\"" ]
+    }
+}

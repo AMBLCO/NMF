@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c4a6bcf13f2e73669e01268e9f90cca6d3d2687c8ab53674b9a79b84a67c4536
-size 966
+package org.opencv.engine;
+
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.util.Log;
+
+public class MarketConnector {
+    protected static final String OpenCVPackageNamePreffix = "org.opencv.lib";
+    private static final String TAG = "OpenCVEngine/MarketConnector";
+    protected Context mContext;
+
+    public MarketConnector(Context context) {
+        mContext = context;
+    }
+
+    public boolean InstallAppFromMarket(String AppID) {
+        Log.d(TAG, "Installing app: " + AppID);
+        boolean result = true;
+        try {
+            Uri uri = Uri.parse("market://details?id=" + AppID);
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            mContext.startActivity(intent);
+        } catch (Exception e) {
+            Log.e(TAG, "Installation failed");
+            result = false;
+        }
+        return result;
+    }
+}

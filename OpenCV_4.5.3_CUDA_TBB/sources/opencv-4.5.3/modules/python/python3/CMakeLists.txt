@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e0346962c6113b00f52ae6a687582105409d5094c70ff468416e8765c9999278
-size 611
+if(NOT PYTHON3_INCLUDE_PATH OR NOT PYTHON3_NUMPY_INCLUDE_DIRS)
+  ocv_module_disable(python3)
+endif()
+
+# Problem in numpy >=1.15 <1.17
+if(PYTHON3_LIMITED_API
+    AND NOT PYTHON3_NUMPY_VERSION VERSION_LESS "1.15"
+    AND PYTHON3_NUMPY_VERSION VERSION_LESS "1.17"
+  )
+  message(WARNING "Current NUMPY version (${PYTHON3_NUMPY_VERSION}) is not compatible with LIMITED_API.")
+  set(PYTHON3_LIMITED_API OFF)
+endif()
+
+set(the_description "The python3 bindings")
+set(MODULE_NAME python3)
+set(MODULE_INSTALL_SUBDIR python3)
+
+set(PYTHON PYTHON3)
+
+include(../common.cmake)
+
+unset(MODULE_NAME)
+unset(MODULE_INSTALL_SUBDIR)

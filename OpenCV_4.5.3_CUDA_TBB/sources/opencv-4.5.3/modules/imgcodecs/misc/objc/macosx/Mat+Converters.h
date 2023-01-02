@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:529ff50dbd0c44263dc2d527ee9af5f325532c9a318b9f7020a1fee1d779b269
-size 658
+//
+//  Mat+Converters.h
+//
+//  Created by Masaya Tsuruta on 2020/10/08.
+//
+
+#pragma once
+
+#ifdef __cplusplus
+#import "opencv2/core.hpp"
+#else
+#define CV_EXPORTS
+#endif
+
+#import "Mat.h"
+#import <Foundation/Foundation.h>
+#import <AppKit/AppKit.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+CV_EXPORTS @interface Mat (Converters)
+
+-(CGImageRef)toCGImage CF_RETURNS_RETAINED;
+-(instancetype)initWithCGImage:(CGImageRef)image;
+-(instancetype)initWithCGImage:(CGImageRef)image alphaExist:(BOOL)alphaExist;
+-(NSImage*)toNSImage;
+-(instancetype)initWithNSImage:(NSImage*)image;
+-(instancetype)initWithNSImage:(NSImage*)image alphaExist:(BOOL)alphaExist;
+
+@end
+
+NS_ASSUME_NONNULL_END

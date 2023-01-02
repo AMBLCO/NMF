@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:59366ba0b4a7a0d21ac46b0814990a86d9b28fd20befdeba417d322ea10934c7
-size 1033
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\opencv-4.5.3\build\modules\world\mathfuncs_core.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\opencv-4.5.3\modules\imgproc\src\corner.avx.cpp">
+      <Filter>opencv_imgproc\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\opencv-4.5.3\build\modules\world\accum.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{FE799018-C8F3-39D6-AAAD-D132E47A7DA0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_imgproc">
+      <UniqueIdentifier>{1C16F5BC-801A-3188-B734-7E1276ABD06D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_imgproc\Src">
+      <UniqueIdentifier>{AE49FD94-0B84-3946-B117-8EEF829B8A12}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

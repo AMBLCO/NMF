@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b5199f3539df514fe2612fbfbb19f803747be2e235d1976fb0c0546becd5f57a
-size 362
+Style Transfer Example {#tutorial_js_style_transfer}
+=======================================
+
+Goal
+----
+
+- In this tutorial you will learn how to use OpenCV.js dnn module for style transfer.
+
+\htmlonly
+<iframe src="../../js_style_transfer.html" width="100%"
+        onload="this.style.height=this.contentDocument.body.scrollHeight +'px';">
+</iframe>
+\endhtmlonly

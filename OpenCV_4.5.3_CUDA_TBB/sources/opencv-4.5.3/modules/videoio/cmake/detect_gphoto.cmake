@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4c0cb4b4879a8ae5f4940f4b62843b0d91d90d406714e92e680bb2756bc2538b
-size 338
+# --- gPhoto2 ---
+if(NOT HAVE_GPHOTO2 AND PKG_CONFIG_FOUND)
+  ocv_check_modules(GPHOTO2 libgphoto2)
+  if(GPHOTO2_FOUND)
+    set(HAVE_GPHOTO2 TRUE)
+  endif()
+endif()
+
+if(HAVE_GPHOTO2)
+  ocv_add_external_target(gphoto2 "${GPHOTO2_INCLUDE_DIRS}" "${GPHOTO2_LIBRARIES}" "HAVE_GPHOTO2")
+endif()
+
+set(HAVE_GPHOTO2 ${HAVE_GPHOTO2} PARENT_SCOPE)

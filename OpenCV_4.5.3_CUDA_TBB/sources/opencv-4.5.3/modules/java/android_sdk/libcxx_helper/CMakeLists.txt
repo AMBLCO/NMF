@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d3d58d6114109b9038f9468213d77610dce67fcef8c8b74644ec56bb27113ad7
-size 140
+cmake_minimum_required(VERSION 3.6)
+
+# dummy target to bring libc++_shared.so into packages
+add_library(opencv_jni_shared STATIC dummy.cpp)

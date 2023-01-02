@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b25fb7db31c4de8ea2ec1c7beed4588e52ec7d75c8bd334d36a73e8564f865cc
-size 745
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/FindPkgConfig.cmake
+C:/opencv-4.5.3/cmake/checks/win32uitest.cpp
+C:/opencv-4.5.3/modules/CMakeLists.txt
+C:/opencv-4.5.3/modules/gapi/cmake/init.cmake
+C:/opencv-4.5.3/modules/highgui/cmake/detect_win32ui.cmake
+C:/opencv-4.5.3/modules/highgui/cmake/init.cmake
+C:/opencv-4.5.3/modules/videoio/cmake/init.cmake
+C:/opencv_contrib-4.5.3/modules/julia/cmake/init.cmake
+C:/opencv_contrib-4.5.3/modules/matlab/cmake/init.cmake
+C:/opencv_contrib-4.5.3/modules/text/cmake/init.cmake

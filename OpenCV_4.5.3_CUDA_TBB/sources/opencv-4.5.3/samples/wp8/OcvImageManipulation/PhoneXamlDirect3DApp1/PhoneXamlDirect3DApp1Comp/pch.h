@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:940ae6e10c39ecda6b4829af8ffbfc86bc9abb5abbd973b599b77aeb37d7d86c
-size 236
+﻿#pragma once
+
+#include <wrl/client.h>
+#include <d3d11_1.h>
+#include <DirectXMath.h>
+#include <memory>
+#include <agile.h>
+#include <implements.h>
+#include <Windows.Phone.Media.Capture.h>
+#include <Windows.Phone.Media.Capture.Native.h>

@@ -1,3 +1,1 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cebba6d7b8729717d4a3e216d62a74f543f42de039416ab7300ae0e49a44817a
-size 60
+/home/anh/workspace/sferes/exp/images/imagenet/hen_256.png 1

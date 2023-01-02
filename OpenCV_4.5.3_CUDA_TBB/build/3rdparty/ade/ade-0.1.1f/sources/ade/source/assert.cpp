@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:04de7023951ab4af7ee6e01c0060915cc6999bf35dcf83af729f68a54fa9686a
-size 643
+// Copyright (C) 2018 Intel Corporation
+//
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+#include "ade/util/assert.hpp"
+
+#include <stdlib.h>
+#include <stdio.h>
+
+namespace ade
+{
+namespace details
+{
+
+void dev_assert_abort(const char* str, int line, const char* file,
+                      const char* func)
+{
+    fprintf(stderr,
+            "%s:%d: Assertion \"%s\" in function \"%s\" failed\n",
+            file, line, str, func);
+    fflush(stderr);
+    abort();
+}
+void dev_exception_abort(const char* str)
+{
+    fprintf(stderr, "An exception thrown! %s\n" , str);
+    fflush(stderr);
+    abort();
+}
+
+} // namespace details
+} // namespace ade

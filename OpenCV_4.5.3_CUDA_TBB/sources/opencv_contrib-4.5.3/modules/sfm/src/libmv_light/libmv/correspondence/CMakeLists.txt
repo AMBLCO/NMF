@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dfd81469047a7315f07dae34f044e868e27f0affd0ec05c70534c28400311172
-size 543
+# define the source files
+SET(CORRESPONDENCE_SRC feature_matching.cc
+                       matches.cc
+                       nRobustViewMatching.cc)
+
+# define the header files (make the headers appear in IDEs.)
+FILE(GLOB CORRESPONDENCE_HDRS *.h)
+
+ADD_LIBRARY(correspondence STATIC ${CORRESPONDENCE_SRC} ${CORRESPONDENCE_HDRS})
+
+TARGET_LINK_LIBRARIES(correspondence LINK_PRIVATE ${GLOG_LIBRARIES} multiview)
+IF(TARGET Eigen3::Eigen)
+  TARGET_LINK_LIBRARIES(correspondence LINK_PUBLIC Eigen3::Eigen)
+ENDIF()
+
+
+LIBMV_INSTALL_LIB(correspondence)

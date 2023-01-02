@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e39bb556f9d608be57bcf10a7c4c8986e0103f79b9339162ae7ac33d6a77471a
-size 116
+# CMake generation dependency list for this directory.
+C:/opencv_contrib-4.5.3/modules/bioinspired/CMakeLists.txt

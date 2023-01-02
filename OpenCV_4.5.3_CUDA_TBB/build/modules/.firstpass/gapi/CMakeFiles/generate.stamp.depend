@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:04f8ff786cd12b5fbef30357ece46611621d03f839ef714eebb7a72ee34d6abe
-size 101
+# CMake generation dependency list for this directory.
+C:/opencv-4.5.3/modules/gapi/CMakeLists.txt

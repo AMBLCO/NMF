@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1ee4c56c03149b3ba1275363dce1118bdd47d34c9fbbdaaba26b0f30cd19c3d0
-size 410
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+#ifndef __OPENCV_TEST_PRECOMP_HPP__
+#define __OPENCV_TEST_PRECOMP_HPP__
+
+#include "opencv2/ts.hpp"
+#include "opencv2/optflow.hpp"
+
+namespace opencv_test {
+using namespace cv::optflow;
+using namespace perf;
+}
+
+#endif

@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:12b3bd069501dd2e7431241bbd8f8db80a6a776e69812e24daad67013275e0ac
-size 290
+/*
+ * a rather innocuous-looking function which is actually
+ * part of <cstdlib>, so we can be reasonably sure its
+ * definition will be found
+ */
+#ifndef __OPENCV_MATLAB_TEST_GENERATOR_HPP_
+#define __OPENCV_MATLAB_TEST_GENERATOR_HPP_
+
+namespace cv {
+
+CV_EXPORTS_W int rand( );
+
+};
+
+#endif

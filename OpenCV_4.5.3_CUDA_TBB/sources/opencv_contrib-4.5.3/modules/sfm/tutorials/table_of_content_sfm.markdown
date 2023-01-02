@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:76b6e26d8caa3311cfd654ef538959f5f8bec3bf29badba4d543b124df6e7607
-size 755
+Structure From Motion {#tutorial_table_of_content_sfm}
+=====================
+
+-   @subpage tutorial_sfm_installation
+
+    *Compatibility:* \> OpenCV 3.0
+
+    *Author:* Edgar Riba
+
+    Instructions in order to properly setup the Structure from Motion module.
+
+-   @subpage tutorial_sfm_trajectory_estimation
+
+    *Compatibility:* \> OpenCV 3.0
+
+    *Author:* Edgar Riba
+
+    Camera motion estimation from a given set of tracked 2d points.
+
+-   @subpage tutorial_sfm_scene_reconstruction
+
+    *Compatibility:* \> OpenCV 3.0
+
+    *Author:* Edgar Riba
+
+    Sparse scene reconstruction from a given set of images.
+
+-   @subpage tutorial_sfm_import_reconstruction
+
+    *Compatibility:* \> OpenCV 3.0
+
+    *Author:* Edgar Riba
+
+    Import a scene reconstruction.

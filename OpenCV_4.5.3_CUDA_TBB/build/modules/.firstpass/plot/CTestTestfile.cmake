@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:40ccb1efb9499f8703da5818f80a3a2e5f9f7d7346fb2996efb7db5358c3ddd4
-size 300
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/plot
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/plot
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9e7ff092f66b6788f820263c4c5cfe1d861f61804467010c78c66313579f88c2
-size 609
+#include <vector>
+#include "render_priv.hpp"
+#include "backends/render/ft_render.hpp"
+
+#ifndef OPENCV_RENDER_OCV_HPP
+#define OPENCV_RENDER_OCV_HPP
+
+namespace cv
+{
+namespace gapi
+{
+namespace wip
+{
+namespace draw
+{
+
+// FIXME only for tests
+void GAPI_EXPORTS drawPrimitivesOCVYUV(cv::Mat& yuv, const Prims& prims, std::shared_ptr<cv::gapi::wip::draw::FTTextRender>& mc);
+void GAPI_EXPORTS drawPrimitivesOCVBGR(cv::Mat& bgr, const Prims& prims, std::shared_ptr<cv::gapi::wip::draw::FTTextRender>& mc);
+
+} // namespace draw
+} // namespace wip
+} // namespace gapi
+} // namespace cv
+
+#endif // OPENCV_RENDER_OCV_HPP

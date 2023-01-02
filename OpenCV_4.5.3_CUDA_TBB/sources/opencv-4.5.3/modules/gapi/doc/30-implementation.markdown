@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f1c5d6d5756c96f50a967e0e68d9e49a5f75c3f557044014ee7405b3b3ea8e39
-size 611
+# Implementation details {#gapi_impl}
+
+[TOC]
+
+# G-API Implementation details
+
+Note -- this section is still in progress.
+
+# API layer {#gapi_detail_api}
+
+## Expression unrolling {#gapi_detail_expr}
+
+## Parameter marshalling {#gapi_detail_params}
+
+## Operations representation {#gapi_detail_operations}
+
+# Graph compiler {#gapi_detail_compiler}
+
+## ADE basics {#gapi_detail_ade}
+
+## Graph model representation {#gapi_detail_gmodel}
+
+## G-API metadata and passes {#gapi_detail_meta}
+
+# Backends {#gapi_detail_backends}
+
+## Backend scope of work {#gapi_backend_scope}
+
+## Graph transformation {#gapi_backend_pass}

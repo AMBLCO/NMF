@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e5da4006d858360bd9e24f511f239d1a0c5d7f3129a2c13acea240c35bc5c365
-size 239
+name = "OpenCV"
+uuid = "c5c8e1f8-82bd-4b4b-a82d-991e5c6b68de"
+authors = ["Archit Rungta <architrungta120@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+CxxWrap = "1f15a43c-97ca-5a2a-ae31-89f07a497df4"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"

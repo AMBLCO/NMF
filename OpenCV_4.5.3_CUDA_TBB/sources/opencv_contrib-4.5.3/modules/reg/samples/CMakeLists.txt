@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:637947de252d6c860c08149889b4121b7cfc027bac0ea2387be42c229884a6b3
-size 286
+cmake_minimum_required(VERSION 2.8)
+project(map_test)
+find_package(OpenCV REQUIRED)
+
+set(SOURCES map_test.cpp)
+
+add_definitions(-DCOMPARE_FEATURES)
+include_directories(${OpenCV_INCLUDE_DIRS})
+add_executable(map_test ${SOURCES} ${HEADERS})
+target_link_libraries(map_test ${OpenCV_LIBS})

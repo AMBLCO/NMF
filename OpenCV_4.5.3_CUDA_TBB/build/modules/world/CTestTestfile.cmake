@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:165f9c6d39091a047c7567857f1ff3b9cd59e25cbc1323b5f9d6a4930d9cacc5
-size 283
+# CMake generated Testfile for 
+# Source directory: C:/opencv-4.5.3/modules/world
+# Build directory: C:/opencv-4.5.3/build/modules/world
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

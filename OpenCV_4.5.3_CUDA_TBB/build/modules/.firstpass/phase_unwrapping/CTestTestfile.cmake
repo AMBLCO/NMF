@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9b355fd4b90a9b18e55298a46402fe94c79d723df6042138b3b13ed0d15e5213
-size 324
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/phase_unwrapping
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/phase_unwrapping
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

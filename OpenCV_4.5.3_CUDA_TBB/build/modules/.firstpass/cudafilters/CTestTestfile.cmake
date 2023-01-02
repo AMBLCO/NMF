@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:92ea57147a265c63c97f13d4daca08ff57a952a01799719533bb1996068ef600
-size 314
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/cudafilters
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/cudafilters
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

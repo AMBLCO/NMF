@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:92fac3af9f166edefb5f5405c815a218a40f8bd305257e0f51dd3dc796b786b7
-size 592
+/*
+ *      ** File generated automatically, do not modify **
+ *
+ * This file defines the list of modules available in current build configuration
+ *
+ *
+*/
+
+// This definition means that OpenCV is built with enabled non-free code.
+// For example, patented algorithms for non-profit/non-commercial use only.
+/* #undef OPENCV_ENABLE_NONFREE */
+
+#define HAVE_OPENCV_CORE
+#define HAVE_OPENCV_CUDAARITHM
+#define HAVE_OPENCV_CUDAIMGPROC
+#define HAVE_OPENCV_CUDEV
+#define HAVE_OPENCV_HIGHGUI
+#define HAVE_OPENCV_IMGCODECS
+#define HAVE_OPENCV_IMGPROC
+#define HAVE_OPENCV_WORLD
+
+

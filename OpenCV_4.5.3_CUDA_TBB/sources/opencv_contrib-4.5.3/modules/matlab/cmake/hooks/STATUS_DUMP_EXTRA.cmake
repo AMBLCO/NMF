@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:61f5ea5d108538210d9e7fabcf84ef9df96b1118d67a6ff7b7d674ea18b564dc
-size 421
+# ========================= matlab =========================
+if(WITH_MATLAB OR MATLAB_FOUND)
+  status("")
+  status("  Matlab:" MATLAB_FOUND THEN "YES" ELSE "NO")
+  if(MATLAB_FOUND)
+    status("    mex:"         MATLAB_MEX_SCRIPT  THEN  "${MATLAB_MEX_SCRIPT}"   ELSE NO)
+    status("    Compiler/generator:" MEX_WORKS   THEN  "Working"                ELSE "Not working (bindings will not be generated)")
+  endif()
+endif()

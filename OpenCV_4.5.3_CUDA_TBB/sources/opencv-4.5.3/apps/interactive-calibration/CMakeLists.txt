@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:351239ab2b8be74f9e070b0325da5dcfca3a8f9d8cb0c23067ff0a4fd91fbcc9
-size 272
+set(DEPS opencv_core opencv_imgproc opencv_features2d opencv_highgui opencv_calib3d opencv_videoio)
+if(${BUILD_opencv_aruco})
+    list(APPEND DEPS opencv_aruco)
+endif()
+file(GLOB SRCS *.cpp)
+ocv_add_application(opencv_interactive-calibration MODULES ${DEPS} SRCS ${SRCS})

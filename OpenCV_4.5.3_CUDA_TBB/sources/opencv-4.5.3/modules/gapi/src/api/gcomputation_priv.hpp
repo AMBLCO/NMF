@@ -1,3 +1,54 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c3f0e8e75b0a1f592060cca4a4b045144b9be66748f62d997e1511991f4b0704
-size 1238
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+//
+// Copyright (C) 2018 Intel Corporation
+
+
+#ifndef OPENCV_GAPI_GCOMPUTATION_PRIV_HPP
+#define OPENCV_GAPI_GCOMPUTATION_PRIV_HPP
+
+#include <ade/graph.hpp>
+
+#include "opencv2/gapi/util/variant.hpp"
+
+#include "opencv2/gapi.hpp"
+#include "opencv2/gapi/gcall.hpp"
+
+#include "opencv2/gapi/util/variant.hpp"
+
+#include "backends/common/serialization.hpp"
+
+namespace cv {
+
+struct GraphInfo
+{
+    using Ptr = std::shared_ptr<GraphInfo>;
+    cv::GTypesInfo inputs;
+    cv::GTypesInfo outputs;
+};
+
+class GComputation::Priv
+{
+public:
+    struct Expr {
+        cv::GProtoArgs m_ins;
+        cv::GProtoArgs m_outs;
+    };
+
+    using Dump = cv::gapi::s11n::GSerialized;
+
+    using Shape = cv::util::variant
+        < Expr    // An expression-based graph
+        , Dump    // A deserialized graph
+        >;
+
+    GCompiled      m_lastCompiled;
+    GMetaArgs      m_lastMetas; // TODO: make GCompiled remember its metas?
+    Shape          m_shape;
+    GraphInfo::Ptr m_info;      // NB: Used by python bridge
+};
+
+}
+
+#endif // OPENCV_GAPI_GCOMPUTATION_PRIV_HPP

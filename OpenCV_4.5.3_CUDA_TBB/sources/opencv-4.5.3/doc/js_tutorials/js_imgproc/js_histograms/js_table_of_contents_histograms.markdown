@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:88871727e8a9e88e52a32cd46c28af8d3f67224c69e1100ac522e81860cdd419
-size 399
+Histograms in OpenCV.js {#tutorial_js_table_of_contents_histograms}
+====================
+
+-   @subpage tutorial_js_histogram_begins
+
+    Learn the basics of histograms
+
+-   @subpage tutorial_js_histogram_equalization
+
+    Learn to Equalize Histograms to get better contrast for images
+
+-   @subpage tutorial_js_histogram_backprojection
+
+    Learn histogram backprojection to segment colored objects

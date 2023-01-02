@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d9179fc9836b7c3c71ac2a5a53e465111103fd12b41d860508ba6cbeffce3276
-size 312
+#if defined __AVX512__ || defined __AVX512F__
+#include <immintrin.h>
+void test()
+{
+    __m512i zmm = _mm512_setzero_si512();
+#if defined __GNUC__ && defined __x86_64__
+    asm volatile ("" : : : "zmm16", "zmm17", "zmm18", "zmm19");
+#endif
+}
+#else
+#error "AVX512 is not supported"
+#endif
+int main() { return 0; }

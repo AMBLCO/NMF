@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:75d54706a40eeb195c03fc5d0e74c4c0a9633eea36b448167b09ecc616bda763
-size 844
+package org.opencv.test.features2d;
+
+import org.opencv.test.OpenCVTestCase;
+
+public class HARRISFeatureDetectorTest extends OpenCVTestCase {
+
+    public void testCreate() {
+        fail("Not yet implemented");
+    }
+
+    public void testDetectListOfMatListOfListOfKeyPoint() {
+        fail("Not yet implemented");
+    }
+
+    public void testDetectListOfMatListOfListOfKeyPointListOfMat() {
+        fail("Not yet implemented");
+    }
+
+    public void testDetectMatListOfKeyPoint() {
+        fail("Not yet implemented");
+    }
+
+    public void testDetectMatListOfKeyPointMat() {
+        fail("Not yet implemented");
+    }
+
+    public void testEmpty() {
+        fail("Not yet implemented");
+    }
+
+    public void testRead() {
+        fail("Not yet implemented");
+    }
+
+    public void testWrite() {
+        fail("Not yet implemented");
+    }
+
+}

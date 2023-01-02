@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:703d56ab5c4b3ea5f1c909baddc90f6b898e2f4fd2273112f8a426329d55ee0c
-size 577
+#define __STDC_CONSTANT_MACROS
+
+#include <stdlib.h>
+
+extern "C" {
+#include <libavformat/avformat.h>
+#include <libavcodec/avcodec.h>
+#include <libswscale/swscale.h>
+}
+
+#define CALC_FFMPEG_VERSION(a,b,c) ( a<<16 | b<<8 | c )
+
+static void test()
+{
+  AVFormatContext* c = 0;
+  AVCodec* avcodec = 0;
+  AVFrame* frame = 0;
+  (void)avcodec;
+  (void)frame;
+
+#if LIBAVFORMAT_BUILD >= CALC_FFMPEG_VERSION(52, 111, 0)
+  int err = avformat_open_input(&c, "", NULL, NULL);
+#else
+  int err = av_open_input_file(&c, "", NULL, 0, NULL);
+#endif
+  (void)err;
+}
+
+int main() { test(); return 0; }

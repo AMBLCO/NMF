@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9540068c5bbd341cebd12abd1bf798ccd09818da718eb298507074976f2092d5
-size 412
+// This file is part of OpenCV project.
+// It is subject to the license terms in the LICENSE file found in the top-level directory
+// of this distribution and at http://opencv.org/license.html.
+
+#ifndef __OPENCV_TEST_PRECOMP_HPP__
+#define __OPENCV_TEST_PRECOMP_HPP__
+
+#include "opencv2/ts.hpp"
+#include "opencv2/intensity_transform.hpp"
+
+namespace opencv_test {
+using namespace cv::intensity_transform;
+}
+
+#endif

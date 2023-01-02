@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:652925cf87d955bbef518622d412d55321eb5f94d8a081c6cff727d3ee9e6001
-size 222
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="org.opencv">
+
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="21" />
+</manifest>

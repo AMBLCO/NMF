@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d4ee56cf6a8281b1e5870e6f05be3d81dd8202f8143cb023a8d38340c89d0c59
-size 304
+# CMake generated Testfile for 
+# Source directory: C:/opencv_contrib-4.5.3/modules/xphoto
+# Build directory: C:/opencv-4.5.3/build/modules/.firstpass/xphoto
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
