@@ -1,9 +1,0 @@
-# CMake generation dependency list for this directory.
-C:/opencv-4.5.3/modules/python/CMakeLists.txt
-C:/opencv-4.5.3/modules/python/package/cv2/__init__.py
-C:/opencv-4.5.3/modules/python/package/cv2/_extra_py_code/__init__.py
-C:/opencv-4.5.3/modules/python/package/cv2/load_config_py2.py
-C:/opencv-4.5.3/modules/python/package/cv2/load_config_py3.py
-C:/opencv-4.5.3/modules/python/package/setup.py
-C:/opencv-4.5.3/modules/python/package/template/config.py.in
-C:/opencv-4.5.3/modules/python/python_loader.cmake

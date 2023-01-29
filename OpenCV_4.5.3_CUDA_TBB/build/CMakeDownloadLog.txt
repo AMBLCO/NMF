@@ -1,2 +1,0 @@
-#use_cache "C:/opencv-4.5.3/.cache"
-#match_hash_in_cmake_cache "OCV_DOWNLOAD_IPPICV_HASH_3rdparty_ippicv_ippicv_2020_win_intel64_20191018_general_zip"
